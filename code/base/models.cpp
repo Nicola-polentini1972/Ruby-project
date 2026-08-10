@@ -727,7 +727,7 @@ bool Model::loadVersion10(FILE* fd)
 
          if ( 1 != fscanf(fd, "%d", &tmp1) )
             { log_softerror_and_alarm("10-50 %d", i); return false; }
-         camera_params[k].profiles[i].uDummyCamP = tmp1;
+         camera_params[k].profiles[i].uColorTempK = tmp1;
       }
 
    }
@@ -1437,7 +1437,7 @@ bool Model::loadVersion11(FILE* fd)
 
          if ( 1 != fscanf(fd, "%u", &u1) )
             { bOk = false; log_softerror_and_alarm("11-44 %d", i); return false; }
-         camera_params[k].profiles[i].uDummyCamP = u1;
+         camera_params[k].profiles[i].uColorTempK = u1;
       }
 
    }
@@ -2059,7 +2059,7 @@ bool Model::loadVersion12(FILE* fd)
 
          if ( 1 != fscanf(fd, "%u", &u1) )
             { bOk = false; log_softerror_and_alarm("11-44 %d", i); return false; }
-         camera_params[k].profiles[i].uDummyCamP = u1;
+         camera_params[k].profiles[i].uColorTempK = u1;
       }
 
    }
@@ -2602,7 +2602,7 @@ bool Model::saveVersion12(FILE* fd, bool isOnController)
       sprintf(szSetting, "%d %d ", (int)camera_params[k].profiles[i].dayNightMode, (int)camera_params[k].profiles[i].hue);
       strcat(szModel, szSetting);
 
-      sprintf(szSetting, " %u\n", camera_params[k].profiles[i].uDummyCamP); 
+      sprintf(szSetting, " %u\n", camera_params[k].profiles[i].uColorTempK); 
       strcat(szModel, szSetting);
       }
    }
@@ -5168,7 +5168,7 @@ void Model::resetCameraProfileToDefaults(camera_profile_parameters_t* pCamParams
    pCamParams->ev = 0; // not set, auto
    pCamParams->iso = 0; // auto
    pCamParams->dayNightMode = 0; // day mode
-   pCamParams->uDummyCamP = 0;
+   pCamParams->uColorTempK = 0;
 }
 
 void Model::resetFunctionsParamsToDefaults()
@@ -5949,8 +5949,8 @@ void Model::log_camera_profiles_differences(camera_profile_parameters_t* pCamPro
       log_line(" * Cam wdr is different: %u - %u", pCamProfile1->wdr, pCamProfile2->wdr);
    if ( pCamProfile1->dayNightMode != pCamProfile2->dayNightMode )
       log_line(" * Cam dayNightMode is different: %u - %u", pCamProfile1->dayNightMode, pCamProfile2->dayNightMode);
-   if ( pCamProfile1->uDummyCamP != pCamProfile2->uDummyCamP )
-      log_line(" * Cam uDummyCamP is different: %u - %u", pCamProfile1->uDummyCamP, pCamProfile2->uDummyCamP);
+   if ( pCamProfile1->uColorTempK != pCamProfile2->uColorTempK )
+      log_line(" * Cam uColorTempK is different: %u - %u", pCamProfile1->uColorTempK, pCamProfile2->uColorTempK);
 
    if ( fabsf(pCamProfile1->analogGain - pCamProfile2->analogGain) > 0.000001 )
       log_line(" * Cam analogGain is different: %f - %f", pCamProfile1->analogGain, pCamProfile2->analogGain);

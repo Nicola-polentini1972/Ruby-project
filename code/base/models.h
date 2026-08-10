@@ -50,7 +50,7 @@ typedef struct
    u8 wdr; // used for IMX327 camera for WDR mode
    u8 dayNightMode; // 0 - day mode, 1 - night mode, only for Veye cameras
    u8 hue; // 0...100
-   u32 uDummyCamP;
+   u32 uColorTempK; // manual color temperature in Kelvin, used to derive awbGainR/awbGainB when whitebalance is off, 0 if not set
 } camera_profile_parameters_t;
 
 typedef struct
