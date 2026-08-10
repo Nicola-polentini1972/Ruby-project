@@ -63,6 +63,7 @@ void MenuVehicleOnboardRecording::addItems()
    removeAllItems();
 
    m_IndexEnableOnArm = -1;
+   m_IndexRecordOSD = -1;
 
    if ( (NULL == g_pCurrentModel) || (! g_pCurrentModel->hasCamera()) )
    {
@@ -82,6 +83,13 @@ void MenuVehicleOnboardRecording::addItems()
    m_pItemsSelect[0]->setIsEditable();
    m_IndexEnableOnArm = addMenuItem(m_pItemsSelect[0]);
    m_pItemsSelect[0]->setSelectedIndex(g_pCurrentModel->onboard_recording_params.uEnabled ? 1 : 0);
+
+   m_pItemsSelect[1] = new MenuItemSelect(L("Record OSD data"), L("Also records a .osd overlay data file locally, alongside the onboard video, using the flight controller's OSD telemetry received directly on the vehicle (independent of the radio link to the controller)."));
+   m_pItemsSelect[1]->addSelection(L("Disabled"));
+   m_pItemsSelect[1]->addSelection(L("Enabled"));
+   m_pItemsSelect[1]->setIsEditable();
+   m_IndexRecordOSD = addMenuItem(m_pItemsSelect[1]);
+   m_pItemsSelect[1]->setSelectedIndex(g_pCurrentModel->onboard_recording_params.uRecordOSD ? 1 : 0);
 
    if ( iTmp >= 0 )
       m_SelectedIndex = iTmp;
@@ -112,8 +120,11 @@ void MenuVehicleOnboardRecording::sendParams()
    onboard_recording_params_t params;
    memcpy(&params, &(g_pCurrentModel->onboard_recording_params), sizeof(onboard_recording_params_t));
    params.uEnabled = (u8) m_pItemsSelect[0]->getSelectedIndex();
+   if ( -1 != m_IndexRecordOSD )
+      params.uRecordOSD = (u8) m_pItemsSelect[1]->getSelectedIndex();
 
-   if ( params.uEnabled == g_pCurrentModel->onboard_recording_params.uEnabled )
+   if ( (params.uEnabled == g_pCurrentModel->onboard_recording_params.uEnabled) &&
+        (params.uRecordOSD == g_pCurrentModel->onboard_recording_params.uRecordOSD) )
       return;
 
    if ( g_pCurrentModel->is_spectator )
@@ -139,6 +150,12 @@ void MenuVehicleOnboardRecording::onSelectItem()
    }
 
    if ( m_IndexEnableOnArm == m_SelectedIndex )
+   {
+      sendParams();
+      return;
+   }
+
+   if ( m_IndexRecordOSD == m_SelectedIndex )
    {
       sendParams();
       return;

@@ -36,6 +36,7 @@
 #include "timers.h"
 #include "../base/ruby_ipc.h"
 #include "../base/msp.h"
+#include "../base/shared_mem.h"
 
 void broadcast_vehicle_stats();
 bool isRadioLinksInitInProgress();
@@ -69,6 +70,36 @@ bool s_bMSPGotFCInfo = false;
 bool s_bMSPSentOSDCanvasSize = false;
 
 u32 s_uMSPLastRequestBatteryInfoTime = 0;
+
+// Full MSP-OSD screen parse state (built independently of the raw forwarding state
+// above) and the shared mem segment it is published to for onboard_video_recording.cpp
+// (running in the ruby_rt_vehicle process) to consume, so a .osd file can be recorded
+// locally on the vehicle alongside the onboard video.
+type_msp_parse_state s_MSPScreenParseState;
+shared_mem_msp_osd_screen* s_pSMMSPOSDScreen = NULL;
+int s_iLastPublishedMSPDrawFrameNumber = -1;
+
+void _publish_msp_osd_screen_to_shared_mem()
+{
+   if ( NULL == s_pSMMSPOSDScreen )
+   {
+      s_pSMMSPOSDScreen = shared_mem_msp_osd_screen_open_for_write();
+      if ( NULL == s_pSMMSPOSDScreen )
+         return;
+   }
+
+   if ( s_MSPScreenParseState.iLastDrawFrameNumber == s_iLastPublishedMSPDrawFrameNumber )
+      return;
+
+   s_pSMMSPOSDScreen->uMSPFlags = s_MSPScreenParseState.headerTelemetryMSP.uMSPFlags;
+   s_pSMMSPOSDScreen->uMSPOSDRows = s_MSPScreenParseState.headerTelemetryMSP.uMSPOSDRows;
+   s_pSMMSPOSDScreen->uMSPOSDCols = s_MSPScreenParseState.headerTelemetryMSP.uMSPOSDCols;
+   memcpy(s_pSMMSPOSDScreen->uScreenChars, s_MSPScreenParseState.uScreenChars, sizeof(s_pSMMSPOSDScreen->uScreenChars));
+   s_iLastPublishedMSPDrawFrameNumber = s_MSPScreenParseState.iLastDrawFrameNumber;
+   s_pSMMSPOSDScreen->iLastDrawFrameNumber = s_iLastPublishedMSPDrawFrameNumber;
+   // Written last, after the buffer copy above, so a reader can detect and discard a torn read.
+   s_pSMMSPOSDScreen->uGenerationCounter++;
+}
 
 void _send_msp_to_fc(u8 uCommand, u8* pData, int iDataLength)
 {
@@ -169,6 +200,8 @@ void telemetry_msp_on_open_port(int iSerialPortFile)
    s_PHTMSP.uMSPOSDCols = 60;
    s_PHTMSP.uMSPOSDRows = 22;
    log_line("[Telem] Reset MSP OSD canvas size to: cols: %d, rows: %d", s_PHTMSP.uMSPOSDCols, s_PHTMSP.uMSPOSDRows);
+
+   parse_msp_reset_state(&s_MSPScreenParseState);
 }
 
 void telemetry_msp_on_close()
@@ -481,6 +514,17 @@ bool telemetry_msp_on_new_serial_data(u8* pData, int iDataLength)
    if ( (NULL == pData) || (iDataLength <= 0) )
       return false;
    bool bReturn = false;
+
+   // Build the full MSP-OSD screen buffer locally (independent state machine from the
+   // raw forwarding below) and publish it for onboard_video_recording.cpp to consume.
+   // FC type and canvas size are not derived by parse_msp_incoming_data() itself (it only
+   // consumes DISPLAYPORT draw commands): mirror them from s_PHTMSP, already tracked by
+   // the raw-forwarding parsing below (MSP_CMD_FC_VARIANT / auto-adjusted OSD canvas size).
+   s_MSPScreenParseState.headerTelemetryMSP.uMSPFlags = s_PHTMSP.uMSPFlags;
+   s_MSPScreenParseState.headerTelemetryMSP.uMSPOSDCols = s_PHTMSP.uMSPOSDCols;
+   s_MSPScreenParseState.headerTelemetryMSP.uMSPOSDRows = s_PHTMSP.uMSPOSDRows;
+   parse_msp_incoming_data(&s_MSPScreenParseState, pData, iDataLength, true);
+   _publish_msp_osd_screen_to_shared_mem();
 
    for( int i=0; i<iDataLength; i++ )
    {

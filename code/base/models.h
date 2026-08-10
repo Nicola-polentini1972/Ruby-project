@@ -298,7 +298,8 @@ typedef struct
 typedef struct
 {
    u8 uEnabled; // 0/1: automatically start onboard video recording when the vehicle arms, stop when it disarms
-   u8 uReserved[15];
+   u8 uRecordOSD; // 0/1: also record a .osd MSP-OSD overlay file locally, alongside the onboard video
+   u8 uReserved[14];
 } onboard_recording_params_t;
 
 

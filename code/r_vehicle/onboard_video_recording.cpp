@@ -49,6 +49,9 @@
 #include "../base/hardware.h"
 #include "../base/hardware_procs.h"
 #include "../base/hardware_files.h"
+#include "../base/msp.h"
+#include "../base/shared_mem.h"
+#include "../radio/radiopackets2.h"
 
 #include "shared_vars.h"
 
@@ -82,6 +85,68 @@ void _onboard_video_recording_flush_temp_buffer()
    s_iOnboardRecTempBufferFilled = 0;
 }
 
+// Reads the MSP-OSD screen buffer published by ruby_tx_telemetry (telemetry_msp.cpp) and,
+// if it has a new frame, appends it to the .osd file, using the exact same binary format
+// already produced station-side (code/r_station/rx_video_recording_data.cpp), so it can be
+// read back by the existing video_playback.cpp without any changes there.
+void _onboard_video_recording_try_write_osd_frame(int iFileOSD, shared_mem_msp_osd_screen* pSMOSD,
+   bool* pbHeaderWritten, int* piLastConsumedFrameNumber, u32 uTimeStartMs, u32* puBytesWritten)
+{
+   if ( (iFileOSD < 0) || (NULL == pSMOSD) )
+      return;
+
+   if ( ! (*pbHeaderWritten) )
+   {
+      u8 uHeader[40];
+      memset(uHeader, 0, sizeof(uHeader));
+      switch ( pSMOSD->uMSPFlags & MSP_FLAGS_FC_TYPE_MASK )
+      {
+         case MSP_FLAGS_FC_TYPE_BETAFLIGHT: memcpy(uHeader, "BTFL", 4); break;
+         case MSP_FLAGS_FC_TYPE_INAV: memcpy(uHeader, "INAV", 4); break;
+         case MSP_FLAGS_FC_TYPE_PITLAB: memcpy(uHeader, "PITL", 4); break;
+         case MSP_FLAGS_FC_TYPE_ARDUPILOT: memcpy(uHeader, "ARDU", 4); break;
+         default: break;
+      }
+      int iRes = write(iFileOSD, uHeader, sizeof(uHeader));
+      if ( iRes > 0 )
+         (*puBytesWritten) += (u32)iRes;
+      *pbHeaderWritten = true;
+      // Same as station-side: the first call only writes the 40 byte header, no frame yet.
+      return;
+   }
+
+   u32 uGen1 = pSMOSD->uGenerationCounter;
+   int iFrameNo = pSMOSD->iLastDrawFrameNumber;
+   if ( iFrameNo == (*piLastConsumedFrameNumber) )
+      return;
+
+   int iCols = (int) pSMOSD->uMSPOSDCols;
+   if ( iCols <= 0 )
+      iCols = DEFAULT_MSPOSD_RECORDING_COLS;
+
+   u16 uBuffer[DEFAULT_MSPOSD_RECORDING_ROWS * DEFAULT_MSPOSD_RECORDING_COLS];
+   int iBuffPos = 0;
+   for( int y=0; y<DEFAULT_MSPOSD_RECORDING_ROWS; y++ )
+   for( int x=0; x<DEFAULT_MSPOSD_RECORDING_COLS; x++ )
+   {
+      int iSrc = x + y*iCols;
+      uBuffer[iBuffPos++] = ((iSrc >= 0) && (iSrc < MAX_MSP_CHARS_BUFFER)) ? pSMOSD->uScreenChars[iSrc] : 0;
+   }
+
+   if ( uGen1 != pSMOSD->uGenerationCounter )
+      return; // Possible torn read: retry next pass, this frame number is not marked consumed.
+
+   u32 uTimeMs = get_current_timestamp_ms() - uTimeStartMs;
+   int iRes = write(iFileOSD, (u8*)&uTimeMs, sizeof(u32));
+   if ( iRes > 0 )
+      (*puBytesWritten) += (u32)iRes;
+   iRes = write(iFileOSD, uBuffer, iBuffPos * sizeof(u16));
+   if ( iRes > 0 )
+      (*puBytesWritten) += (u32)iRes;
+
+   *piLastConsumedFrameNumber = iFrameNo;
+}
+
 void* _thread_onboard_video_recording(void* argument)
 {
    log_line("[OnboardVideoRecording-Th] Thread started.");
@@ -97,9 +162,16 @@ void* _thread_onboard_video_recording(void* argument)
    if ( (NULL != g_pCurrentModel) && (g_pCurrentModel->video_params.uVideoExtraFlags & VIDEO_FLAG_GENERATE_H265) )
       szExt = "h265";
 
+   u32 uRecTimestampMs = get_current_timestamp_ms();
+
    char szFile[MAX_FILE_PATH_SIZE];
    snprintf(szFile, sizeof(szFile)/sizeof(szFile[0]), "%sonboard_rec_%llu.%s",
-      FOLDER_MEDIA, (unsigned long long)get_current_timestamp_ms(), szExt);
+      FOLDER_MEDIA, (unsigned long long)uRecTimestampMs, szExt);
+
+   bool bRecordOSD = (NULL != g_pCurrentModel) && (0 != g_pCurrentModel->onboard_recording_params.uRecordOSD);
+   char szFileOSD[MAX_FILE_PATH_SIZE];
+   snprintf(szFileOSD, sizeof(szFileOSD)/sizeof(szFileOSD[0]), "%sonboard_rec_%llu.osd",
+      FOLDER_MEDIA, (unsigned long long)uRecTimestampMs);
 
    int iPipeRead = -1;
    int iRetries = 100;
@@ -149,6 +221,25 @@ void* _thread_onboard_video_recording(void* argument)
 
    log_line("[OnboardVideoRecording-Th] Recording onboard video to: %s", szFile);
 
+   int iOutputFileOSD = -1;
+   shared_mem_msp_osd_screen* pSMOSD = NULL;
+   bool bOSDHeaderWritten = false;
+   int iOSDLastConsumedFrameNumber = -1;
+   u32 uOSDBytesWritten = 0;
+   if ( bRecordOSD )
+   {
+      iOutputFileOSD = open(szFileOSD, O_CREAT | O_WRONLY | O_TRUNC, 0777);
+      if ( -1 == iOutputFileOSD )
+         log_softerror_and_alarm("[OnboardVideoRecording-Th] Failed to create .osd recording file: %s", szFileOSD);
+      else
+      {
+         log_line("[OnboardVideoRecording-Th] Recording onboard OSD data to: %s", szFileOSD);
+         pSMOSD = shared_mem_msp_osd_screen_open_for_read();
+         if ( NULL == pSMOSD )
+            log_softerror_and_alarm("[OnboardVideoRecording-Th] Failed to open MSP OSD shared mem for reading, .osd file will have no data.");
+      }
+   }
+
    s_iOnboardRecTempBufferFilled = 0;
    s_uOnboardRecCurrentToken = 0x11111111;
    s_bOnboardRecFoundFirstNAL = false;
@@ -162,6 +253,10 @@ void* _thread_onboard_video_recording(void* argument)
    while ( (! g_bQuit) && s_bOnboardRecShouldRun )
    {
       u32 uTimeNow = get_current_timestamp_ms();
+
+      if ( -1 != iOutputFileOSD )
+         _onboard_video_recording_try_write_osd_frame(iOutputFileOSD, pSMOSD,
+            &bOSDHeaderWritten, &iOSDLastConsumedFrameNumber, (u32)uRecTimestampMs, &uOSDBytesWritten);
 
       if ( uTimeNow > uTimeLastFreeSpaceCheck + 4000 )
       {
@@ -223,6 +318,23 @@ void* _thread_onboard_video_recording(void* argument)
       char szDel[600];
       snprintf(szDel, sizeof(szDel)/sizeof(szDel[0]), "rm -f %s", szFile);
       hw_execute_bash_command(szDel, NULL);
+   }
+
+   if ( -1 != iOutputFileOSD )
+   {
+      close(iOutputFileOSD);
+      if ( NULL != pSMOSD )
+         shared_mem_msp_osd_screen_close(pSMOSD);
+
+      // Delete the .osd file together with a too-short video, and also when it never got
+      // any actual OSD frame data (only the 40 byte header), e.g. no FC DisplayPort MSP.
+      if ( (uTotalBytesWritten < 10000) || (uOSDBytesWritten <= 40) )
+      {
+         log_line("[OnboardVideoRecording-Th] Deleting incomplete/empty .osd file: %s", szFileOSD);
+         char szDelOSD[600];
+         snprintf(szDelOSD, sizeof(szDelOSD)/sizeof(szDelOSD[0]), "rm -f %s", szFileOSD);
+         hw_execute_bash_command(szDelOSD, NULL);
+      }
    }
 
    s_bOnboardRecThreadRunning = false;

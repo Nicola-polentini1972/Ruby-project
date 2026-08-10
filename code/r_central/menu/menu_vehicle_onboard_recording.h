@@ -18,4 +18,5 @@ class MenuVehicleOnboardRecording: public Menu
 
       MenuItemSelect* m_pItemsSelect[5];
       int m_IndexEnableOnArm;
+      int m_IndexRecordOSD;
 };

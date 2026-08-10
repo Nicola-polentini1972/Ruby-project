@@ -1132,6 +1132,17 @@ bool Model::loadVersion10(FILE* fd)
    else
       onboard_recording_params.uEnabled = 0;
 
+   if ( bOk )
+   {
+      u32 uTmpOnboardRecOSD_v10 = 0;
+      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecOSD_v10) )
+         onboard_recording_params.uRecordOSD = 0;
+      else
+         onboard_recording_params.uRecordOSD = (u8)uTmpOnboardRecOSD_v10;
+   }
+   else
+      onboard_recording_params.uRecordOSD = 0;
+
    //--------------------------------------------------
    // End reading file;
    //----------------------------------------
@@ -1720,6 +1731,17 @@ bool Model::loadVersion11(FILE* fd)
    else
       onboard_recording_params.uEnabled = 0;
 
+   if ( bOk )
+   {
+      u32 uTmpOnboardRecOSD_v11 = 0;
+      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecOSD_v11) )
+         onboard_recording_params.uRecordOSD = 0;
+      else
+         onboard_recording_params.uRecordOSD = (u8)uTmpOnboardRecOSD_v11;
+   }
+   else
+      onboard_recording_params.uRecordOSD = 0;
+
    //--------------------------------------------------
    // End reading file;
    //----------------------------------------
@@ -2285,6 +2307,17 @@ bool Model::loadVersion12(FILE* fd)
    else
       onboard_recording_params.uEnabled = 0;
 
+   if ( bOk )
+   {
+      u32 uTmpOnboardRecOSD_v12 = 0;
+      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecOSD_v12) )
+         onboard_recording_params.uRecordOSD = 0;
+      else
+         onboard_recording_params.uRecordOSD = (u8)uTmpOnboardRecOSD_v12;
+   }
+   else
+      onboard_recording_params.uRecordOSD = 0;
+
    //--------------------------------------------------
    // End reading file;
    //----------------------------------------
@@ -2743,6 +2776,9 @@ bool Model::saveVersion12(FILE* fd, bool isOnController)
    strcat(szModel, szSetting);
 
    sprintf(szSetting, "%u\n", (u32)onboard_recording_params.uEnabled);
+   strcat(szModel, szSetting);
+
+   sprintf(szSetting, "%u\n", (u32)onboard_recording_params.uRecordOSD);
    strcat(szModel, szSetting);
 
    // End writing values to file
@@ -4517,6 +4553,7 @@ void Model::resetToDefaults(bool generateId)
    uControllerId = 0;
    uControllerBoardType = 0;
    onboard_recording_params.uEnabled = 0;
+   onboard_recording_params.uRecordOSD = 0;
    sw_version = (SYSTEM_SW_VERSION_MAJOR * 256 + SYSTEM_SW_VERSION_MINOR) | (SYSTEM_SW_BUILD_NUMBER<<16);
    log_line("SW Version: %d.%d (b-%d)", get_sw_version_major(this), get_sw_version_minor(this), get_sw_version_build(this));
    
