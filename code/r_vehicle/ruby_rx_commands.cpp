@@ -2656,7 +2656,13 @@ bool process_command(u8* pBuffer, int length)
    if ( uCommandType == COMMAND_ID_SET_VEHICLE_NAME )
    {
       char* szName = (char*)(pBuffer + sizeof(t_packet_header)+sizeof(t_packet_header_command));
-      strcpy(g_pCurrentModel->vehicle_name, szName);
+      int iNameLen = iParamsLength;
+      if ( iNameLen < 0 )
+         iNameLen = 0;
+      if ( iNameLen >= MAX_VEHICLE_NAME_LENGTH )
+         iNameLen = MAX_VEHICLE_NAME_LENGTH - 1;
+      memcpy(g_pCurrentModel->vehicle_name, szName, iNameLen);
+      g_pCurrentModel->vehicle_name[iNameLen] = 0;
       saveCurrentModel();
       signalReloadModel(0, 0);
       sendCommandReply(COMMAND_RESPONSE_FLAGS_OK, 0, 0);

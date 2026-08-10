@@ -1155,7 +1155,15 @@ bool handle_last_command_result()
          add_menu_to_stack(s_pMenuVehicleHWInfo);
          s_pMenuVehicleHWInfo->addTopLine(" ");
          s_pMenuVehicleHWInfo->addTopLine(" ");
-         strcpy(szBuff, (const char*)pBuffer);
+         {
+            int iCopyLen = iDataLength;
+            if ( iCopyLen < 0 )
+               iCopyLen = 0;
+            if ( iCopyLen >= (int)sizeof(szBuff) )
+               iCopyLen = (int)sizeof(szBuff) - 1;
+            memcpy(szBuff, pBuffer, iCopyLen);
+            szBuff[iCopyLen] = 0;
+         }
 
             szWord = strtok(szBuff, "#");
             while( NULL != szWord )
@@ -1217,7 +1225,15 @@ bool handle_last_command_result()
          s_pMenuVehicleHWInfo->addTopLine(" ");
          //s_pMenuVehicleHWInfo->addTopLine("CPU Info:");
 
-         strcpy(szBuff, (const char*)pBuffer);
+         {
+            int iCopyLen = iDataLength;
+            if ( iCopyLen < 0 )
+               iCopyLen = 0;
+            if ( iCopyLen >= (int)sizeof(szBuff) )
+               iCopyLen = (int)sizeof(szBuff) - 1;
+            memcpy(szBuff, pBuffer, iCopyLen);
+            szBuff[iCopyLen] = 0;
+         }
          szWord = strtok(szBuff, szTokens);
          while( NULL != szWord )
          {
