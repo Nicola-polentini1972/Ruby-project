@@ -1,0 +1,23 @@
+S6-0:00:14.158 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S6-0:00:14.158 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S6-0:00:14.158 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S6-0:00:14.158 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S7-0:00:14.729 000 RubyRadioInit: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S7-0:00:20.614 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 9 ms, stall count: 5
+S7-0:00:20.630 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 13 ms, stall count: 12
+S7-0:00:22.004 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 10 ms, stall count: 9
+S7-0:00:24.278 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S7-0:00:24.278 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S7-0:00:24.278 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S7-0:00:24.278 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S7-0:00:28.785 000 RubyController: SOFTERROR: Main processing loop took too long (539 ms).
+S7-0:00:29.474 000 Router: SOFTERROR: Received a response from set freq command: [Error for wireless request "Set Frequency" (8B04) :
+    SET failed on device wlan0 ; No such device.
+]
+S7-0:00:29.740 000 Router: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S7-0:00:30.224 000 Router: SOFTERROR: Failed to switch radio interface 1 (wlan0, 8812eu) to frequency 5825 Mhz, returned error: [Error for wireless request "Set Frequency" (8B04) :.    SET failed on device wlan0 ; No such device..]
+S7-0:00:30.724 000 Router: SOFTERROR: Error setting [wlan0] to immediate mode: SIOCGIFHWADDR: No such device
+S7-0:00:30.724 000 Router: SOFTERROR: ERROR: unknown encapsulation on [wlan0]! check if monitor mode is supported and enabled
+S7-0:02:44.855 396 Central: SOFTERROR: [Hardware] Done executing reboot command

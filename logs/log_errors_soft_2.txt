@@ -1,0 +1,539 @@
+S2-0:00:13.426 000 RubyRadioInit: SOFTERROR: Failed to load preferences from file: /home/radxa/ruby/config/ui_preferences.cfg (missing file)
+S2-0:00:13.426 000 RubyRadioInit: SOFTERROR: CtrlInterfaces: Failed to load controller interfaces settings from file: /home/radxa/ruby/config/controller_input_interfaces.cfg (missing file). Reset and create the file.
+S2-0:00:19.309 000 Central: SOFTERROR: Failed to load preferences from file: /home/radxa/ruby/config/ui_preferences.cfg (missing file)
+S2-0:00:29.159 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:29.159 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:29.199 000 RubyController: SOFTERROR: Main processing loop took too long (541 ms).
+S2-0:00:31.201 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:31.201 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:33.202 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:33.202 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:35.203 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:35.203 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:37.204 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:37.204 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:39.205 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:39.205 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:41.206 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:41.206 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:43.207 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:43.207 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:45.208 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:45.209 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:47.210 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:47.210 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:49.211 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:49.211 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:51.212 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:51.212 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:53.213 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:53.213 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:55.214 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:55.214 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:57.215 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:57.215 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:00:59.216 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:00:59.216 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:01:01.217 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:01:01.218 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:01:03.222 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S2-0:01:03.222 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S2-0:01:04.244 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 37 ms, stall count: 19
+S2-0:01:04.268 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 21 ms, stall count: 18
+S2-0:01:05.645 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 11 ms, stall count: 8
+S2-0:01:07.675 006 Central: SOFTERROR: Failed to load plugins settings from file: /home/radxa/ruby/config/osd_plugins_settings.cfg (missing file)
+S2-0:01:07.675 006 Central: SOFTERROR: Failed to load core plugins settings from file: /home/radxa/ruby/config/core_plugins_settings.cfg (missing file). Reseted core plugins settings to default.
+S2-0:01:07.992 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S2-0:01:07.992 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S2-0:01:07.992 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S2-0:01:07.992 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S2-0:01:08.226 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 7 ms, stall count: 6
+S2-0:01:11.918 033 Central: SOFTERROR: Failed to load simple configuration from file: /home/radxa/ruby/config/current_vehicle_count.cfg (missing file)
+S2-0:01:12.623 042 Central: SOFTERROR: Failed to load plugins settings from file: /home/radxa/ruby/config/osd_plugins_settings.cfg (missing file)
+S2-0:01:13.644 000 Router: SOFTERROR: Failed to load simple configuration from file: /home/radxa/ruby/config/current_vehicle_count.cfg (missing file)
+S2-0:01:13.996 000 RX_Telemetry: SOFTERROR: Failed to load simple configuration from file: /home/radxa/ruby/config/current_vehicle_count.cfg (missing file)
+S2-0:01:14.585 042 Central: SOFTERROR: [Hardware] USB memory stick could NOT be mounted! Failed to iterate block devices.
+S2-0:01:14.657 000 TXRC: SOFTERROR: Failed to load simple configuration from file: /home/radxa/ruby/config/current_vehicle_count.cfg (missing file)
+S2-0:01:14.827 001 Router: SOFTERROR: [VRXBuffers] Empty buffers: (init) (no additional data)
+S2-0:01:14.827 001 Router: SOFTERROR: [VRXBuffers] Empty buffers: Already empty. Do nothing.
+S2-0:01:14.827 001 Router: SOFTERROR: [VRXBuffers] Empty buffers: (Reset receiver state.) (no additional data)
+S2-0:01:14.827 001 Router: SOFTERROR: [VRXBuffers] Empty buffers: Already empty. Do nothing.
+S2-0:01:14.828 001 Router: SOFTERROR: Reading and consuming 100 video/reg packets and 0 high priority packets in 1 consume loops took too long (fps 30): 129 ms
+S2-0:01:14.828 001 Router: SOFTERROR: Main loop took too long (max 26 ms, fps: 30): 129 ms (=129 + 0 + 0) cnt2: 0, cnt3: 100
+S2-0:01:14.828 002 Router: SOFTERROR: [VRXBuffers] Empty buffers: (Reset receiver state.) (no additional data)
+S2-0:01:14.828 002 Router: SOFTERROR: [VRXBuffers] Empty buffers: Already empty. Do nothing.
+S2-0:01:15.917 663 Router: SOFTERROR: Reading and consuming 3 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 30): 727 ms
+S2-0:01:15.918 663 Router: SOFTERROR: Main loop took too long (max 26 ms, fps: 30): 728 ms (=727 + 1 + 0) cnt2: 0, cnt3: 3
+S2-0:01:15.919 664 Router: SOFTERROR: [VRXBuffers] Empty buffers: (Reset receiver state.) (no additional data)
+S2-0:01:15.919 664 Router: SOFTERROR: [VRXBuffers] Empty buffers: Already empty. Do nothing.
+S2-0:01:15.919 664 Router: SOFTERROR: ERROR Rx loop (count 1) took 595 ms
+S2-0:01:15.995 698 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 1 consume loops took too long (fps 30): 52 ms
+S2-0:01:15.996 698 Router: SOFTERROR: Main loop took too long (max 26 ms, fps: 30): 53 ms (=52 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:01:16.099 000 RubyPlayerP: SOFTERROR: Stop reading pipe as quit flag is set.
+S2-0:01:17.049 624 Router: SOFTERROR: [VRXBuffers] Empty buffers: (Reset receiver state.) (no additional data)
+S2-0:01:17.049 624 Router: SOFTERROR: [VRXBuffers] Empty buffers: State: bottom buffer index: 0/1, bottom video block: 20714, emtpy? no, top buffer index: 0, top video block: 20714, empty? no, max recv block packet index: 0
+S2-0:01:17.332 066 Central: SOFTERROR: Main processing loop took too long (478 ms)
+S2-0:01:23.439 962 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:01:23.440 962 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 23
+S2-0:01:33.449 640 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:01:33.450 640 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:01:43.460 266 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:01:43.461 266 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:01:48.467 094 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:01:48.468 094 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 58094) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:01:48.468 094 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:01:53.469 882 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:01:53.470 882 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:01:58.475 697 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:01:58.476 697 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:02:08.486 363 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 29 ms
+S2-0:02:08.486 363 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:02:13.491 156 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:02:13.492 156 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 102156) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:02:13.492 156 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:02:18.497 986 Router: SOFTERROR: Reading and consuming 31 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:02:18.497 986 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 31
+S2-0:02:28.507 614 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:02:28.508 614 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 128614) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:02:28.508 614 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 30
+S2-0:02:33.511 415 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:02:33.512 415 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 137415) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:02:33.512 415 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 30
+S2-0:02:38.516 212 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:02:38.518 212 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 146212) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:02:38.518 212 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:02:43.522 004 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:02:43.523 004 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 0 + 1) cnt2: 0, cnt3: 24
+S2-0:02:48.528 784 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 31 ms
+S2-0:02:48.528 784 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 163784) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:02:48.528 784 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:02:53.533 578 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:02:53.533 578 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:03:03.542 213 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:03:03.543 213 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:03:13.552 830 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:03:13.553 830 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:03:28.568 320 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:03:28.569 320 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:03:33.573 121 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:03:33.573 121 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:03:48.589 506 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:03:48.590 506 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:03:58.600 131 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:03:58.601 131 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 0 + 1) cnt2: 0, cnt3: 29
+S2-0:04:08.610 738 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:04:08.610 738 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:04:13.616 558 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:04:13.617 558 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 313558) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:04:13.617 558 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:04:18.621 353 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:04:18.621 353 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:04:23.627 132 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:04:23.627 132 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 30
+S2-0:04:33.637 749 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:04:33.637 749 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:04:43.648 345 Router: SOFTERROR: Reading and consuming 31 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:04:43.648 345 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 31
+S2-0:04:58.662 830 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:04:58.663 830 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:05:13.677 237 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:05:13.678 237 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 30
+S2-0:05:28.692 651 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:05:28.693 651 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:05:38.703 266 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:05:38.703 266 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:05:43.709 043 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:05:43.710 043 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:05:48.713 829 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:05:48.714 829 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:05:53.721 614 Router: SOFTERROR: Reading and consuming 31 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 30 ms
+S2-0:05:53.722 614 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 489614) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:05:53.722 614 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 31
+S2-0:05:58.725 411 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:05:58.726 411 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:06:03.730 204 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:06:03.731 204 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:06:08.734 987 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:06:08.735 987 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 515987) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:06:08.735 987 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:06:13.739 766 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:06:13.740 766 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:06:18.748 543 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 31 ms
+S2-0:06:18.749 543 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 533543) (32 milisec: 31 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:06:18.749 543 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 32 ms (=31 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:06:23.750 334 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:06:23.752 334 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 542334) (32 milisec: 31 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:06:23.752 334 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 32 ms (=31 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:06:28.755 105 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:06:28.755 105 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:06:33.760 877 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:06:33.760 877 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:06:38.764 664 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:06:38.764 664 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:06:48.775 255 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 26 ms
+S2-0:06:48.776 255 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=26 + 1 + 0) cnt2: 0, cnt3: 22
+S2-0:06:53.782 036 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:06:53.783 036 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 24
+S2-0:06:58.785 789 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:06:58.786 789 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 22
+S2-0:07:08.796 318 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:07:08.796 318 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:07:13.802 090 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:07:13.803 090 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:07:18.807 885 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:07:18.807 885 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:07:28.822 423 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 31 ms
+S2-0:07:28.822 423 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 656423) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:07:28.822 423 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:07:33.823 203 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:07:33.824 203 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 0 + 1) cnt2: 0, cnt3: 24
+S2-0:07:38.829 971 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 28 ms
+S2-0:07:38.829 971 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:07:53.843 280 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:07:53.843 280 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:07:58.848 052 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:07:58.849 052 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:08:03.855 822 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:08:03.855 822 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 30
+S2-0:08:08.858 579 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:08:08.859 579 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:08:13.865 359 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:08:13.865 359 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 22
+S2-0:08:18.868 139 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:08:18.869 139 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 0 + 1) cnt2: 0, cnt3: 22
+S2-0:08:23.873 899 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:08:23.875 899 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 752899) (31 milisec: 29 + 2 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:08:23.875 899 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=29 + 2 + 0) cnt2: 0, cnt3: 29
+S2-0:08:28.880 663 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:08:28.880 663 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:08:33.883 413 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:08:33.884 413 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 770413) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:08:33.884 413 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:08:38.892 196 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:08:38.893 196 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:08:43.895 959 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:08:43.895 959 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:08:48.899 715 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:08:48.900 715 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:08:53.905 487 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:08:53.905 487 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:08:58.910 237 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:08:58.910 237 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:09:03.923 003 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 33 ms
+S2-0:09:03.923 003 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 823003) (33 milisec: 33 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:09:03.924 003 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 34 ms (=33 + 0 + 1) cnt2: 0, cnt3: 29
+S2-0:09:08.921 755 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:09:08.921 755 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:09:13.925 510 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:09:13.927 510 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:09:18.931 253 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:09:18.931 253 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:09:28.942 818 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:09:28.942 818 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:09:33.946 575 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 25 ms
+S2-0:09:33.947 575 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 26 ms (=25 + 1 + 0) cnt2: 0, cnt3: 24
+S2-0:09:43.959 134 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 31 ms
+S2-0:09:43.959 134 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 893134) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:09:43.959 134 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:09:48.963 840 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:09:48.965 840 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 901840) (31 milisec: 29 + 1 + 1 + 0) recording: no, repeat count: 1!!!
+S2-0:09:48.965 840 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=29 + 1 + 1) cnt2: 0, cnt3: 29
+S2-0:09:53.967 511 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:09:53.968 511 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:09:58.973 287 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:09:58.974 287 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:10:03.979 031 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:10:03.980 031 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:10:08.984 727 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:10:08.985 727 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 936727) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:10:08.985 727 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 30
+S2-0:10:23.998 107 Router: SOFTERROR: Reading and consuming 20 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:10:23.999 107 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 20
+S2-0:10:29.004 848 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:10:29.004 848 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:10:44.019 158 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:10:44.019 158 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:10:54.030 707 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:10:54.030 707 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:10:59.036 471 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:10:59.037 471 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 24
+S2-0:11:04.041 241 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:11:04.041 241 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:11:09.045 976 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:11:09.045 976 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:11:19.056 511 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:11:19.056 511 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:11:24.063 288 Router: SOFTERROR: Reading and consuming 31 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:11:24.064 288 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1068288) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:11:24.065 288 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 32 ms (=30 + 1 + 1) cnt2: 0, cnt3: 31
+S2-0:11:29.066 051 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:11:29.066 051 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:11:34.072 735 Router: SOFTERROR: Reading and consuming 31 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 31 ms
+S2-0:11:34.072 735 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1085735) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:11:34.072 735 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 31
+S2-0:11:39.075 425 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:11:39.076 425 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:11:44.081 147 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:11:44.081 147 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:11:49.086 854 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:11:49.087 854 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:11:54.092 604 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:11:54.092 604 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:12:04.105 069 Router: SOFTERROR: Reading and consuming 21 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 22 ms
+S2-0:12:04.106 069 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 23 ms (=23 + 0 + 0) cnt2: 0, cnt3: 21
+S2-0:12:09.111 809 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 22 ms
+S2-0:12:09.112 809 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 23 ms (=22 + 1 + 0) cnt2: 0, cnt3: 22
+S2-0:12:14.118 568 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 24 ms
+S2-0:12:14.118 568 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 24 ms (=24 + 0 + 0) cnt2: 0, cnt3: 22
+S2-0:12:19.124 330 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 22 ms
+S2-0:12:19.124 330 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 22 ms (=22 + 0 + 0) cnt2: 0, cnt3: 22
+S2-0:12:24.143 080 Router: SOFTERROR: Reading and consuming 31 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 32 ms
+S2-0:12:24.143 080 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1173080) (32 milisec: 32 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:12:24.143 080 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 32 ms (=32 + 0 + 0) cnt2: 0, cnt3: 31
+S2-0:12:29.141 814 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:12:29.141 814 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 22
+S2-0:12:34.146 560 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:12:34.146 560 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:12:39.151 312 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:12:39.151 312 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:12:44.155 053 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:12:44.156 053 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:12:49.163 800 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:12:49.163 800 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 30
+S2-0:12:54.165 532 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:12:54.165 532 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:12:59.166 274 Router: SOFTERROR: Reading and consuming 21 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 22 ms
+S2-0:12:59.167 274 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 23 ms (=22 + 1 + 0) cnt2: 0, cnt3: 21
+S2-0:13:09.181 805 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:13:09.182 805 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 24
+S2-0:13:14.186 579 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 25 ms
+S2-0:13:14.187 579 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 26 ms (=25 + 1 + 0) cnt2: 0, cnt3: 22
+S2-0:13:29.201 842 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:13:29.202 842 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:13:34.207 583 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:13:34.208 583 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:13:39.212 342 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:13:39.213 342 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 30
+S2-0:13:49.225 820 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:13:49.225 820 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:13:59.233 300 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:13:59.234 300 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:14:04.238 034 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:14:04.238 034 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:14:09.243 775 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 30 ms
+S2-0:14:09.244 775 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1356775) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:14:09.244 775 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 30
+S2-0:14:14.250 529 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 29 ms
+S2-0:14:14.251 529 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 0 + 1) cnt2: 0, cnt3: 29
+S2-0:14:19.256 283 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:14:19.257 283 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:14:29.265 824 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:14:29.265 824 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:14:39.276 353 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:14:39.276 353 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:14:54.279 618 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 29 ms
+S2-0:14:54.280 618 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:15:04.289 121 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:15:04.289 121 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:15:14.300 540 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:15:14.301 540 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:15:19.304 273 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 5 consume loops took too long (fps 60): 30 ms
+S2-0:15:19.305 273 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1479273) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:15:19.305 273 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 30
+S2-0:15:24.309 002 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:15:24.309 002 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:15:29.314 703 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:15:29.316 703 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:15:34.321 448 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 30 ms
+S2-0:15:34.321 448 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:15:39.326 172 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:15:39.326 172 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:15:44.330 911 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:15:44.331 911 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:15:49.335 643 Router: SOFTERROR: Reading and consuming 21 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:15:49.335 643 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 21
+S2-0:15:54.342 344 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 31 ms
+S2-0:15:54.343 344 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1540344) (32 milisec: 31 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:15:54.343 344 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 32 ms (=31 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:16:04.352 799 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:16:04.353 799 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:16:14.362 298 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:16:14.362 298 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:16:19.366 030 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:16:19.367 030 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:16:24.373 776 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:16:24.373 776 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:16:39.387 060 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:16:39.387 060 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:16:44.391 752 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:16:44.392 752 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:16:54.403 176 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:16:54.404 176 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 0 + 1) cnt2: 0, cnt3: 29
+S2-0:16:59.408 878 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:16:59.408 878 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:17:09.417 359 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:17:09.419 359 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 22
+S2-0:17:14.424 115 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:17:14.424 115 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:17:34.444 198 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:17:34.445 198 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:17:39.450 929 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:17:39.451 929 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:17:44.454 632 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 31 ms
+S2-0:17:44.454 632 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1732632) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:17:44.454 632 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 30
+S2-0:17:54.465 120 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:17:54.465 120 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 22
+S2-0:17:59.469 861 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:17:59.470 861 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:18:04.476 608 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:18:04.477 608 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:18:14.485 115 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:18:14.485 115 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:18:19.492 870 Router: SOFTERROR: Reading and consuming 31 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 31 ms
+S2-0:18:19.492 870 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1793870) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:18:19.492 870 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 31
+S2-0:18:24.496 621 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:18:24.497 621 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:18:29.501 375 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 25 ms
+S2-0:18:29.501 375 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 25 ms (=25 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:18:34.509 111 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:18:34.509 111 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:18:36.837 176 Router: SOFTERROR: [VRXBuffers] Empty buffers: (Reset receiver state.) (no additional data)
+S2-0:18:36.837 176 Router: SOFTERROR: [VRXBuffers] Empty buffers: State: bottom buffer index: 61/2, bottom video block: 48313, emtpy? no, top buffer index: 61, top video block: 48313, empty? no, max recv block packet index: 1
+S2-0:19:02.576 469 Router: SOFTERROR: [VRXBuffers] Empty buffers: (Reset receiver state.) (no additional data)
+S2-0:19:02.576 469 Router: SOFTERROR: [VRXBuffers] Empty buffers: Already empty. Do nothing.
+S2-0:19:05.823 951 Router: SOFTERROR: [VRXBuffers] Empty buffers: (too much gap (overflow) (1 blocks) in received blocks) (while processing recv video packet [233/1] (retransmitted: no), fr index: 134, fr packet 65/69, stream id/packet index: 4, radio index: 2487)
+S2-0:19:05.823 951 Router: SOFTERROR: [VRXBuffers] Empty buffers: State: bottom buffer index: 35/4, bottom video block: 135, emtpy? no, top buffer index: 32, top video block: 232, empty? no, max recv block packet index: 11
+S2-0:19:12.709 401 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:19:12.710 401 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:19:22.719 077 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:19:22.720 077 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1909077) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:19:22.720 077 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:19:27.724 869 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 26 ms
+S2-0:19:27.724 869 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 26 ms (=26 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:19:32.729 643 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:19:32.730 643 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:19:37.734 439 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:19:37.735 439 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1935439) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:19:37.735 439 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:19:42.740 197 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:19:42.740 197 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:19:47.746 979 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:19:47.746 979 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:19:57.758 511 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 31 ms
+S2-0:19:57.758 511 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1970511) (31 milisec: 31 + 0 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:19:57.758 511 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=31 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:20:07.765 082 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:20:07.765 082 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:20:12.773 868 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:20:12.775 868 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 1996868) (31 milisec: 29 + 1 + 0 + 1) recording: no, repeat count: 1!!!
+S2-0:20:12.775 868 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=29 + 1 + 1) cnt2: 0, cnt3: 27
+S2-0:20:22.780 331 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 26 ms
+S2-0:20:22.780 331 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 26 ms (=26 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:20:37.799 630 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 28 ms
+S2-0:20:37.800 630 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:20:42.803 404 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:20:42.804 404 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:20:52.814 935 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:20:52.815 935 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:20:57.820 701 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 31 ms
+S2-0:20:57.821 701 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 2075701) (32 milisec: 31 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:20:57.821 701 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 32 ms (=31 + 1 + 0) cnt2: 0, cnt3: 29
+S2-0:21:12.834 948 Router: SOFTERROR: Reading and consuming 20 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:21:12.835 948 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 20
+S2-0:21:22.843 471 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:21:22.844 471 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:21:37.860 747 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:21:37.861 747 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:21:42.865 465 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:21:42.865 465 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:21:47.868 175 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:21:47.869 175 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 22
+S2-0:22:07.889 174 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:22:07.890 174 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 26
+S2-0:22:17.900 684 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:22:17.900 684 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:22:22.905 379 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:22:22.907 379 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:22:27.912 106 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:22:27.913 106 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 22
+S2-0:22:32.915 853 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:22:32.916 853 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 22
+S2-0:22:37.920 560 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:22:37.921 560 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 23
+S2-0:22:47.931 054 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:22:47.931 054 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:22:52.938 779 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:22:52.939 779 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 2276779) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:22:52.939 779 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 30
+S2-0:22:57.943 490 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 29 ms
+S2-0:22:57.943 490 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:23:02.949 201 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:23:02.949 201 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:23:07.952 950 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 26 ms
+S2-0:23:07.952 950 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 26 ms (=26 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:23:12.957 679 Router: SOFTERROR: Reading and consuming 21 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:23:12.959 679 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=28 + 1 + 0) cnt2: 0, cnt3: 21
+S2-0:23:22.969 151 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 29 ms
+S2-0:23:22.969 151 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:23:32.978 568 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 28 ms
+S2-0:23:32.978 568 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:23:43.122 388 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:23:43.123 388 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:23:48.129 783 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:23:48.130 783 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:23:53.135 117 Router: SOFTERROR: Reading and consuming 30 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 30 ms
+S2-0:23:53.136 117 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 2380117) (31 milisec: 30 + 1 + 0 + 0) recording: no, repeat count: 1!!!
+S2-0:23:53.136 117 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 31 ms (=30 + 1 + 0) cnt2: 0, cnt3: 30
+S2-0:24:08.149 113 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:24:08.149 113 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 25
+S2-0:24:28.170 505 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:24:28.171 505 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:24:38.178 145 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:24:38.179 145 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 27
+S2-0:24:43.183 445 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 25 ms
+S2-0:24:43.185 445 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=26 + 1 + 0) cnt2: 0, cnt3: 24
+S2-0:24:48.188 768 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 26 ms
+S2-0:24:48.189 768 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:24:53.194 122 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:24:53.194 122 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:25:03.205 673 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:25:03.205 673 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:25:08.209 008 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:25:08.211 008 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=28 + 2 + 0) cnt2: 0, cnt3: 28
+S2-0:25:13.216 276 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 5 consume loops took too long (fps 60): 29 ms
+S2-0:25:13.216 276 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:25:23.227 933 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 27 ms
+S2-0:25:23.228 933 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:25:28.229 278 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:25:28.231 278 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=28 + 2 + 0) cnt2: 0, cnt3: 22
+S2-0:25:33.235 583 Router: SOFTERROR: Reading and consuming 23 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:25:33.235 583 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 27 ms (=27 + 0 + 0) cnt2: 0, cnt3: 23
+S2-0:25:38.241 945 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:25:38.242 945 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:25:43.246 300 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:25:43.247 300 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 28
+S2-0:25:48.250 656 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 27 ms
+S2-0:25:48.251 656 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 27
+S2-0:25:53.256 961 Router: SOFTERROR: Reading and consuming 28 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 29 ms
+S2-0:25:53.256 961 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 28
+S2-0:25:58.263 330 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 29 ms
+S2-0:25:58.263 330 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:26:03.268 641 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:26:03.269 641 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:26:08.270 998 Router: SOFTERROR: Reading and consuming 22 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 25 ms
+S2-0:26:08.271 998 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 26 ms (=26 + 0 + 0) cnt2: 0, cnt3: 22
+S2-0:26:13.275 224 Router: SOFTERROR: Reading and consuming 24 video/reg packets and 0 high priority packets in 2 consume loops took too long (fps 60): 28 ms
+S2-0:26:13.276 224 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 29 ms (=29 + 0 + 0) cnt2: 0, cnt3: 24
+S2-0:26:33.297 393 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 27 ms
+S2-0:26:33.298 393 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=28 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:26:38.303 750 Router: SOFTERROR: Reading and consuming 25 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 27 ms
+S2-0:26:38.304 750 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 28 ms (=27 + 1 + 0) cnt2: 0, cnt3: 25
+S2-0:26:43.310 061 Router: SOFTERROR: Reading and consuming 29 video/reg packets and 0 high priority packets in 3 consume loops took too long (fps 60): 30 ms
+S2-0:26:43.310 061 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 29
+S2-0:26:48.316 393 Router: SOFTERROR: Reading and consuming 26 video/reg packets and 0 high priority packets in 5 consume loops took too long (fps 60): 30 ms
+S2-0:26:48.316 393 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=30 + 0 + 0) cnt2: 0, cnt3: 26
+S2-0:27:03.329 133 Router: SOFTERROR: Reading and consuming 27 video/reg packets and 0 high priority packets in 4 consume loops took too long (fps 60): 29 ms
+S2-0:27:03.330 133 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 30 ms (=29 + 1 + 0) cnt2: 0, cnt3: 27
+                                                                                                                                                                                                                                                                                        

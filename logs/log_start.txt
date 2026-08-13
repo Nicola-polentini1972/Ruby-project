@@ -1,0 +1,100 @@
+Check for write access (step 1), succeeded on try number: 1 (boot count: 1)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 1)
+Access to files ok. Boot count now: 1
+Starting run number 1; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 2)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 2)
+Access to files ok. Boot count now: 2
+Starting run number 2; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 3)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 3)
+Access to files ok. Boot count now: 3
+Starting run number 3; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 4)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 4)
+Access to files ok. Boot count now: 4
+Starting run number 4; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 5)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 5)
+Access to files ok. Boot count now: 5
+Starting run number 5; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 6)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 6)
+Access to files ok. Boot count now: 6
+Starting run number 6; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 7)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 7)
+Access to files ok. Boot count now: 7
+Starting run number 7; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 8)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 8)
+Access to files ok. Boot count now: 8
+Starting run number 8; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 9)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 9)
+Access to files ok. Boot count now: 9
+Starting run number 9; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 10)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 10)
+Access to files ok. Boot count now: 10
+Starting run number 10; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 11)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 11)
+Access to files ok. Boot count now: 11
+Starting run number 11; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 12)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 12)
+Access to files ok. Boot count now: 12
+Starting run number 12; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 13)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 13)
+Access to files ok. Boot count now: 13
+Starting run number 13; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 14)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 14)
+Access to files ok. Boot count now: 14
+Starting run number 14; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 15)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 15)
+Access to files ok. Boot count now: 15
+Starting run number 15; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 16)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 16)
+Access to files ok. Boot count now: 16
+Starting run number 16; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 17)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 17)
+Access to files ok. Boot count now: 17
+Starting run number 17; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 18)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 18)
+Access to files ok. Boot count now: 18
+Starting run number 18; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 19)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 19)
+Access to files ok. Boot count now: 19
+Starting run number 19; Starting Ruby...
+
+Check for write access (step 1), succeeded on try number: 1 (boot count: 20)
+Check for write access (step 2), succeeded on try number: 1 (boot count: 20)
+Access to files ok. Boot count now: 20
+Starting run number 20; Starting Ruby...
+

@@ -1,0 +1,22 @@
+S8-0:00:14.348 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S8-0:00:14.348 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S8-0:00:14.348 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S8-0:00:14.348 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S9-0:00:14.931 000 RubyRadioInit: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S9-0:00:22.509 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 10 ms, stall count: 9
+S9-0:00:24.947 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S9-0:00:24.947 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S9-0:00:24.947 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S9-0:00:24.947 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S9-0:00:29.217 000 RubyController: SOFTERROR: Main processing loop took too long (545 ms).
+S9-0:00:30.006 000 Router: SOFTERROR: Received a response from set freq command: [Error for wireless request "Set Frequency" (8B04) :
+    SET failed on device wlan0 ; No such device.
+]
+S9-0:00:30.288 000 Router: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S9-0:00:30.749 000 Router: SOFTERROR: Failed to switch radio interface 1 (wlan0, 8812eu) to frequency 5825 Mhz, returned error: [Error for wireless request "Set Frequency" (8B04) :.    SET failed on device wlan0 ; No such device..]
+S9-0:00:31.236 000 Router: SOFTERROR: Error setting [wlan0] to immediate mode: SIOCGIFHWADDR: No such device
+S9-0:00:31.236 000 Router: SOFTERROR: ERROR: unknown encapsulation on [wlan0]! check if monitor mode is supported and enabled
+S9-0:04:51.892 300 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 13 ms (=13 + 0 + 0) cnt2: 0, cnt3: 0
+S9-0:06:09.325 992 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 13 ms (=13 + 0 + 0) cnt2: 0, cnt3: 0

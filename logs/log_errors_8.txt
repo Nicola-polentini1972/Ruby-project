@@ -1,0 +1,13 @@
+S8-0:00:21.588 000 Central: ERROR: Failed to create read semaphore: RUBY_SEM_VIDEO_PLAY_WILL_FINISH, try alternative.
+S8-0:00:21.589 000 Central: ERROR: Failed to create read semaphore: RUBY_SEM_VIDEO_PLAY_FINISHED, try alternative.
+S7-0:00:26.370 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:26.722 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:27.056 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:27.418 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:27.790 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:28.086 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:28.392 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:28.727 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:29.083 000 RubyStart: ERROR: ruby_rt_station is not running
+S7-0:00:29.421 000 RubyStart: ERROR: ruby_rt_station is not running
+S8-0:00:33.211 000 Router: ERROR: Error:	ioctl(SIOCGIFINDEX) failed

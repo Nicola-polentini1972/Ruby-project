@@ -1,0 +1,1504 @@
+-1-0:00:17.028 000 : Check existence of process (ruby_logger)...
+-1-0:00:17.087 000 : Result of [pidof ruby_logger]: ()
+-1-0:00:17.087 000 : No result on pidof. Check using pgrep...
+-1-0:00:17.159 000 : Result of [pgrep ruby_logger]: ()
+-1-0:00:17.159 000 : No results on pgrep. Check using ps...
+-1-0:00:17.233 000 : Result of [ps search ruby_logger]: ()
+-1-0:00:17.233 000 : Process (ruby_logger) is not running.
+-1-0:00:17.233 000 : Executing Ruby process: [ruby_logger], no prefixes, params: [None], wait: no
+-1-0:00:17.245 000 : Launched Ruby process: [./ruby_logger &]
+2-0:00:00.441 000 RubyLogger: Starting (PID: 635, parent PID: 1)...
+2-0:00:00.441 000(F) RubyLogger: Process version: 11.8 (b-11810) HW: RadxaZero3
+2-0:00:00.441 000(F) RubyLogger: Using logger service: no
+2-0:00:00.442 000(F) RubyLogger: Executed with 1 arguments:
+2-0:00:00.442 000(F) RubyLogger: Arg 0: [./ruby_logger]
+2-0:00:00.442 000(F) RubyLogger: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+2-0:00:00.442 000 RubyLogger: Created logger message queue, key id: 7b030a9d, msgqueue id: 0
+2-0:00:00.443 000 RubyLogger: Write to logger (/home/radxa/ruby/logs/log_logger.log)
+2-0:00:00.443 000 RubyLogger: Started logger main loop
+2-0:00:00.443 000 RubyLogger: Write to logger (/home/radxa/ruby/logs/log_logger.log)
+2-0:00:00.625 000(F) RubyStart: Generate a new key for accessing logger message queue, from PID: 566, parent PID: 560...
+2-0:00:00.626 000(F) RubyStart: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+2-0:00:00.626 000(F) RubyStart: Got access to logger service. Using logger service for log. key id: 0x7B030A9D, msgqueue id: 0
+2-0:00:00.626 000(F) RubyStart: Starting (PID: 566, parent PID: 560)...
+2-0:00:00.626 000(F) RubyStart: Current clock (id 1) resolution: 0 sec, 1 nanosec
+2-0:00:00.626 000(F) RubyStart: Found good console. Continuing...
+2-0:00:00.626 000(F) RubyStart: Process version: 11.8 (b-11810) HW: RadxaZero3
+S2-0:00:00.626 000 RubyStart: Found good console, starting Ruby...
+2-0:00:00.627 000(F) RubyStart: Using logger service: yes
+2-0:00:00.627 000(F) RubyStart: Executed with 1 arguments:
+2-0:00:00.627 000(F) RubyStart: Arg 0: [./ruby_start]
+S2-0:00:00.627 000 RubyStart: Executing command: date -s 'next year'
+S2-0:00:00.669 000 RubyStart: Read process output: 32 bytes in 40 ms. Content: [Tue 18 Jun 2024 02:56:07 PM UTC]
+S2-0:00:00.670 000 RubyStart: Executing command: date -s 'next year'
+S2-0:00:00.683 000 RubyStart: Read process output: 32 bytes in 12 ms. Content: [Wed 18 Jun 2025 02:56:07 PM UTC]
+S2-0:00:01.372 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/config/* 2>/dev/null
+S2-0:00:01.385 000 RubyStart: Read process output: 0 bytes in 11 ms
+S2-0:00:01.385 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/config/models/
+S2-0:00:01.398 000 RubyStart: Read process output: 0 bytes in 12 ms
+S2-0:00:01.398 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/config/models/* 2>/dev/null
+S2-0:00:01.408 000 RubyStart: Read process output: 0 bytes in 9 ms
+S2-0:00:01.408 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/media/
+S2-0:00:01.420 000 RubyStart: Read process output: 0 bytes in 10 ms
+S2-0:00:01.420 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/media/
+S2-0:00:01.429 000 RubyStart: Read process output: 0 bytes in 8 ms
+S2-0:00:01.430 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/media/* 2>/dev/null
+S2-0:00:01.441 000 RubyStart: Read process output: 0 bytes in 10 ms
+S2-0:00:01.441 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/
+S2-0:00:01.453 000 RubyStart: Read process output: 0 bytes in 11 ms
+S2-0:00:01.473 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/pi/
+S2-0:00:01.485 000 RubyStart: Read process output: 0 bytes in 11 ms
+S2-0:00:01.507 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/radxaz3/
+S2-0:00:01.518 000 RubyStart: Read process output: 0 bytes in 10 ms
+S2-0:00:01.540 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/ssc338q/
+S2-0:00:01.551 000 RubyStart: Read process output: 0 bytes in 10 ms
+S2-0:00:01.570 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/drivers/
+S2-0:00:01.582 000 RubyStart: Read process output: 0 bytes in 10 ms
+S2-0:00:01.706 000 RubyStart: Files are ok, checking processes and init log files...
+S2-0:00:01.706 000 RubyStart: Read previous system type: 0
+S2-0:00:01.707 000 RubyStart: Executing command: rm -rf /home/radxa/ruby/config/system_type.txt
+S2-0:00:01.716 000 RubyStart: Read process output: 0 bytes in 8 ms
+S2-0:00:01.717 000 RubyStart: [Hardware] Failed to get GPIO access to Ruby type PIN.
+S2-0:00:01.717 000 RubyStart: [Hardware] Detecting system type...
+S2-0:00:01.718 000 RubyStart: [Hardware] Can't open any previous hardware detection type file.
+S2-0:00:01.718 000 RubyStart: [Hardware] Do full detection of board and system type...
+S2-0:00:01.718 000 RubyStart: Executing command raw (on PID 566): cat /proc/device-tree/model
+S2-0:00:01.727 000 RubyStart: Read process output: 13 bytes in 8 ms. Content: [Radxa ZERO 3]
+S2-0:00:01.727 000 RubyStart: [Hardware] Board description string: Radxa ZERO 3
+S2-0:00:01.727 000 RubyStart: Executing command raw (on PID 566): uname -r
+S2-0:00:01.736 000 RubyStart: Read process output: 19 bytes in 8 ms. Content: [5.10.160-34-rk356x]
+S2-0:00:01.736 000 RubyStart: Executing command raw (on PID 566): uname -a
+S2-0:00:01.745 000 RubyStart: Read process output: 103 bytes in 8 ms
+S2-0:00:01.745 000 RubyStart: Executing command raw (on PID 566): lscpu | grep Model
+S2-0:00:01.770 000 RubyStart: Read process output: 79 bytes in 23 ms. Content: [Model:                           0
+Model name:                      Cortex-A55]
+S2-0:00:01.771 000 RubyStart: [Hardware] Detected board first time, board type for id (5.10.160-34-rk356x) (int: 60): Radxa Zero 3
+S2-0:00:01.771 000 RubyStart: [Hardware] Board type is 60 (Radxa Zero 3)
+S2-0:00:01.771 000 RubyStart: [Hardware] Detected board type: Radxa Zero 3
+S2-0:00:01.771 000 RubyStart: Executing command: modprobe i2c-dev
+S2-0:00:01.791 000 RubyStart: Read process output: 0 bytes in 19 ms
+S2-0:00:01.791 000 RubyStart: [Hardware] Detected system as controller.
+S2-0:00:01.792 000 RubyStart: [Hardware] Write system type (0) and board type (60) to file: /home/radxa/ruby/config/system_type.txt
+S2-0:00:01.792 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/config/system_type.txt
+S2-0:00:01.802 000 RubyStart: Read process output: 0 bytes in 8 ms
+S2-0:00:01.803 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/tmp/board.txt
+S2-0:00:01.813 000 RubyStart: Read process output: 0 bytes in 9 ms
+S2-0:00:01.813 000 RubyStart: [Hardware] Detected system Type: [controller]
+S2-0:00:01.813 000 RubyStart: [Hardware] Detected system as controller.
+S2-0:00:01.814 000 RubyStart: Executing command: rm -rf /home/radxa/ruby/tmp/updateinprogress
+S2-0:00:01.824 000 RubyStart: Read process output: 0 bytes in 9 ms
+S2-0:00:01.824 000 RubyStart: Executing command: rm -rf /home/radxa/ruby/tmp/updateinprogressapply
+S2-0:00:01.834 000 RubyStart: Read process output: 0 bytes in 9 ms
+S2-0:00:01.835 000 RubyStart: Ruby: Start on verison 11.8 (b-11810)
+S2-0:00:01.836 000 RubyStart: [Config] Read raw base Ruby version: [11.7] from file (/home/radxa/ruby/version_ruby_base.txt)
+S2-0:00:01.836 000 RubyStart: [Config] Parsed base Ruby version: 11.7
+S2-0:00:01.836 000 RubyStart: Ruby: Base version is 11.7
+S2-0:00:01.836 000 RubyStart: Executing command raw (on PID 566): uname -rn
+S2-0:00:01.846 000 RubyStart: Read process output: 35 bytes in 8 ms. Content: [ruby-controller 5.10.160-34-rk356x]
+S2-0:00:01.846 000 RubyStart: Ruby: Platform: Radxa, Board: Radxa Zero 3, ruby-controller 5.10.160-34-rk356x
+S2-0:00:01.851 000 RubyStart: Executing command: ip link set wlx down 2>&1 1>/dev/null
+S2-0:00:01.894 000 RubyStart: Read process output: 25 bytes in 41 ms. Content: [Cannot find device "wlx"
+~Åÿÿ]
+S2-0:00:01.894 000 RubyStart: Executing command: modprobe i2c-dev
+S2-0:00:01.913 000 RubyStart: Read process output: 0 bytes in 17 ms
+S2-0:00:01.913 000 RubyStart: Executing command raw (on PID 566): lsusb
+S2-0:00:01.973 000 RubyStart: Read process output: 526 bytes in 59 ms
+S2-0:00:01.973 000 RubyStart: USB Devices:
+S2-0:00:01.973 000 RubyStart: Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 002: ID 0bda:a81a Realtek Semiconductor Corp. 802.11ac NIC
+Bus 
+S2-0:00:01.973 000 RubyStart: Executing command raw (on PID 566): lsmod
+S2-0:00:02.005 000 RubyStart: Read process output: 1608 bytes in 30 ms
+S2-0:00:02.005 000 RubyStart: Loaded Modules:
+S2-0:00:02.005 000 RubyStart: Module                  Size  Used by
+snd_soc_hdmi_codec     20480  1
+hci_uart               81920  0
+btqca                  16384  1 hci_uart
+btrtl                  20480  1 hci_uart
+btbcm                  16384  1 hci_uart
+btintel                20480  1 hci_uart
+v
+S2-0:00:02.005 000 RubyStart: Executing command raw (on PID 566): i2cdetect -l
+S2-0:00:02.017 000 RubyStart: Read process output: 186 bytes in 11 ms
+S2-0:00:02.017 000 RubyStart: I2C buses:
+S2-0:00:02.017 000 RubyStart: i2c-3	i2c       	rk3x-i2c                        	I2C adapter
+i2c-6	i2c       	DesignWare HDMI                 	I2C adapter
+i2c-0	i2c       	rk3x-i2c                        	I2C adapter
+
+*END*
+
+S2-0:00:02.017 000 RubyStart: Ruby: Finding external I2C devices add-ons...
+S2-0:00:02.017 000 RubyStart: [Hardware]: Enumerating I2C busses...
+S2-0:00:02.018 000 RubyStart: [Hardware]: Found I2C bus: /dev/i2c-0
+S2-0:00:02.018 000 RubyStart: [Hardware]: Found I2C bus: /dev/i2c-3
+S2-0:00:02.018 000 RubyStart: [Hardware]: Found I2C bus: /dev/i2c-6
+S2-0:00:02.018 000 RubyStart: [Hardware]: Found 3 I2C busses.
+S2-0:00:02.064 000 RubyStart: [Hardware]: Found I2C device on bus I2C-0 at address 0x1C, device type: Unknown
+S2-0:00:02.420 000 RubyStart: [Hardware]: Found I2C device on bus I2C-6 at address 0x30, device type: Unknown
+S2-0:00:02.493 000 RubyStart: [Hardware]: Found a total of 2 I2C devices on all busses.
+S2-0:00:02.520 000 RubyStart: [Hardware]: Loaded I2C devices settings from file: /home/radxa/ruby/config/i2c_devices_settings.cfg
+S2-0:00:02.520 000 RubyStart: [Hardware]: Loaded I2C devices settings for 19 I2C devices
+S2-0:00:02.520 000 RubyStart: [Hardware] -----------------------------------------
+S2-0:00:02.520 000 RubyStart: [Hardware] I2C Buses: 3
+S2-0:00:02.520 000 RubyStart: [Hardware] 1 I2C devices on bus 0 (0 i2c-0): 28
+S2-0:00:02.520 000 RubyStart: [Hardware] No I2C devices on bus 1 (3 i2c-3)
+S2-0:00:02.520 000 RubyStart: [Hardware] 1 I2C devices on bus 2 (6 i2c-6): 48
+S2-0:00:02.520 000 RubyStart: [Hardware] -----------------------------------------
+S2-0:00:02.520 000 RubyStart: [Hardware] Settings stored for 19 I2C devices:
+S2-0:00:02.520 000 RubyStart: [Hardware] -----------------------------------------
+S2-0:00:02.521 000 RubyStart: [Hardware]: Saved I2C devices settings to file: /home/radxa/ruby/config/i2c_devices_settings.cfg
+S2-0:00:02.521 000 RubyStart: [Hardware]: Saved I2C devices settings for 19 I2C devices.
+S2-0:00:02.521 000 RubyStart: Ruby: Done finding external I2C devices add-ons. None known found.
+S2-0:00:02.522 000 RubyStart: Ruby: Finding serial ports...
+S2-0:00:02.522 000 RubyStart: [HW-S] Initializing serial ports...
+S2-0:00:02.522 000 RubyStart: [HW-S] Enumerating hardware serial ports...
+S2-0:00:02.522 000 RubyStart: [HW-S] Enumerated hardware serial ports. 0 serial ports found.
+S2-0:00:02.522 000 RubyStart: [HW-S] Loading and validating serial ports settings...
+S2-0:00:02.522 000 RubyStart: [HW-S] No serial ports configuration file [/home/radxa/ruby/config/hw_serial.cfg]
+S2-0:00:02.522 000 RubyStart: [HW-S] Restored hw serial ports settings: 0 of 0 hw serial ports have been restored from stored configuration. 0 where updated.
+S2-0:00:02.522 000 RubyStart: [HW-S] Initialized 0 serial ports:
+S2-0:00:02.522 000 RubyStart: Ruby: Initialized 0 serial ports.
+S2-0:00:02.522 000 RubyStart: Executing command: lsmod | grep 88XXau
+S2-0:00:02.551 000 RubyStart: Read process output: 0 bytes in 27 ms
+S2-0:00:02.551 000 RubyStart: Executing command: uname -r
+S2-0:00:02.560 000 RubyStart: Read process output: 19 bytes in 8 ms. Content: [5.10.160-34-rk356x]
+S2-0:00:02.560 000 RubyStart: [Hardware] Loading driver RTL8812AU for platform: 5.10.160-34-rk356x ...
+S2-0:00:02.560 000 RubyStart: Executing command: sudo modprobe cfg80211
+S2-0:00:02.637 000 RubyStart: Read process output: 0 bytes in 76 ms
+S2-0:00:02.638 000 RubyStart: Executing command: sudo modprobe 88XXau rtw_tx_pwr_idx_override=1 2>&1
+S2-0:00:02.816 000 RubyStart: Read process output: 0 bytes in 177 ms
+S2-0:00:02.817 000 RubyStart: Modprobe result: []
+S2-0:00:02.817 000 RubyStart: Executing command: lsmod | grep 8812eu
+S2-0:00:02.851 000 RubyStart: Read process output: 32 bytes in 33 ms. Content: [8812eu               1994752  0]
+S2-0:00:02.851 000 RubyStart: Loading previous radio configuration...
+S2-0:00:02.851 000 RubyStart: [HW-R] Loading hardware radio config from file (/home/radxa/ruby/config/current_radios.cfg)...
+S2-0:00:02.852 000 RubyStart: Loaded radio HW info file.
+S2-0:00:02.852 000 RubyStart: =================================================================
+S2-0:00:02.852 000 RubyStart: Total: 2 Radios read, 2 supported:
+S2-0:00:02.852 000 RubyStart: 
+S2-0:00:02.853 000 RubyStart: * RadioInterface 1: wlan0 MAC:DC840328F4BB phy#0, supported: yes, USBPort: A now at 5825 Mhz;
+S2-0:00:02.853 000 RubyStart:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S2-0:00:02.853 000 RubyStart: 
+S2-0:00:02.853 000 RubyStart: * RadioInterface 2: wlan1 MAC:DC840328F4BA phy#1, supported: yes, USBPort: A now at 5825 Mhz;
+S2-0:00:02.853 000 RubyStart:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S2-0:00:02.853 000 RubyStart: 
+S2-0:00:02.853 000 RubyStart: =================================================================
+S2-0:00:02.853 000 RubyStart: [HW-R] Loaded hardware radio config from file (/home/radxa/ruby/config/current_radios.cfg).
+S2-0:00:02.853 000 RubyStart: Loaded previous radio configuration.
+S2-0:00:02.853 000 RubyStart: Executing command: rm -rf /home/radxa/ruby/config/current_radios.cfg
+S2-0:00:02.864 000 RubyStart: Read process output: 0 bytes in 10 ms
+S2-0:00:02.865 000 RubyStart: [HW-R] Finding USB radio interfaces and devices for linux/raspberry platform...
+S2-0:00:02.865 000 RubyStart: Executing command: lsusb | grep 1a86:8094
+S2-0:00:02.917 000 RubyStart: Read process output: 0 bytes in 51 ms
+S2-0:00:02.918 000 RubyStart: Executing command raw timeout 4000 ms: lsusb
+S2-0:00:02.974 000 RubyStart: Read process output: 526 bytes in 55 ms
+S2-0:00:02.974 000 RubyStart: [HW-R] Output of lsusb: <<<Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 002: ID 0bda:a81a Realtek Semiconduc
+S2-0:00:02.974 000 RubyStart: [HW-R] Ignored USB device: bus 6, device 1: prod id: 1d6b:0003, name: Generic
+S2-0:00:02.974 000 RubyStart: [HW-R] Ignored USB device: bus 5, device 1: prod id: 1d6b:0002, name: Generic
+S2-0:00:02.974 000 RubyStart: [HW-R] Ignored USB device: bus 4, device 1: prod id: 1d6b:0001, name: Generic
+S2-0:00:02.974 000 RubyStart: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+S2-0:00:02.974 000 RubyStart: [HW-R] Ignored USB device: bus 2, device 1: prod id: 1d6b:0002, name: Generic
+S2-0:00:02.974 000 RubyStart: [HW-R] Ignored USB device: bus 3, device 1: prod id: 1d6b:0001, name: Generic
+S2-0:00:02.974 000 RubyStart: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+S2-0:00:02.974 000 RubyStart: [HW-R] Ignored USB device: bus 1, device 1: prod id: 1d6b:0002, name: Generic
+S2-0:00:02.974 000 RubyStart: [HW-R] Done finding USB devices. Found 8 USB devices of which 2 are known radio cards.
+S2-0:00:02.974 000 RubyStart: [HW-R] Adding radio modules on Radxa for 2 detected supported radio cards...
+S2-0:00:02.974 000 RubyStart: [HW-R] Loading radio modules...
+S2-0:00:02.975 000 RubyStart: [HW-R] Found RTL8812EU cards. Loading module...
+S2-0:00:02.975 000 RubyStart: Executing command: uname -r
+S2-0:00:02.986 000 RubyStart: Read process output: 19 bytes in 10 ms. Content: [5.10.160-34-rk356x]
+S2-0:00:02.986 000 RubyStart: [Hardware] Loading driver RTL8812EU for platform: 5.10.160-34-rk356x ...
+S2-0:00:02.986 000 RubyStart: Executing command: sudo modprobe cfg80211
+S2-0:00:03.071 000 RubyStart: Read process output: 0 bytes in 83 ms
+S2-0:00:03.072 000 RubyStart: Executing command: sudo modprobe 8812eu rtw_tx_pwr_by_rate=0 rtw_tx_pwr_lmt_enable=0 2>&1
+S2-0:00:03.157 000 RubyStart: Read process output: 0 bytes in 83 ms
+S2-0:00:03.157 000 RubyStart: Modprobe result: []
+S2-0:00:03.157 000 RubyStart: [HW-R] Added 1 modules. Added RTL8812AU? no. Added RTL8812EU? yes. Added RTL8733BU? no. Added Atheros? no
+S2-0:00:03.658 000 RubyStart: Executing command raw (on PID 566): lsmod | grep 88
+S2-0:00:03.692 000 RubyStart: Read process output: 64 bytes in 32 ms. Content: [88XXau_wfb           2281472  0
+8812eu               1994752  0]
+S2-0:00:03.693 000 RubyStart: Content of lsmod: [88XXau_wfb           2281472  0*8812eu               1994752  0]
+S2-0:00:03.693 000 RubyStart: Executing command raw (on PID 566): ip link | grep wl
+S2-0:00:03.741 000 RubyStart: Read process output: 200 bytes in 47 ms
+S2-0:00:03.741 000 RubyStart: Content of ip link: [3: wlan0: <BROADCAST,MULTICAST> mtu 4052 qdisc noop state DOWN mode DEFAULT group default qlen 1000*4: wlan1: <BROADCAST,MULTICAST> mtu 4052 qdisc noop state DOWN mode DEFAULT group default qlen 1000]
+S2-0:00:03.741 000 RubyStart: Executing command raw (on PID 566): ls /sys/class/net/
+S2-0:00:03.759 000 RubyStart: Read process output: 20 bytes in 16 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S2-0:00:03.759 000 RubyStart: Content of class net: [eth0*lo*wlan0*wlan1]
+S2-0:00:03.759 000 RubyStart: wlan0 detected on the first try: [eth0*lo*wlan0*wlan1]
+S2-0:00:03.759 000 RubyStart: Executing command raw (on PID 566): ip link 2>&1 | grep wlan0
+S2-0:00:03.780 000 RubyStart: Read process output: 100 bytes in 19 ms
+S2-0:00:03.780 000 RubyStart: Radio interface wlan0 state: [3: wlan0: <BROADCAST,MULTICAST> mtu 4052 qdisc noop state DOWN mode DEFAULT group default qlen 1000]
+S2-0:00:03.780 000 RubyStart: Executing command raw (on PID 566): ls /sys/class/net/
+S2-0:00:03.795 000 RubyStart: Read process output: 20 bytes in 13 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S2-0:00:03.795 000 RubyStart: Network devices found: [eth0*lo*wlan0*wlan1]
+S2-0:00:03.796 000 RubyStart: Executing command raw (on PID 566): cat /sys/class/net/wlan0/device/uevent
+S2-0:00:03.807 000 RubyStart: Read process output: 150 bytes in 10 ms
+S2-0:00:03.807 000 RubyStart: Network wlan0 info: [DEVTYPE=usb_interface*DRIVER=rtl88x2eu*PRODUCT=bda/a81a/0*TYPE=0/0/0*INTERFACE=255/255/255*MODALIAS=usb:v0BDApA81Ad0000dc00dsc00dp00icFFiscFFipFFin00]
+S2-0:00:03.807 000 RubyStart: Executing command raw (on PID 566): cat /sys/class/net/wlan1/device/uevent
+S2-0:00:03.819 000 RubyStart: Read process output: 150 bytes in 10 ms
+S2-0:00:03.819 000 RubyStart: Network wlan1 info: [DEVTYPE=usb_interface*DRIVER=rtl88x2eu*PRODUCT=bda/a81a/0*TYPE=0/0/0*INTERFACE=255/255/255*MODALIAS=usb:v0BDApA81Ad0000dc00dsc00dp00icFFiscFFipFFin00]
+S2-0:00:03.820 000 RubyStart: Executing command raw (on PID 566): ls /sys/class/net/ | grep eth0
+S2-0:00:03.835 000 RubyStart: Read process output: 5 bytes in 14 ms. Content: [eth0]
+S2-0:00:03.836 000 RubyStart: Executing command: ip link set dev eth0 up
+S2-0:00:04.868 000 RubyStart: Read process output: 0 bytes in 1031 ms
+S2-0:00:04.868 000 RubyStart: Device has an ETH port.
+S2-0:00:04.868 000 RubyStart: Ruby: Enumerating supported 2.4/5.8Ghz radio interfaces...
+S2-0:00:04.868 000 RubyStart: =================================================================
+S2-0:00:04.868 000 RubyStart: [HW-R] Enumerating radios (step 0)...
+S2-0:00:04.869 000 RubyStart: [HW-R] HW Enumerate: no existing radio HW info file. Enumerating HW radios from scratch.
+S2-0:00:04.869 000 RubyStart: [HW-R] Enumerating wifi radios for Radxa platform...
+S2-0:00:04.869 000 RubyStart: [HW-R] Finding USB radio interfaces and devices for linux/raspberry platform...
+S2-0:00:04.869 000 RubyStart: Executing command: lsusb | grep 1a86:8094
+S2-0:00:04.928 000 RubyStart: Read process output: 0 bytes in 57 ms
+S2-0:00:04.928 000 RubyStart: Executing command raw timeout 4000 ms: lsusb
+S2-0:00:04.985 000 RubyStart: Read process output: 526 bytes in 55 ms
+S2-0:00:04.985 000 RubyStart: [HW-R] Output of lsusb: <<<Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 002: ID 0bda:a81a Realtek Semiconduc
+S2-0:00:04.986 000 RubyStart: [HW-R] Ignored USB device: bus 6, device 1: prod id: 1d6b:0003, name: Generic
+S2-0:00:04.986 000 RubyStart: [HW-R] Ignored USB device: bus 5, device 1: prod id: 1d6b:0002, name: Generic
+S2-0:00:04.986 000 RubyStart: [HW-R] Ignored USB device: bus 4, device 1: prod id: 1d6b:0001, name: Generic
+S2-0:00:04.986 000 RubyStart: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+S2-0:00:04.986 000 RubyStart: [HW-R] Ignored USB device: bus 2, device 1: prod id: 1d6b:0002, name: Generic
+S2-0:00:04.986 000 RubyStart: [HW-R] Ignored USB device: bus 3, device 1: prod id: 1d6b:0001, name: Generic
+S2-0:00:04.986 000 RubyStart: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+S2-0:00:04.986 000 RubyStart: [HW-R] Ignored USB device: bus 1, device 1: prod id: 1d6b:0002, name: Generic
+S2-0:00:04.986 000 RubyStart: [HW-R] Done finding USB devices. Found 8 USB devices of which 2 are known radio cards.
+S2-0:00:04.986 000 RubyStart: [HW-R] Finding wireless radio cards...
+S2-0:00:05.046 000 RubyStart: [HW-R] Parsing found wireless radio: [wlan0]
+S2-0:00:05.046 000 RubyStart: [HW-R] Parsing found wireless radio: [wlan1]
+S2-0:00:05.049 000 RubyStart: [HW-R] Found a total of 2 wifi cards. Get info about them...
+S2-0:00:05.049 000 RubyStart: Executing command: cat /sys/class/net/wlan0/device/uevent | nice grep DRIVER | sed 's/DRIVER=//'
+S2-0:00:05.072 000 RubyStart: Read process output: 10 bytes in 21 ms. Content: [rtl88x2eu]
+S2-0:00:05.073 000 RubyStart: [HW-R] Driver for wlan0: (rtl88x2eu)
+S2-0:00:05.073 000 RubyStart: [HW-R] Driver for wlan0 (last part): (8x2eu)
+S2-0:00:05.073 000 RubyStart: [HW-R] Minimised driver string: (rtl88x2eu)
+S2-0:00:05.073 000 RubyStart: [HW-R] Found supported radio type: Realtek, driver: 8812eu, driver string short: rtl88x2eu, driver string: [rtl88x2eu]
+S2-0:00:05.073 000 RubyStart: Executing command raw (on PID 566): iw dev wlan0 info | grep addr
+S2-0:00:05.096 000 RubyStart: Read process output: 24 bytes in 22 ms. Content: [ addr dc:84:03:28:f4:bb]
+S2-0:00:05.096 000 RubyStart: Found MAC address dc:84:03:28:f4:bb for wlan0
+S2-0:00:05.096 000 RubyStart: Executing command raw (on PID 566): iw dev | grep -B 1 wlan0
+S2-0:00:05.147 000 RubyStart: Read process output: 23 bytes in 49 ms. Content: [phy#0
+	Interface wlan0]
+S2-0:00:05.147 000 RubyStart: phy string: [phy#0], length: 5
+S2-0:00:05.147 000 RubyStart: Executing command raw (on PID 566): iw phy0 info | grep 2377
+S2-0:00:05.189 000 RubyStart: Read process output: 0 bytes in 41 ms
+S2-0:00:05.189 000 RubyStart: Executing command raw (on PID 566): iw phy0 info | grep 2427
+S2-0:00:05.231 000 RubyStart: Read process output: 29 bytes in 41 ms. Content: [   * 2427 MHz [4] (19.0 dBm)]
+S2-0:00:05.231 000 RubyStart: Executing command raw (on PID 566): iw phy0 info | grep 2512
+S2-0:00:05.280 000 RubyStart: Read process output: 0 bytes in 48 ms
+S2-0:00:05.281 000 RubyStart: Executing command raw (on PID 566): iw phy0 info | grep 5745
+S2-0:00:05.328 000 RubyStart: Read process output: 39 bytes in 46 ms. Content: [   * 5745 MHz [149] (19.0 dBm) (no IR)]
+S2-0:00:05.329 000 RubyStart: [HW-R] Interface wlan0 supported bands: [5.8 Ghz band]
+S2-0:00:05.329 000 RubyStart: Executing command: cat /sys/class/net/wlan1/device/uevent | nice grep DRIVER | sed 's/DRIVER=//'
+S2-0:00:05.348 000 RubyStart: Read process output: 10 bytes in 18 ms. Content: [rtl88x2eu]
+S2-0:00:05.348 000 RubyStart: [HW-R] Driver for wlan1: (rtl88x2eu)
+S2-0:00:05.348 000 RubyStart: [HW-R] Driver for wlan1 (last part): (8x2eu)
+S2-0:00:05.348 000 RubyStart: [HW-R] Minimised driver string: (rtl88x2eu)
+S2-0:00:05.349 000 RubyStart: [HW-R] Found supported radio type: Realtek, driver: 8812eu, driver string short: rtl88x2eu, driver string: [rtl88x2eu]
+S2-0:00:05.349 000 RubyStart: Executing command raw (on PID 566): iw dev wlan1 info | grep addr
+S2-0:00:05.366 000 RubyStart: Read process output: 24 bytes in 16 ms. Content: [ addr dc:84:03:28:f4:ba]
+S2-0:00:05.367 000 RubyStart: Found MAC address dc:84:03:28:f4:ba for wlan1
+S2-0:00:05.367 000 RubyStart: Executing command raw (on PID 566): iw dev | grep -B 1 wlan1
+S2-0:00:05.417 000 RubyStart: Read process output: 23 bytes in 49 ms. Content: [phy#1
+	Interface wlan1]
+S2-0:00:05.418 000 RubyStart: phy string: [phy#1], length: 5
+S2-0:00:05.418 000 RubyStart: Executing command raw (on PID 566): iw phy1 info | grep 2377
+S2-0:00:05.470 000 RubyStart: Read process output: 0 bytes in 51 ms
+S2-0:00:05.470 000 RubyStart: Executing command raw (on PID 566): iw phy1 info | grep 2427
+S2-0:00:05.523 000 RubyStart: Read process output: 29 bytes in 52 ms. Content: [   * 2427 MHz [4] (19.0 dBm)]
+S2-0:00:05.523 000 RubyStart: Executing command raw (on PID 566): iw phy1 info | grep 2512
+S2-0:00:05.576 000 RubyStart: Read process output: 0 bytes in 51 ms
+S2-0:00:05.576 000 RubyStart: Executing command raw (on PID 566): iw phy1 info | grep 5745
+S2-0:00:05.629 000 RubyStart: Read process output: 39 bytes in 51 ms. Content: [   * 5745 MHz [149] (19.0 dBm) (no IR)]
+S2-0:00:05.630 000 RubyStart: [HW-R] Interface wlan1 supported bands: [5.8 Ghz band]
+S2-0:00:05.630 000 RubyStart: [HW-R] Finding USB ports for 2 radio interfaces...
+S2-0:00:05.630 000 RubyStart: Executing command: lsusb | grep 1a86:8094
+S2-0:00:05.688 000 RubyStart: Read process output: 0 bytes in 57 ms
+S2-0:00:05.689 000 RubyStart: [HW-R] Quering USB device path: [usb5]...
+S2-0:00:05.737 000 RubyStart: [HW-R] Quering USB device path: [6-0:1.0]...
+S2-0:00:05.784 000 RubyStart: [HW-R] Quering USB device path: [usb3]...
+S2-0:00:05.832 000 RubyStart: [HW-R] Quering USB device path: [2-1]...
+S2-0:00:05.879 000 RubyStart: [HW-R] Quering USB device path: [usb1]...
+S2-0:00:05.927 000 RubyStart: [HW-R] Quering USB device path: [2-1:1.0]...
+S2-0:00:05.991 000 RubyStart: [HW-R] Found USB port tree position for radio interface 2: [2-1:1.0]
+S2-0:00:06.008 000 RubyStart: [HW-R] Found product/vendor id for radio interface 2: [bda:a81a:0
+], card model: 15: [Blue RTL8812EU]
+S2-0:00:06.008 000 RubyStart: [HW-R] Found USB port part for radio interface 2: [2-1]
+S2-0:00:06.008 000 RubyStart: [HW-R] Assigned short USB port to radio interface 2: [A]
+S2-0:00:06.008 000 RubyStart: [HW-R] Quering USB device path: [3-0:1.0]...
+S2-0:00:06.055 000 RubyStart: [HW-R] Quering USB device path: [usb6]...
+S2-0:00:06.103 000 RubyStart: [HW-R] Quering USB device path: [1-1]...
+S2-0:00:06.150 000 RubyStart: [HW-R] Quering USB device path: [4-0:1.0]...
+S2-0:00:06.198 000 RubyStart: [HW-R] Quering USB device path: [usb4]...
+S2-0:00:06.247 000 RubyStart: [HW-R] Quering USB device path: [usb2]...
+S2-0:00:06.295 000 RubyStart: [HW-R] Quering USB device path: [1-0:1.0]...
+S2-0:00:06.342 000 RubyStart: [HW-R] Quering USB device path: [5-0:1.0]...
+S2-0:00:06.389 000 RubyStart: [HW-R] Quering USB device path: [1-1:1.0]...
+S2-0:00:06.438 000 RubyStart: [HW-R] Found USB port tree position for radio interface 1: [1-1:1.0]
+S2-0:00:06.454 000 RubyStart: [HW-R] Found product/vendor id for radio interface 1: [bda:a81a:0
+], card model: 15: [Blue RTL8812EU]
+S2-0:00:06.454 000 RubyStart: [HW-R] Found USB port part for radio interface 1: [1-1]
+S2-0:00:06.454 000 RubyStart: [HW-R] Assigned short USB port to radio interface 1: [A]
+S2-0:00:06.469 000 RubyStart: [HW-R] Quering USB device path: [2-0:1.0]...
+S2-0:00:06.517 000 RubyStart: [HW-R] Done assigning USB ports to radio interfaces:
+S2-0:00:06.517 000 RubyStart: [HW-R] Radio interface 1 USB port: [A]
+S2-0:00:06.517 000 RubyStart: [HW-R] Radio interface 2 USB port: [A]
+S2-0:00:06.517 000 RubyStart: [HW-R] Found 2 2.4/5.8 radio modules.
+S2-0:00:06.517 000 RubyStart: [HW-R] Total: 2 radios found
+S2-0:00:06.517 000 RubyStart: =================================================================
+S2-0:00:06.517 000 RubyStart: Ruby: 2 radio interfaces found on 2.4/5.8 Ghz bands
+S2-0:00:06.517 000 RubyStart: Ruby: 2 of 2 radio interfaces are supported on 2.4/5.8 Ghz bands
+S2-0:00:06.517 000 RubyStart: Ruby: Finding SiK radio interfaces...
+S2-0:00:06.518 000 RubyStart: =================================================================
+S2-0:00:06.518 000 RubyStart: [HW-R] Enumerating radios (step 1)...
+S2-0:00:06.518 000 RubyStart: [HW-RSK]: Enumerating Sik radios...
+S2-0:00:06.518 000 RubyStart: [HW-RSK]: Try to load last known good SiK radio configuration from file [/home/radxa/ruby/config/last_sik_radios_detected.cfg].
+S2-0:00:06.518 000 RubyStart: [HW-RSK]: Loaded last known good SiK radio configuration from file [/home/radxa/ruby/config/last_sik_radios_detected.cfg]. 0 SiK radios loaded:
+S2-0:00:06.518 000 RubyStart: [HW-RSK]: Try to find SiK radio on interface [/dev/ttyUSB0]...
+S2-0:00:06.518 000 RubyStart: [HW-RSK]: Device [/dev/ttyUSB0] is not present.
+S2-0:00:06.519 000 RubyStart: [HW-RSK]: Try to find SiK radio on interface [/dev/ttyUSB1]...
+S2-0:00:06.519 000 RubyStart: [HW-RSK]: Device [/dev/ttyUSB1] is not present.
+S2-0:00:06.519 000 RubyStart: [HW-RSK]: Try to find SiK radio on interface [/dev/ttyUSB2]...
+S2-0:00:06.519 000 RubyStart: [HW-RSK]: Device [/dev/ttyUSB2] is not present.
+S2-0:00:06.519 000 RubyStart: [HW-RSK]: Found 0 SiK radios.
+S2-0:00:06.519 000 RubyStart: [HW-RSK]: Saving current SiK radios configuration (0 SiK radio interfaces).
+S2-0:00:06.520 000 RubyStart: [HW-RSK]: Saved current SiK radios configuration to file [/home/radxa/ruby/config/last_sik_radios_detected.cfg]:
+S2-0:00:06.520 000 RubyStart: [HW-R] Total: 2 radios found
+S2-0:00:06.520 000 RubyStart: =================================================================
+S2-0:00:06.520 000 RubyStart: 
+S2-0:00:06.520 000 RubyStart: * RadioInterface 1: wlan0 MAC:DC840328F4BB phy#0, supported: yes, USBPort: A now at 0 Mhz;
+S2-0:00:06.520 000 RubyStart:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S2-0:00:06.520 000 RubyStart: 
+S2-0:00:06.520 000 RubyStart: * RadioInterface 2: wlan1 MAC:DC840328F4BA phy#1, supported: yes, USBPort: A now at 0 Mhz;
+S2-0:00:06.520 000 RubyStart:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S2-0:00:06.520 000 RubyStart: 
+S2-0:00:06.520 000 RubyStart: =================================================================
+S2-0:00:06.520 000 RubyStart: [HW-R] Saving hardware radio config to file (/home/radxa/ruby/config/current_radios.cfg)...
+S2-0:00:06.521 000 RubyStart: [HW-R] Saved hardware radio config to file (/home/radxa/ruby/config/current_radios.cfg).
+S2-0:00:06.521 000 RubyStart: Ruby: No SiK radio interfaces found.
+S2-0:00:06.521 000 RubyStart: Ruby: Finding serial radio interfaces...
+S2-0:00:06.521 000 RubyStart: [HW-RS] Parsing serial ports and adding hardware radio info...
+S2-0:00:06.521 000 RubyStart: [HW-RS] Parsed serial ports. Added 0 hardware radio serial interfaces.
+S2-0:00:06.521 000 RubyStart: Ruby: No serial radio interfaces found.
+S2-0:00:06.521 000 RubyStart: Ruby: Done finding radio interfaces.
+S2-0:00:06.521 000 RubyStart: [Hardware] Detecting camera type...
+S2-0:00:06.521 000 RubyStart: [Hardware] No camera detected.
+S2-0:00:06.522 000 RubyStart: Executing Ruby process: [ruby_initdhcp], no prefixes, params: [None], wait: no
+S2-0:00:06.534 000 RubyStart: Launched Ruby process: [./ruby_initdhcp &]
+S2-0:00:06.534 000 RubyStart: Executing command: ruby_init_wifi -rename 2>/dev/null
+S2-0:00:06.540 000 RubyStart: Read process output: 0 bytes in 4 ms
+S2-0:00:06.541 000 RubyStart: Executing Ruby process: [ruby_init_wifi], no prefixes, params: [None], wait: no
+S2-0:00:06.541 000 RubyStart: ERROR: Can't execute Ruby process. Not found here: [ruby_init_wifi] or here: [/home/radxa/ruby/ruby_init_wifi]
+S2-0:00:06.541 000 RubyStart: Detected system as controller.
+S2-0:00:06.541 000 RubyStart: 
+S2-0:00:06.541 000 RubyStart: ===========================================================================
+S2-0:00:06.541 000 RubyStart: | System detected as controller.
+S2-0:00:06.541 000 RubyStart: ===========================================================================
+S2-0:00:06.541 000 RubyStart: 
+S2-0:00:06.543 000 RubyStart: [Hardware] Released!
+S2-0:00:06.543 000 RubyStart: Starting Ruby system...
+S2-0:00:06.543 000 RubyStart: Running on Radxa Zero 3 hardware
+S2-0:00:06.543 000 RubyStart: Feature local audio recording is: Off.
+S2-0:00:06.543 000 RubyStart: Feature radio RxTx thread synchronization is: Off.
+S2-0:00:06.543 000 RubyStart: Executing command: cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+S2-0:00:06.555 000 RubyStart: Read process output: 0 bytes in 10 ms
+S2-0:00:06.556 000 RubyStart: Executing command raw (on PID 566): echo 'performance' | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+S2-0:00:06.574 000 RubyStart: Read process output: 12 bytes in 17 ms. Content: [performance
+ˆcð ~Åÿÿ]
+S2-0:00:06.574 000 RubyStart: Executing command raw (on PID 566): echo 1416000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
+S2-0:00:06.589 000 RubyStart: Read process output: 8 bytes in 13 ms. Content: [1416000]
+S2-0:00:06.590 000 RubyStart: Executing command raw (on PID 566): echo 1400000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_min_freq
+S2-0:00:06.609 000 RubyStart: Read process output: 8 bytes in 18 ms. Content: [1400000]
+S2-0:00:06.609 000 RubyStart: Executing command: systemctl disable systemd-journald.service 2>&1 1>/dev/null
+3-0:00:06.653 000(F) RubyDHCPInit: Generate a new key for accessing logger message queue, from PID: 1245, parent PID: 1...
+3-0:00:06.653 000(F) RubyDHCPInit: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+3-0:00:06.653 000(F) RubyDHCPInit: Got access to logger service. Using logger service for log. key id: 0x7B030A9D, msgqueue id: 0
+3-0:00:06.653 000(F) RubyDHCPInit: Starting (PID: 1245, parent PID: 1)...
+3-0:00:06.654 000(F) RubyDHCPInit: Current clock (id 1) resolution: 0 sec, 1 nanosec
+S2-0:00:07.981 000 RubyStart: Read process output: 71 bytes in 1369 ms. Content: [Unit /etc/systemd/system/systemd-journald.service is masked, ignoring.]
+S2-0:00:07.981 000 RubyStart: Executing command: systemctl mask systemd-journald.service 2>&1 1>/dev/null
+S2-0:00:09.367 000 RubyStart: Read process output: 0 bytes in 1384 ms
+S2-0:00:09.367 000 RubyStart: Executing command: systemctl disable rknpu2.service 2>&1 1>/dev/null
+S2-0:00:10.687 000 RubyStart: Read process output: 61 bytes in 1318 ms. Content: [Unit /etc/systemd/system/rknpu2.service is masked, ignoring.
+ignoring.]
+S2-0:00:10.688 000 RubyStart: Executing command: systemctl mask rknpu2.service 2>&1 1>/dev/null
+S2-0:00:12.089 000 RubyStart: Read process output: 0 bytes in 1399 ms
+S2-0:00:12.090 000 RubyStart: CtrlInterfaces: Added new radio interface at index 0 (1 in list now): MAC: DC840328F4BB
+S2-0:00:12.090 000 RubyStart: CtrlInterfaces: Added new radio interface at index 1 (2 in list now): MAC: DC840328F4BA
+S2-0:00:12.090 000 RubyStart: Executing Ruby process: [ruby_start], no prefixes, params: [-ver], wait: yes
+S2-0:00:12.288 000 RubyStart: Read process output for process (ruby_start): 36 bytes in 197 ms
+S2-0:00:12.288 000 RubyStart: Launched Ruby process: [./ruby_start -ver]
+S2-0:00:12.288 000 RubyStart: ruby_start: [11.8 (b-11810) Built for Radxa Zero3]
+S2-0:00:12.288 000 RubyStart: Executing Ruby process: [ruby_rt_vehicle], no prefixes, params: [-ver], wait: yes
+S2-0:00:12.438 000 RubyStart: Read process output for process (ruby_rt_vehicle): 14 bytes in 148 ms
+S2-0:00:12.438 000 RubyStart: Launched Ruby process: [./ruby_rt_vehicle -ver]
+S2-0:00:12.438 000 RubyStart: ruby_rt_vehicle: [11.8 (b-11801)]
+S2-0:00:12.438 000 RubyStart: Executing Ruby process: [ruby_tx_telemetry], no prefixes, params: [-ver], wait: yes
+S2-0:00:12.578 000 RubyStart: Read process output for process (ruby_tx_telemetry): 14 bytes in 138 ms
+S2-0:00:12.578 000 RubyStart: Launched Ruby process: [./ruby_tx_telemetry -ver]
+S2-0:00:12.579 000 RubyStart: ruby_tx_telemetry: [11.8 (b-11801)]
+S2-0:00:12.579 000 RubyStart: Executing Ruby process: [ruby_rt_station], no prefixes, params: [-ver], wait: yes
+S2-0:00:12.717 000 RubyStart: Read process output for process (ruby_rt_station): 14 bytes in 137 ms
+S2-0:00:12.717 000 RubyStart: Launched Ruby process: [./ruby_rt_station -ver]
+S2-0:00:12.717 000 RubyStart: ruby_rt_station: [11.8 (b-11810)]
+S2-0:00:12.718 000 RubyStart: Executing Ruby process: [ruby_rx_telemetry], no prefixes, params: [-ver], wait: yes
+S2-0:00:12.856 000 RubyStart: Read process output for process (ruby_rx_telemetry): 14 bytes in 137 ms
+S2-0:00:12.856 000 RubyStart: Launched Ruby process: [./ruby_rx_telemetry -ver]
+S2-0:00:12.856 000 RubyStart: ruby_rx_telemetry: [11.8 (b-11810)]
+S2-0:00:12.856 000 RubyStart: Executing Ruby process: [ruby_tx_rc], no prefixes, params: [-ver], wait: yes
+S2-0:00:13.021 000 RubyStart: Read process output for process (ruby_tx_rc): 14 bytes in 163 ms
+S2-0:00:13.021 000 RubyStart: Launched Ruby process: [./ruby_tx_rc -ver]
+S2-0:00:13.021 000 RubyStart: ruby_tx_rc: [11.8 (b-11810)]
+S2-0:00:13.021 000 RubyStart: Executing Ruby process: [ruby_central], no prefixes, params: [-ver], wait: yes
+-1-0:00:30.129 000 : Initializing localization data for 1357 strings for 7 languages
+S2-0:00:13.235 000 RubyStart: Read process output for process (ruby_central): 14 bytes in 212 ms
+S2-0:00:13.236 000 RubyStart: Launched Ruby process: [./ruby_central -ver]
+S2-0:00:13.236 000 RubyStart: ruby_central: [11.8 (b-11810)]
+S2-0:00:13.237 000 RubyStart: Checking for HW changes...
+S2-0:00:13.237 000 RubyStart: [Hardware]: Found unknown I2C device at address: 1C, type: [Unknown]
+S2-0:00:13.237 000 RubyStart: [Hardware]: Got stored device settings for I2C device 0x1C
+S2-0:00:13.237 000 RubyStart: [Hardware]: Updating settings for I2C device address: 0x1C; current I2C devices count: 19
+S2-0:00:13.237 000 RubyStart: [Hardware]: Got stored device settings for I2C device 0x1C
+S2-0:00:13.237 000 RubyStart: [Hardware]: Found unknown I2C device at address: 30, type: [Unknown]
+S2-0:00:13.237 000 RubyStart: [Hardware]: Got stored device settings for I2C device 0x30
+S2-0:00:13.237 000 RubyStart: [Hardware]: Updating settings for I2C device address: 0x30; current I2C devices count: 19
+S2-0:00:13.237 000 RubyStart: [Hardware]: Got stored device settings for I2C device 0x30
+S2-0:00:13.237 000 RubyStart: [Hardware]: Done cheching for I2C devices settings.
+S2-0:00:13.237 000 RubyStart: [Hardware]: I2C devices settings where updated. Saving new config.
+S2-0:00:13.239 000 RubyStart: [Hardware]: Saved I2C devices settings to file: /home/radxa/ruby/config/i2c_devices_settings.cfg
+S2-0:00:13.239 000 RubyStart: [Hardware]: Saved I2C devices settings for 19 I2C devices.
+S2-0:00:13.239 000 RubyStart: Checking for HW changes complete.
+S2-0:00:13.239 000 RubyStart: Executing command: mkfifo /tmp/ruby/fifocam1
+S2-0:00:13.256 000 RubyStart: Read process output: 0 bytes in 15 ms
+S2-0:00:13.256 000 RubyStart: Executing command: mkfifo /tmp/ruby/fifoaudio1
+S2-0:00:13.270 000 RubyStart: Read process output: 0 bytes in 12 ms
+S2-0:00:13.271 000 RubyStart: Executing command: mkfifo /tmp/ruby/fifoaudiobuff
+S2-0:00:13.285 000 RubyStart: Read process output: 0 bytes in 13 ms
+S2-0:00:13.285 000 RubyStart: Executing command: mkfifo /tmp/ruby/fifoaudioqueue
+S2-0:00:13.299 000 RubyStart: Read process output: 0 bytes in 12 ms
+S2-0:00:13.300 000 RubyStart: Executing command: mkfifo /tmp/ruby/fifovideo_disp
+S2-0:00:13.314 000 RubyStart: Read process output: 0 bytes in 13 ms
+S2-0:00:13.314 000 RubyStart: Executing command: mkfifo /tmp/ruby/fifovideo_rec
+S2-0:00:13.328 000 RubyStart: Read process output: 0 bytes in 12 ms
+S2-0:00:13.329 000 RubyStart: Executing command: mkfifo /tmp/ruby/fifovideo_eth
+S2-0:00:13.343 000 RubyStart: Read process output: 0 bytes in 13 ms
+S2-0:00:13.343 000 RubyStart: Starting processes...
+S2-0:00:13.343 000 RubyStart: Init radio interfaces...
+S2-0:00:13.344 000 RubyStart: Executing Ruby process: [ruby_start], no prefixes, params: [-initradio], wait: yes
+3-0:00:13.462 000(F) RubyRadioInit: Generate a new key for accessing logger message queue, from PID: 1347, parent PID: 1346...
+3-0:00:13.462 000(F) RubyRadioInit: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+3-0:00:13.462 000(F) RubyRadioInit: Got access to logger service. Using logger service for log. key id: 0x7B030A9D, msgqueue id: 0
+3-0:00:13.463 000(F) RubyRadioInit: Starting (PID: 1347, parent PID: 1346)...
+3-0:00:13.463 000(F) RubyRadioInit: Current clock (id 1) resolution: 0 sec, 1 nanosec
+3-0:00:13.463 000(F) RubyRadioInit: Process version: 11.8 (b-11810) HW: RadxaZero3
+3-0:00:13.463 000(F) RubyRadioInit: Using logger service: yes
+3-0:00:13.463 000(F) RubyRadioInit: Executed with 2 arguments:
+3-0:00:13.463 000(F) RubyRadioInit: Arg 0: [./ruby_start]
+3-0:00:13.463 000(F) RubyRadioInit: Arg 1: [-initradio]
+S3-0:00:13.463 000 RubyRadioInit: [Hardware] Detecting system type...
+S3-0:00:13.464 000 RubyRadioInit: [Hardware] Loaded system Type: [controller], board type: Radxa Zero 3
+S3-0:00:13.464 000 RubyRadioInit: [Hardware] Detected system as controller.
+S3-0:00:13.464 000 RubyRadioInit: Executing command raw (on PID 1347): ls /sys/class/net/
+S3-0:00:13.478 000 RubyRadioInit: Read process output: 20 bytes in 13 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S3-0:00:13.478 000 RubyRadioInit: Network devices found: [eth0
+lo
+wlan0
+wlan1
+]
+S3-0:00:13.479 000 RubyRadioInit: =================================================================
+S3-0:00:13.479 000 RubyRadioInit: [HW-R] Enumerating radios (step -1)...
+S3-0:00:13.479 000 RubyRadioInit: [HW-R] HW Enumerate: has radio HW info file. Using it.
+S3-0:00:13.479 000 RubyRadioInit: [HW-R] Loading hardware radio config from file (/home/radxa/ruby/config/current_radios.cfg)...
+S3-0:00:13.479 000 RubyRadioInit: Loaded radio HW info file.
+S3-0:00:13.479 000 RubyRadioInit: =================================================================
+S3-0:00:13.479 000 RubyRadioInit: Total: 2 Radios read, 2 supported:
+S3-0:00:13.479 000 RubyRadioInit: 
+S3-0:00:13.479 000 RubyRadioInit: * RadioInterface 1: wlan0 MAC:DC840328F4BB phy#0, supported: yes, USBPort: A now at 0 Mhz;
+S3-0:00:13.479 000 RubyRadioInit:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S3-0:00:13.479 000 RubyRadioInit: 
+S3-0:00:13.479 000 RubyRadioInit: * RadioInterface 2: wlan1 MAC:DC840328F4BA phy#1, supported: yes, USBPort: A now at 0 Mhz;
+S3-0:00:13.479 000 RubyRadioInit:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S3-0:00:13.479 000 RubyRadioInit: 
+S3-0:00:13.479 000 RubyRadioInit: =================================================================
+S3-0:00:13.479 000 RubyRadioInit: [HW-R] Loaded hardware radio config from file (/home/radxa/ruby/config/current_radios.cfg).
+S3-0:00:13.479 000 RubyRadioInit: [HW-RSK]: Try to load last known good SiK radio configuration from file [/home/radxa/ruby/config/last_sik_radios_detected.cfg].
+S3-0:00:13.479 000 RubyRadioInit: [HW-RSK]: Loaded last known good SiK radio configuration from file [/home/radxa/ruby/config/last_sik_radios_detected.cfg]. 0 SiK radios loaded:
+S3-0:00:13.479 000 RubyRadioInit: =================================================================
+S3-0:00:13.479 000 RubyRadioInit: Configuring radios: START.
+S3-0:00:13.480 000 RubyRadioInit: Configuring radios: we are station.
+S3-0:00:13.506 000 RubyRadioInit: Loaded preferences from file: /home/radxa/ruby/config/ui_preferences.cfg
+S3-0:00:13.507 000 RubyRadioInit: CtrlInterfaces: Loaded controller input interfaces settings from file: /home/radxa/ruby/config/controller_input_interfaces.cfg
+S3-0:00:13.507 000 RubyRadioInit: CtrlInterfaces: Loaded controller input interfaces settings for 0 input devices.
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: Loaded controller radio interface 0 settings: MAC: [DC840328F4BB], name: [], card type: Blue RTL8812EU, flags: [CAN TX/RX] [DATA][VIDEO], supported radio flags: [LEG&MCS rates] [Fr: DATA] [HT40] [SGI] [STBC] [LDPC], raw tx power: 20
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: Loaded controller radio interface 1 settings: MAC: [DC840328F4BA], name: [], card type: Blue RTL8812EU, flags: [CAN TX/RX] [DATA][VIDEO], supported radio flags: [LEG&MCS rates] [Fr: DATA] [HT40] [SGI] [STBC] [LDPC], raw tx power: 20
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: Loaded controller radio interfaces settings from file: /home/radxa/ruby/config/controller_radio_interfaces.cfg
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: Loaded controller radio interfaces settings for 2 radio interfaces, 0 preferred Tx cards.
+S3-0:00:13.508 000 RubyRadioInit: =================================================================
+S3-0:00:13.508 000 RubyRadioInit: Controller radio interfaces flags and info:
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: * RadioInterface 1: card type: Blue RTL8812EU, wlan0 MAC:DC840328F4BB phy#0, [ENABLED] [RX/TX], 5.8 Ghz band, raw_tx_power: 20, preferred for Tx: 0
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: * RadioInterface 1 supported radio flags: [LEG&MCS rates] [Fr: DATA] [HT40] [SGI] [STBC] [LDPC]
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces:       Controller set flags: [CAN TX/RX] [DATA][VIDEO]
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: * RadioInterface 2: card type: Blue RTL8812EU, wlan1 MAC:DC840328F4BA phy#1, [ENABLED] [RX/TX], 5.8 Ghz band, raw_tx_power: 20, preferred for Tx: 0
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces: * RadioInterface 2 supported radio flags: [LEG&MCS rates] [Fr: DATA] [HT40] [SGI] [STBC] [LDPC]
+S3-0:00:13.508 000 RubyRadioInit: CtrlInterfaces:       Controller set flags: [CAN TX/RX] [DATA][VIDEO]
+S3-0:00:13.508 000 RubyRadioInit: =================================================================
+S3-0:00:13.508 000 RubyRadioInit: Executing command raw (on PID 1347): iw reg set 00
+S3-0:00:13.555 000 RubyRadioInit: Read process output: 0 bytes in 45 ms
+S3-0:00:13.556 000 RubyRadioInit: Configuring wifi radio interface 1: wlan0 ...
+S3-0:00:13.556 000 RubyRadioInit: [HW-R] Initialize radio interface 1: wlan0, (rtl88x2eu)
+S3-0:00:13.556 000 RubyRadioInit: Executing command: ip link set dev wlan0 mtu 1400
+S3-0:00:13.574 000 RubyRadioInit: Read process output: 0 bytes in 17 ms
+S3-0:00:13.634 000 RubyRadioInit: Executing command: ip link set dev wlan0 down
+S3-0:00:13.651 000 RubyRadioInit: Read process output: 0 bytes in 15 ms
+S3-0:00:13.711 000 RubyRadioInit: Executing command: iw dev wlan0 set monitor none 2>&1
+S3-0:00:14.654 000 RubyDHCPInit: Finished waiting. Checking DHCP...
+S3-0:00:14.655 000 RubyDHCPInit: [Hardware] Detecting system type...
+S3-0:00:14.655 000 RubyDHCPInit: [Hardware] Loaded system Type: [controller], board type: Radxa Zero 3
+S3-0:00:14.655 000 RubyDHCPInit: [Hardware] Detected system as controller.
+S3-0:00:14.655 000 RubyDHCPInit: Executing command raw (on PID 1245): ls /sys/class/net/
+S3-0:00:14.670 000 RubyDHCPInit: Read process output: 20 bytes in 13 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S3-0:00:14.670 000 RubyDHCPInit: Network devices found: [eth0
+lo
+wlan0
+wlan1
+]
+S3-0:00:14.671 000 RubyDHCPInit: Board type: 60 -> Radxa Zero 3
+S3-0:00:14.671 000 RubyDHCPInit: Executing command raw (on PID 1245): ls /sys/class/net/ | grep eth0
+S3-0:00:14.686 000 RubyDHCPInit: Read process output: 5 bytes in 14 ms. Content: [eth0]
+S3-0:00:14.687 000 RubyDHCPInit: Executing command: ip link set dev eth0 up
+S3-0:00:15.049 000 RubyRadioInit: Read process output: 0 bytes in 1336 ms
+S3-0:00:15.110 000 RubyRadioInit: Executing command: iw dev wlan0 set monitor fcsfail
+S3-0:00:16.071 000 RubyDHCPInit: Read process output: 0 bytes in 1383 ms
+S3-0:00:16.078 000 RubyRadioInit: Read process output: 0 bytes in 966 ms
+S3-0:00:16.099 000 RubyDHCPInit: Loaded controller settings from file: /home/radxa/ruby/config/controller_settings.cfg
+S3-0:00:16.099 000 RubyDHCPInit: Executing command raw (on PID 1245): ls /sys/class/net/
+S3-0:00:16.113 000 RubyDHCPInit: Read process output: 20 bytes in 12 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S3-0:00:16.114 000 RubyDHCPInit: Network devices found: [eth0
+lo
+wlan0
+wlan1
+]
+S3-0:00:16.114 000 RubyDHCPInit: Executing command raw (on PID 1245): hostname
+S3-0:00:16.126 000 RubyDHCPInit: Read process output: 16 bytes in 11 ms. Content: [ruby-controller]
+S3-0:00:16.126 000 RubyDHCPInit: Hostname: (ruby-controller)
+S3-0:00:16.126 000 RubyDHCPInit: Executing command raw (on PID 1245): hostname -I
+S3-0:00:16.138 000 RubyDHCPInit: Read process output: 1 bytes in 10 ms. Content: []
+S3-0:00:16.138 000 RubyDHCPInit: Hostname IP: ()
+S3-0:00:16.138 000 RubyDHCPInit: Executing command raw (on PID 1245): ip link | grep -A 5 eth
+S3-0:00:16.138 000 RubyRadioInit: Executing command: ip link set dev wlan0 up
+S3-0:00:16.159 000 RubyDHCPInit: Read process output: 478 bytes in 19 ms
+S3-0:00:16.160 000 RubyDHCPInit: ip link:
+S3-0:00:16.160 000 RubyDHCPInit: 2: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether c2:e5:4e:28:11:6d brd ff:ff:ff:ff:ff:ff
+3: wlan0: <BROADCAST,MULTICAST> mtu 1400 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/i
+S3-0:00:16.160 000 RubyDHCPInit: Executing command raw (on PID 1245): ifconfig | grep -A 5 eth
+S3-0:00:16.160 000 RubyRadioInit: Read process output: 0 bytes in 20 ms
+S3-0:00:16.181 000 RubyDHCPInit: Read process output: 0 bytes in 20 ms
+S3-0:00:16.181 000 RubyDHCPInit: ifconfig:
+S3-0:00:16.181 000 RubyDHCPInit: ***END***
+S3-0:00:16.181 000 RubyDHCPInit: Executing command raw (on PID 1245): pidof pump
+S3-0:00:16.220 000 RubyRadioInit: Executing command: iwconfig wlan0 rts off
+S3-0:00:16.232 000 RubyRadioInit: Read process output: 0 bytes in 10 ms
+S3-0:00:16.232 000 RubyRadioInit: [HW-R] Initialized radio interface 1: wlan0
+S3-0:00:16.232 000 RubyRadioInit: Setting radio interface 1 RTL8812EU raw tx power to: 10
+S3-0:00:16.233 000 RubyRadioInit: Executing command: iw dev wlan0 set txpower fixed 400
+S3-0:00:16.236 000 RubyDHCPInit: Read process output: 0 bytes in 53 ms
+S3-0:00:16.236 000 RubyDHCPInit: pump proc: ()
+S3-0:00:16.236 000 RubyDHCPInit: Executing command raw (on PID 1245): pgrep pump
+S3-0:00:16.250 000 RubyRadioInit: Read process output: 0 bytes in 16 ms
+S3-0:00:16.250 000 RubyRadioInit: Radio interface 1 RTL8812EU raw tx power changed to: 10
+S3-0:00:16.300 000 RubyDHCPInit: Read process output: 0 bytes in 62 ms
+S3-0:00:16.301 000 RubyDHCPInit: pump proc: ()
+S3-0:00:16.301 000 RubyDHCPInit: Done DHCP config process.
+S3-0:00:16.371 000 RubyRadioInit: Executing command: ip link | grep wlan0
+S3-0:00:16.387 000 RubyRadioInit: Read process output: 108 bytes in 15 ms
+S3-0:00:16.387 000 RubyRadioInit: Radio interface wlan0 state: [3: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1400 qdisc mq state UP mode DEFAULT group default qlen 1000]
+S3-0:00:16.387 000 RubyRadioInit: Configuring wifi radio interface 2: wlan1 ...
+S3-0:00:16.387 000 RubyRadioInit: [HW-R] Initialize radio interface 2: wlan1, (rtl88x2eu)
+S3-0:00:16.387 000 RubyRadioInit: Executing command: ip link set dev wlan1 mtu 1400
+S3-0:00:16.402 000 RubyRadioInit: Read process output: 0 bytes in 14 ms
+S3-0:00:16.462 000 RubyRadioInit: Executing command: ip link set dev wlan1 down
+S3-0:00:16.479 000 RubyRadioInit: Read process output: 0 bytes in 15 ms
+S3-0:00:16.539 000 RubyRadioInit: Executing command: iw dev wlan1 set monitor none 2>&1
+S3-0:00:18.064 000 RubyRadioInit: Read process output: 0 bytes in 1523 ms
+S3-0:00:18.124 000 RubyRadioInit: Executing command: iw dev wlan1 set monitor fcsfail
+S3-0:00:18.144 000 RubyRadioInit: Read process output: 0 bytes in 18 ms
+S3-0:00:18.205 000 RubyRadioInit: Executing command: ip link set dev wlan1 up
+S3-0:00:18.223 000 RubyRadioInit: Read process output: 0 bytes in 16 ms
+S3-0:00:18.284 000 RubyRadioInit: Executing command: iwconfig wlan1 rts off
+S3-0:00:18.295 000 RubyRadioInit: Read process output: 0 bytes in 9 ms
+S3-0:00:18.296 000 RubyRadioInit: [HW-R] Initialized radio interface 2: wlan1
+S3-0:00:18.296 000 RubyRadioInit: Setting radio interface 2 RTL8812EU raw tx power to: 10
+S3-0:00:18.296 000 RubyRadioInit: Executing command: iw dev wlan1 set txpower fixed 400
+S3-0:00:18.315 000 RubyRadioInit: Read process output: 0 bytes in 18 ms
+S3-0:00:18.315 000 RubyRadioInit: Radio interface 2 RTL8812EU raw tx power changed to: 10
+S3-0:00:18.436 000 RubyRadioInit: Executing command: ip link | grep wlan1
+S3-0:00:18.457 000 RubyRadioInit: Read process output: 108 bytes in 20 ms
+S3-0:00:18.457 000 RubyRadioInit: Radio interface wlan1 state: [4: wlan1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1400 qdisc mq state UP mode DEFAULT group default qlen 1000]
+S3-0:00:18.457 000 RubyRadioInit: Executing command raw (on PID 1347): iw reg set 00
+S3-0:00:18.504 000 RubyRadioInit: Read process output: 0 bytes in 46 ms
+S3-0:00:18.506 000 RubyRadioInit: [HW-R] Saving hardware radio config to file (/home/radxa/ruby/config/current_radios.cfg)...
+S3-0:00:18.507 000 RubyRadioInit: [HW-R] Saved hardware radio config to file (/home/radxa/ruby/config/current_radios.cfg).
+S3-0:00:18.507 000 RubyRadioInit: Configuring radios COMPLETED.
+S3-0:00:18.507 000 RubyRadioInit: =================================================================
+S3-0:00:18.507 000 RubyRadioInit: Radio interfaces and frequencies assigned:
+S3-0:00:18.507 000 RubyRadioInit:    * Radio interface 1: Blue RTL8812EU on port A, wlan0 DC840328F4BB Realtek: 0 Mhz
+S3-0:00:18.507 000 RubyRadioInit:    * Radio interface 2: Blue RTL8812EU on port A, wlan1 DC840328F4BA Realtek: 0 Mhz
+S3-0:00:18.507 000 RubyRadioInit: =================================================================
+S3-0:00:18.507 000 RubyRadioInit: Ruby Init Radio process completed.
+S2-0:00:18.529 000 RubyStart: Abandoning reading start process output.
+S2-0:00:18.529 000 RubyStart: Read process output for process (ruby_start): 0 bytes in 5184 ms
+S2-0:00:18.529 000 RubyStart: Launched Ruby process: [./ruby_start -initradio]
+S2-0:00:18.529 000 RubyStart: Reloading hardware radio configuration after radio init step completed...
+S2-0:00:18.529 000 RubyStart: [HW-R] Loading hardware radio config from file (/home/radxa/ruby/config/current_radios.cfg)...
+S2-0:00:18.530 000 RubyStart: Loaded radio HW info file.
+S2-0:00:18.530 000 RubyStart: =================================================================
+S2-0:00:18.530 000 RubyStart: Total: 2 Radios read, 2 supported:
+S2-0:00:18.530 000 RubyStart: 
+S2-0:00:18.530 000 RubyStart: * RadioInterface 1: wlan0 MAC:DC840328F4BB phy#0, supported: yes, USBPort: A now at 0 Mhz;
+S2-0:00:18.530 000 RubyStart:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S2-0:00:18.530 000 RubyStart: 
+S2-0:00:18.530 000 RubyStart: * RadioInterface 2: wlan1 MAC:DC840328F4BA phy#1, supported: yes, USBPort: A now at 0 Mhz;
+S2-0:00:18.530 000 RubyStart:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+S2-0:00:18.530 000 RubyStart: 
+S2-0:00:18.530 000 RubyStart: =================================================================
+S2-0:00:18.530 000 RubyStart: [HW-R] Loaded hardware radio config from file (/home/radxa/ruby/config/current_radios.cfg).
+S2-0:00:18.530 000 RubyStart: No new supported high capacity radio hardware cards found in the system.
+S2-0:00:18.530 000 RubyStart: Starting main process...
+S2-0:00:18.530 000 RubyStart: Executing command raw (on PID 566): ls /sys/class/net/
+S2-0:00:18.545 000 RubyStart: Read process output: 20 bytes in 13 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S2-0:00:18.545 000 RubyStart: Network devices found: [eth0
+lo
+wlan0
+wlan1
+]
+S2-0:00:18.545 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/config/*
+S2-0:00:18.559 000 RubyStart: Read process output: 0 bytes in 12 ms
+S2-0:00:18.560 000 RubyStart: Controller UID: 2814618114
+S2-0:00:18.560 000 RubyStart: Starting controller...
+S2-0:00:18.560 000 RubyStart: Executing Ruby process: [ruby_alive], no prefixes, params: [None], wait: no
+S2-0:00:18.572 000 RubyStart: Launched Ruby process: [./ruby_alive &]
+S2-0:00:18.573 000 RubyStart: Executing Ruby process: [ruby_controller], no prefixes, params: [None], wait: no
+S2-0:00:18.585 000 RubyStart: Launched Ruby process: [./ruby_controller &]
+3-0:00:18.688 000(F) RubyAlive: Generate a new key for accessing logger message queue, from PID: 1423, parent PID: 1...
+3-0:00:18.689 000(F) RubyAlive: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+3-0:00:18.689 000(F) RubyAlive: Got access to logger service. Using logger service for log. key id: 0x7B030A9D, msgqueue id: 0
+3-0:00:18.689 000(F) RubyAlive: Starting (PID: 1423, parent PID: 1)...
+3-0:00:18.690 000(F) RubyAlive: Current clock (id 1) resolution: 0 sec, 1 nanosec
+S3-0:00:18.690 000 RubyAlive: Entering main loop...
+3-0:00:18.700 000(F) RubyController: Generate a new key for accessing logger message queue, from PID: 1425, parent PID: 1...
+3-0:00:18.701 000(F) RubyController: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+3-0:00:18.701 000(F) RubyController: Got access to logger service. Using logger service for log. key id: 0x7B030A9D, msgqueue id: 0
+3-0:00:18.701 000(F) RubyController: Starting (PID: 1425, parent PID: 1)...
+3-0:00:18.701 000(F) RubyController: Current clock (id 1) resolution: 0 sec, 1 nanosec
+S3-0:00:18.701 000 RubyController: [Hardware] Detecting system type...
+S3-0:00:18.702 000 RubyController: [Hardware] Loaded system Type: [controller], board type: Radxa Zero 3
+S3-0:00:18.702 000 RubyController: [Hardware] Detected system as controller.
+S3-0:00:18.702 000 RubyController: Loaded controller settings from file: /home/radxa/ruby/config/controller_settings.cfg
+S3-0:00:18.702 000 RubyController: Executing command raw (on PID 1425): nproc --all
+S3-0:00:18.741 000 RubyController: Read process output: 2 bytes in 38 ms. Content: [4]
+S3-0:00:18.741 000 RubyController: [HWP] Did set cpu affinity for current thread (ruby_controller) to cores: 3-3
+S3-0:00:18.741 000 RubyController: Executing Ruby process: [ruby_central], prefixes: [nice -n -19], params: [None], wait: no
+S3-0:00:18.753 000 RubyController: Launched Ruby process: [nice -n -19 ./ruby_central &]
+S3-0:00:18.753 000 RubyController: Executed central process.
+S3-0:00:18.790 001 RubyAlive: [Hardware] Detecting system type...
+S3-0:00:18.790 001 RubyAlive: [Hardware] Loaded system Type: [controller], board type: Radxa Zero 3
+-1-0:00:35.803 000 : Initializing localization data for 1357 strings for 7 languages
+3-0:00:18.884 000(F) Central: Generate a new key for accessing logger message queue, from PID: 1429, parent PID: 1...
+3-0:00:18.884 000(F) Central: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+3-0:00:18.884 000(F) Central: Got access to logger service. Using logger service for log. key id: 0x7B030A9D, msgqueue id: 0
+3-0:00:18.884 000(F) Central: Starting (PID: 1429, parent PID: 1)...
+3-0:00:18.885 000(F) Central: Current clock (id 1) resolution: 0 sec, 1 nanosec
+S3-0:00:18.885 000 Central: [Hardware] Detecting system type...
+S3-0:00:18.912 000 Central: [Hardware] Loaded system Type: [controller], board type: Radxa Zero 3
+S3-0:00:18.912 000 Central: [Hardware] Detected system as controller.
+S3-0:00:18.913 000 Central: Initializing localization data for 1357 strings for 7 languages
+S3-0:00:18.913 000 Central: Controller UID: 2814618114
+S3-0:00:18.913 000 Central: Ruby UI starting
+S3-0:00:18.913 000 Central: [Hardware] Start Initialization...
+S3-0:00:18.913 000 Central: [GPIO] Loading custom GPIO mappings from file (/config/gpio.txt)...
+S3-0:00:18.914 000 Central: [GPIO] No file with custom GPIO mappings.
+S3-0:00:18.914 000 Central: [GPIO] Export and initialize buttons (for Radxa)...
+S3-0:00:18.914 000 Central: [GPIO] Exported pin 97 on chip gpiochip3, line 1
+S3-0:00:18.915 000 Central: [GPIO] Exported pin 98 on chip gpiochip3, line 2
+S3-0:00:18.915 000 Central: [GPIO] Exported pin 105 on chip gpiochip3, line 9
+S3-0:00:18.915 000 Central: [GPIO] Exported pin 106 on chip gpiochip3, line 10
+S3-0:00:18.916 000 Central: [GPIO] Exported pin 114 on chip gpiochip3, line 18
+S3-0:00:18.916 000 Central: [GPIO] Exported pin 102 on chip gpiochip3, line 6
+S3-0:00:18.916 000 Central: [GPIO] Exported pin 101 on chip gpiochip3, line 5
+S3-0:00:18.917 000 Central: [GPIO] Dir: current value 0 for GPIO (gpiochip3) line 1, pin 97
+S3-0:00:18.917 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 1, pin 97
+S3-0:00:18.917 000 Central: [GPIO] Dir: current value 0 for GPIO (gpiochip3) line 2, pin 98
+S3-0:00:18.917 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 2, pin 98
+S3-0:00:18.918 000 Central: [GPIO] Dir: current value 0 for GPIO (gpiochip3) line 9, pin 105
+S3-0:00:18.918 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 9, pin 105
+S3-0:00:18.918 000 Central: [GPIO] Dir: current value 0 for GPIO (gpiochip3) line 10, pin 106
+S3-0:00:18.918 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 10, pin 106
+S3-0:00:18.919 000 Central: [GPIO] Dir: current value 0 for GPIO (gpiochip3) line 18, pin 114
+S3-0:00:18.919 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 18, pin 114
+S3-0:00:18.919 000 Central: [GPIO] Dir: current value 0 for GPIO (gpiochip3) line 6, pin 102
+S3-0:00:18.919 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 6, pin 102
+S3-0:00:18.920 000 Central: [GPIO] Dir: current value 0 for GPIO (gpiochip3) line 5, pin 101
+S3-0:00:18.920 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 5, pin 101
+S3-0:00:18.920 000 Central: [Hardware] Initialized GPIO buttons (for Radxa)
+S3-0:00:18.920 000 Central: [Hardware] Pins for buzzer: -1, vehicle detect: -1, controller detect: -1
+S3-0:00:18.920 000 Central: [GPIO] Exported pin 108 on chip gpiochip3, line 12
+S3-0:00:18.920 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 12, pin 108
+S3-0:00:18.920 000 Central: [Hardware] Did set GPIO configuration for pin for LED red (GPIO: 108)
+S3-0:00:18.921 000 Central: [GPIO] Exported pin 107 on chip gpiochip3, line 11
+S3-0:00:18.921 000 Central: [GPIO] Dir: Done for GPIO (gpiochip3) line 11, pin 107
+S3-0:00:18.921 000 Central: [Hardware] Did set GPIO configuration for pin for LED green (GPIO: 107)
+S3-0:00:18.921 000 Central: [Hardware] GPIO setup successfully.
+S3-0:00:18.922 000 Central: [Hardware] Initial read of Quick Actions buttons: 0 0--1 0, [-1, -1]
+S3-0:00:18.922 000 Central: [Hardware] Initialization complete. No errors.
+S3-0:00:18.922 000 Central: Loaded preferences from file: /home/radxa/ruby/config/ui_preferences.cfg
+S3-0:00:18.922 000 Central: Set active language to: 1
+S3-0:00:18.923 000 Central: Loaded controller settings from file: /home/radxa/ruby/config/controller_settings.cfg
+S3-0:00:18.925 000 Central: [DRMCore] Waiting for display to be conncted...
+S3-0:00:18.925 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:18.925 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:19.326 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:19.326 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:19.326 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:19.726 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:19.727 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:19.727 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:20.127 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:20.127 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:20.127 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:20.528 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:20.528 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:20.528 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:20.929 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:20.929 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:20.929 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:21.329 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:21.329 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:21.330 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:21.730 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:21.730 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:21.730 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:22.131 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:22.131 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:22.131 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:22.532 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:22.532 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:22.532 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:22.754 000 RubyController: Enter watchdog state
+S3-0:00:22.754 000 RubyController: Watchdog state started.
+S3-0:00:22.755 000 RubyController: Opened semaphore for signaling restart.
+S3-0:00:22.756 000 RubyController: Opened semaphore for signaling pause.
+S3-0:00:22.756 000 RubyController: Opened semaphore for signaling resume.
+S3-0:00:22.933 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:22.933 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:22.933 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:23.333 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:23.334 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:23.334 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:23.588 000 RubyStart: Checking processes start...
+S2-0:00:23.588 000 RubyStart: Check existence of process (ruby_logger)...
+S2-0:00:23.639 000 RubyStart: Result of [pidof ruby_logger]: (635)
+S2-0:00:23.640 000 RubyStart: Process (ruby_logger) is running, PID: 635
+S2-0:00:23.640 000 RubyStart: ruby_logger is started
+S2-0:00:23.640 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:23.688 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:23.688 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:23.688 000 RubyStart: ruby_central is started
+S2-0:00:23.688 000 RubyStart: Check existence of process (ruby_controller)...
+S3-0:00:23.734 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:23.734 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:23.734 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:23.736 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:23.736 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:23.736 000 RubyStart: ruby_controller is started
+S2-0:00:23.736 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:23.782 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:23.782 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:23.849 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:23.849 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:23.923 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:23.923 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:23.923 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:23.923 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:23.968 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:23.968 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:23.968 000 RubyStart: ruby_central is started
+S2-0:00:23.968 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:24.019 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:24.019 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:24.019 000 RubyStart: ruby_controller is started
+S2-0:00:24.019 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:24.070 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:24.070 000 RubyStart: No result on pidof. Check using pgrep...
+S3-0:00:24.135 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:24.135 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:24.135 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:24.141 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:24.141 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:24.212 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:24.212 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:24.212 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:24.212 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:24.259 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:24.259 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:24.259 000 RubyStart: ruby_central is started
+S2-0:00:24.259 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:24.310 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:24.310 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:24.310 000 RubyStart: ruby_controller is started
+S2-0:00:24.310 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:24.361 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:24.361 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:24.431 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:24.431 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:24.504 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:24.504 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:24.504 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:24.504 000 RubyStart: Check existence of process (ruby_central)...
+S3-0:00:24.536 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:24.536 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:24.536 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:24.559 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:24.559 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:24.559 000 RubyStart: ruby_central is started
+S2-0:00:24.559 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:24.609 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:24.609 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:24.609 000 RubyStart: ruby_controller is started
+S2-0:00:24.609 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:24.660 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:24.660 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:24.730 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:24.730 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:24.808 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:24.808 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:24.808 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:24.808 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:24.856 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:24.856 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:24.856 000 RubyStart: ruby_central is started
+S2-0:00:24.856 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:24.908 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:24.908 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:24.908 000 RubyStart: ruby_controller is started
+S2-0:00:24.908 000 RubyStart: Check existence of process (ruby_rt_station)...
+S3-0:00:24.937 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:24.937 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:24.937 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:24.958 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:24.959 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:25.028 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:25.028 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:25.102 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:25.102 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:25.102 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:25.102 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:25.150 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:25.150 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:25.150 000 RubyStart: ruby_central is started
+S2-0:00:25.150 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:25.200 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:25.200 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:25.200 000 RubyStart: ruby_controller is started
+S2-0:00:25.200 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:25.251 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:25.251 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:25.322 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:25.322 000 RubyStart: No results on pgrep. Check using ps...
+S3-0:00:25.337 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:25.338 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:25.338 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:25.393 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:25.394 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:25.394 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:25.394 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:25.439 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:25.439 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:25.439 000 RubyStart: ruby_central is started
+S2-0:00:25.439 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:25.490 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:25.491 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:25.491 000 RubyStart: ruby_controller is started
+S2-0:00:25.491 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:25.542 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:25.543 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:25.613 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:25.613 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:25.686 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:25.686 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:25.686 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:25.686 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:25.732 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:25.733 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:25.733 000 RubyStart: ruby_central is started
+S2-0:00:25.733 000 RubyStart: Check existence of process (ruby_controller)...
+S3-0:00:25.739 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:25.739 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:25.739 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:25.785 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:25.785 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:25.785 000 RubyStart: ruby_controller is started
+S2-0:00:25.785 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:25.836 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:25.837 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:25.907 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:25.907 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:25.977 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:25.977 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:25.977 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:25.977 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:26.027 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:26.027 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:26.027 000 RubyStart: ruby_central is started
+S2-0:00:26.027 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:26.078 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:26.078 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:26.078 000 RubyStart: ruby_controller is started
+S2-0:00:26.078 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:26.129 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:26.129 000 RubyStart: No result on pidof. Check using pgrep...
+S3-0:00:26.139 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:26.140 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:26.140 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:26.199 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:26.199 000 RubyStart: No results on pgrep. Check using ps...
+S2-0:00:26.272 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:26.273 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:26.273 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:26.273 000 RubyStart: Check existence of process (ruby_central)...
+S2-0:00:26.317 000 RubyStart: Result of [pidof ruby_central]: (1429)
+S2-0:00:26.318 000 RubyStart: Process (ruby_central) is running, PID: 1429
+S2-0:00:26.318 000 RubyStart: ruby_central is started
+S2-0:00:26.318 000 RubyStart: Check existence of process (ruby_controller)...
+S2-0:00:26.368 000 RubyStart: Result of [pidof ruby_controller]: (1425)
+S2-0:00:26.368 000 RubyStart: Process (ruby_controller) is running, PID: 1425
+S2-0:00:26.368 000 RubyStart: ruby_controller is started
+S2-0:00:26.368 000 RubyStart: Check existence of process (ruby_rt_station)...
+S2-0:00:26.418 000 RubyStart: Result of [pidof ruby_rt_station]: ()
+S2-0:00:26.419 000 RubyStart: No result on pidof. Check using pgrep...
+S2-0:00:26.489 000 RubyStart: Result of [pgrep ruby_rt_station]: ()
+S2-0:00:26.490 000 RubyStart: No results on pgrep. Check using ps...
+S3-0:00:26.540 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:26.540 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:26.541 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S2-0:00:26.561 000 RubyStart: Result of [ps search ruby_rt_station]: ()
+S2-0:00:26.561 000 RubyStart: Process (ruby_rt_station) is not running.
+S2-0:00:26.561 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:00:26.562 000 RubyStart: Executing command raw (on PID 566): ls /sys/class/net/
+S2-0:00:26.573 000 RubyStart: Read process output: 20 bytes in 10 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S2-0:00:26.574 000 RubyStart: Network devices found: [eth0
+lo
+wlan0
+wlan1
+]
+S2-0:00:26.574 000 RubyStart: Executing command: rm -rf /config/last_ruby_boot.txt
+S2-0:00:26.583 000 RubyStart: Read process output: 0 bytes in 8 ms
+S2-0:00:26.583 000 RubyStart: Executing command: cp -rf logs/log_system.txt /config/last_ruby_boot.txt
+S2-0:00:26.605 000 RubyStart: Read process output: 0 bytes in 21 ms
+S2-0:00:26.605 000 RubyStart: Copy boot log to /config partition. Done.
+S2-0:00:26.605 000 RubyStart: 
+S2-0:00:26.605 000 RubyStart: ------------------------------
+S2-0:00:26.605 000 RubyStart: Ruby Start Finished.
+S2-0:00:26.605 000 RubyStart: ------------------------------
+S2-0:00:26.605 000 RubyStart: 
+S3-0:00:26.941 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:26.941 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:26.941 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:27.342 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:27.342 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:27.342 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:27.743 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:27.743 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:27.743 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:28.143 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:28.143 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:28.144 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:28.544 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:28.544 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:28.544 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:28.713 100 RubyAlive: Pi is alive
+S3-0:00:28.759 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:28.759 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:28.798 000 RubyController: SOFTERROR: Main processing loop took too long (540 ms).
+S3-0:00:28.945 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:28.945 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:28.945 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:29.346 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:29.346 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:29.346 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:29.746 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:29.747 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:29.747 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:30.147 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:30.147 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:30.147 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:30.548 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:30.548 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:30.548 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:30.800 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:30.800 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:30.948 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:30.949 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:30.949 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:31.349 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:31.349 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:31.349 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:31.750 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:31.750 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:31.750 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:32.150 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:32.151 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:32.151 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:32.551 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:32.552 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:32.552 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:32.801 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:32.801 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:32.952 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:32.952 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:32.952 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:33.353 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:33.353 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:33.353 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:33.753 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:33.754 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:33.754 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:34.154 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:34.154 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:34.154 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:34.555 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:34.555 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:34.555 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:34.802 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:34.802 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:34.955 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:34.956 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:34.956 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:35.356 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:35.356 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:35.356 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:35.757 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:35.757 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:35.757 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:36.158 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:36.158 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:36.158 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:36.558 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:36.559 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:36.559 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:36.803 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:36.803 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:36.959 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:36.959 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:36.959 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:37.360 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:37.360 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:37.360 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:37.761 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:37.761 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:37.761 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:38.161 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:38.162 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:38.162 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:38.562 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:38.562 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:38.562 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:38.733 200 RubyAlive: Pi is alive
+S3-0:00:38.804 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:38.804 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:38.963 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:38.963 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:38.963 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:39.364 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:39.364 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:39.364 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:39.764 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:39.765 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:39.765 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:40.165 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:40.165 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:40.166 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:40.566 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:40.566 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:40.566 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:40.805 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:40.805 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:40.967 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:40.967 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:40.967 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:41.367 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:41.367 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:41.368 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:41.768 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:41.768 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:41.768 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:42.169 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:42.169 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:42.169 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:42.570 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:42.570 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:42.570 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:42.806 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:42.806 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:42.970 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:42.971 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:42.971 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:43.371 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:43.371 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:43.371 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:43.772 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:43.772 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:43.772 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:44.173 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:44.173 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:44.173 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:44.573 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:44.574 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:44.574 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:44.807 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:44.807 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:44.974 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:44.974 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:44.974 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:45.375 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:45.375 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:45.375 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:45.776 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:45.776 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:45.776 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:46.176 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:46.177 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:46.177 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:46.577 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:46.577 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:46.577 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:46.808 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:46.809 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:46.978 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:46.978 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:46.978 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:47.378 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:47.379 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:47.379 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:47.779 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:47.779 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:47.780 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:48.180 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:48.180 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:48.180 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:48.581 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:48.581 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:48.581 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:48.752 300 RubyAlive: Pi is alive
+S3-0:00:48.809 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:48.810 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:48.982 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:48.982 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:48.982 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:49.382 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:49.383 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:49.383 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:49.783 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:49.783 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:49.783 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:50.184 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:50.184 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:50.184 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:50.585 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:50.585 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:50.585 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:50.811 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:50.811 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:50.985 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:50.986 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:50.986 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:51.386 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:51.386 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:51.386 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:51.787 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:51.787 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:51.787 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:52.187 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:52.188 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:52.188 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:52.588 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:52.588 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:52.588 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:52.812 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:52.812 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:52.989 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:52.989 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:52.989 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:53.390 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:53.390 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:53.390 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:53.790 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:53.791 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:53.791 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:54.191 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:54.191 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:54.191 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:54.592 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:54.592 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:54.592 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:54.813 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:54.813 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:54.993 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:54.993 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:54.993 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:55.393 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:55.394 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:55.394 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:55.794 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:55.794 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:55.795 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:56.195 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:56.195 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:56.195 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:56.596 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:56.596 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:56.596 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:56.814 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:56.814 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:56.996 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:56.997 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:56.997 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:57.397 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:57.397 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:57.397 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:57.798 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:57.798 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:57.798 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:58.198 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:58.199 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:58.199 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:58.599 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:58.599 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:58.599 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:58.771 400 RubyAlive: Pi is alive
+S3-0:00:58.815 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:00:58.815 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:00:59.000 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:59.000 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:59.000 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:59.401 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:59.401 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:59.401 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:00:59.801 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:00:59.802 000 Central: [DRMCore] Opened DRM device.
+S3-0:00:59.802 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:00.202 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:00.203 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:00.203 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:00.603 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:00.603 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:00.603 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:00.816 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:00.816 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:01.004 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:01.004 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:01.004 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:01.404 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:01.405 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:01.405 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:01.805 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:01.805 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:01.806 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:02.206 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:02.206 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:02.206 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:02.607 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:02.607 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:02.607 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:02.817 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:02.817 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:03.007 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:03.008 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:03.008 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:03.408 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:03.408 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:03.408 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:03.809 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:03.809 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:03.809 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:04.210 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:04.210 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:04.210 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:04.610 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:04.611 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:04.611 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:04.818 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:04.818 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:05.011 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:05.011 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:05.012 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:05.412 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:05.412 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:05.412 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:05.813 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:05.813 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:05.813 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:06.213 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:06.214 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:06.214 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:06.614 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:06.614 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:06.614 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:06.819 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:06.819 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:07.015 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:07.015 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:07.015 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:07.416 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:07.416 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:07.416 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:07.816 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:07.817 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:07.817 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:08.217 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:08.217 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:08.217 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:08.618 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:08.618 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:08.618 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:08.790 500 RubyAlive: Pi is alive
+S3-0:01:08.820 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:08.820 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:09.019 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:09.019 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:09.019 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:09.419 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:09.420 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:09.420 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:09.820 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:09.820 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:09.821 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:10.221 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:10.221 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:10.221 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:10.622 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:10.622 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:10.622 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:10.821 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:10.821 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:11.022 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:11.023 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:11.023 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:11.423 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:11.423 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:11.423 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:11.824 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:11.824 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:11.824 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:12.225 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:12.225 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:12.225 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:12.625 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:12.626 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:12.626 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:12.822 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:12.823 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:13.026 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:13.026 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:13.026 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:13.427 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:13.427 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:13.427 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:13.827 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:13.828 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:13.828 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:14.228 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:14.229 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:14.229 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:14.629 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:14.629 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:14.629 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:14.823 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:14.823 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:15.030 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:15.030 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:15.030 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:15.430 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:15.431 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:15.431 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:15.831 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:15.831 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:15.832 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:16.232 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:16.232 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:16.232 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:16.633 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:16.633 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:16.633 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:16.824 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S3-0:01:16.824 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S3-0:01:17.033 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:17.034 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:17.034 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:17.434 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:17.434 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:17.434 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:17.835 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:17.835 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:17.835 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:18.235 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:18.236 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:18.236 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:18.636 000 Central: [DRMCore] Waiting again for display to be conncted...
+S3-0:01:18.636 000 Central: [DRMCore] Opened DRM device.
+S3-0:01:18.637 000 Central: [DRMCore] (Check display connected) Finding resources (1 connectors, 1 crtcs)...
+S3-0:01:18.810 600 RubyAlive: Pi is alive
+S3-0:01:18.825 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+-1-0:00:16.678 000 : Executing command: mkdir -p /home/radxa/ruby/config/
+-1-0:00:16.719 000 : Read process output: 0 bytes in 12 ms
+-1-0:00:16.720 000 : Executing command: chmod 777 /home/radxa/ruby/ruby* 2>/dev/null
+-1-0:00:16.734 000 : Read process output: 0 bytes in 13 ms
+-1-0:00:16.734 000 : Executing command: chmod 777 /home/radxa/ruby/onyx* 2>/dev/null
+-1-0:00:16.745 000 : Read process output: 0 bytes in 10 ms
+-1-0:00:16.745 000 : Executing command: chown -hR root *
+-1-0:00:16.833 000 : Read process output: 0 bytes in 86 ms
+-1-0:00:16.834 000 : Executing command: chgrp -hR root *
+-1-0:00:16.872 000 : Read process output: 0 bytes in 37 ms
+-1-0:00:16.873 000 : Executing command: chmod 777 /home/radxa/ruby/config/* 2>/dev/null
+-1-0:00:16.887 000 : Read process output: 0 bytes in 12 ms
+-1-0:00:16.888 000 : Executing command: mkdir -p /home/radxa/ruby/cal/
+-1-0:00:16.903 000 : Read process output: 0 bytes in 13 ms
+-1-0:00:16.904 000 : Executing command: chmod 777 /home/radxa/ruby/cal/
+-1-0:00:16.914 000 : Read process output: 0 bytes in 8 ms

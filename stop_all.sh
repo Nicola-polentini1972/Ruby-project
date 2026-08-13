@@ -1,0 +1,32 @@
+#!/bin/bash
+ps -aef | nice grep "ruby_controller" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_tx_rc" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_rx_commands" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_rx_telemetry" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_rx_rc" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_rt_station" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_rt_vehicle" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_rt_vehicle_light" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_tx_telemetry" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_vehicle" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_central" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep "ruby_start" | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_player_f' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_player_p' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_player_s' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_player_radxa' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_alive' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_initdhcp' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_initradio' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_i2c' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -aef | nice grep 'ruby_gpio_detect' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -ef | nice grep 'ruby_capture_raspi' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -ef | nice grep 'ruby_capture_veye' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -ef | nice grep 'ruby_capture_veye307' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -ef | nice grep 'raspivid' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -ef | nice grep 'veye_raspivid' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null 
+ps -ef | nice grep 'aplay' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -ef | nice grep 'arecord' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+ps -ef | nice grep 'gst-launch-1.0' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null
+
+ps -aef | nice grep 'ruby_camera' | nice grep -v grep | awk '{print $2}' | xargs kill -9 2>/dev/null

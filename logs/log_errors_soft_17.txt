@@ -1,0 +1,639 @@
+S17-0:00:28.034 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:28.034 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:28.075 000 RubyController: SOFTERROR: Main processing loop took too long (541 ms).
+S17-0:00:30.076 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:30.076 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:32.077 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:32.077 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:34.078 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:34.078 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:36.080 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:36.080 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:38.081 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:38.081 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:40.082 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:40.082 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:42.083 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:42.083 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:44.084 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:44.084 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:46.085 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:46.085 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:48.086 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:48.087 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:50.088 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:50.088 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:52.089 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:52.089 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:54.090 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:54.090 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:56.091 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:56.091 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:00:58.092 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:00:58.092 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:00.093 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:00.093 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:02.094 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:02.094 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:04.095 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:04.096 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:06.096 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:06.097 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:08.097 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:08.098 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:10.099 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:10.099 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:12.100 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:12.100 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:14.101 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:14.101 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:16.103 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:16.103 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:18.104 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:18.104 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:20.105 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:20.105 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:22.106 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:22.106 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:24.107 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:24.107 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:26.108 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:26.108 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:28.109 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:28.110 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:30.111 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:30.111 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:32.112 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:32.112 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:34.113 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:34.113 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:36.114 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:36.114 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:38.115 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:38.115 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:40.116 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:40.116 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:42.118 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:42.118 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:44.119 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:44.119 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:46.120 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:46.120 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:48.121 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:48.121 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:50.122 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:50.122 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:52.123 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:52.123 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:54.124 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:54.124 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:56.125 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:56.126 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:01:58.127 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:01:58.127 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:00.128 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:00.128 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:02.129 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:02.129 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:04.130 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:04.130 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:06.131 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:06.131 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:08.132 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:08.132 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:10.133 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:10.133 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:12.134 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:12.134 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:14.135 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:14.136 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:16.136 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:16.137 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:18.138 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:18.138 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:20.139 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:20.139 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:22.140 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:22.140 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:24.141 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:24.141 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:26.142 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:26.142 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:28.143 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:28.143 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:30.144 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:30.145 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:32.146 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:32.146 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:34.147 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:34.147 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:36.148 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:36.148 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:38.149 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:38.149 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:40.150 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:40.150 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:42.151 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:42.151 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:44.152 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:44.152 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:46.153 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:46.153 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:48.155 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:48.155 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:50.156 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:50.156 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:52.157 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:52.157 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:54.158 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:54.158 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:56.159 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:56.159 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:02:58.160 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:02:58.160 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:00.161 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:00.161 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:02.162 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:02.162 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:04.163 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:04.163 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:06.164 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:06.165 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:08.166 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:08.166 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:10.167 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:10.167 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:12.168 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:12.168 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:14.169 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:14.169 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:16.170 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:16.170 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:18.171 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:18.171 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:20.172 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:20.172 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:22.173 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:22.173 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:24.174 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:24.174 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:26.175 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:26.175 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:28.176 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:28.176 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:30.177 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:30.177 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:32.178 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:32.178 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:34.179 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:34.179 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:36.180 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:36.180 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:38.181 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:38.181 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:40.182 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:40.182 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:42.183 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:42.184 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:44.185 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:44.185 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:46.186 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:46.186 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:48.187 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:48.187 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:50.188 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:50.188 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:52.189 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:52.189 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:54.190 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:54.190 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:56.191 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:56.191 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:03:58.192 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:03:58.193 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:00.194 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:00.194 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:02.195 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:02.195 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:04.196 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:04.196 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:06.197 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:06.197 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:08.198 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:08.198 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:10.199 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:10.199 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:12.201 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:12.201 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:14.202 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:14.202 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:16.203 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:16.203 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:18.204 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:18.204 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:20.205 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:20.205 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:22.206 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:22.206 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:24.207 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:24.207 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:26.208 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:26.209 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:28.210 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:28.210 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:30.211 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:30.211 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:32.212 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:32.212 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:34.213 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:34.213 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:36.214 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:36.214 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:38.215 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:38.215 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:40.216 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:40.216 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:42.217 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:42.217 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:44.219 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:44.219 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:46.220 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:46.220 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:48.221 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:48.221 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:50.222 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:50.222 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:52.223 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:52.223 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:54.224 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:54.224 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:56.225 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:56.225 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:04:58.226 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:04:58.226 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:00.227 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:00.228 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:02.229 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:02.229 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:04.230 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:04.230 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:06.231 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:06.231 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:08.232 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:08.232 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:10.233 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:10.233 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:12.234 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:12.235 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:14.236 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:14.236 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:16.237 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:16.237 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:18.238 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:18.238 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:20.239 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:20.239 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:22.240 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:22.240 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:24.241 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:24.241 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:26.242 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:26.243 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:28.244 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:28.244 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:30.245 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:30.245 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:32.246 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:32.246 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:34.247 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:34.247 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:36.248 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:36.248 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:38.249 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:38.249 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:40.250 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:40.250 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:42.251 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:42.251 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:44.253 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:44.253 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:46.254 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:46.254 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:48.255 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:48.255 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:50.256 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:50.256 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:52.257 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:52.257 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:54.258 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:54.258 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:56.259 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:56.259 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:05:58.260 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:05:58.260 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:00.261 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:00.262 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:02.263 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:02.263 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:04.264 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:04.264 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:06.265 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:06.265 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:08.266 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:08.266 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:10.267 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:10.267 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:12.268 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:12.268 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:14.269 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:14.269 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:16.270 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:16.271 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:18.272 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:18.272 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:20.273 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:20.273 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:22.274 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:22.274 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:24.275 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:24.275 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:26.276 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:26.276 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:28.277 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:28.277 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:30.278 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:30.278 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:32.279 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:32.279 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:34.281 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:34.281 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:36.282 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:36.282 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:38.283 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:38.283 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:40.284 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:40.284 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:42.285 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:42.285 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:44.286 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:44.286 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:46.287 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:46.287 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:48.289 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:48.289 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:50.290 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:50.290 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:52.291 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:52.291 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:54.292 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:54.292 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:56.293 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:56.293 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:06:58.294 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:06:58.294 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:00.295 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:00.295 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:02.296 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:02.296 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:04.297 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:04.298 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:06.299 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:06.299 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:08.300 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:08.300 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:10.301 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:10.301 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:12.302 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:12.302 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:14.303 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:14.303 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:16.304 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:16.304 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:18.306 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:18.306 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:20.307 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:20.307 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:22.308 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:22.308 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:24.309 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:24.309 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:26.310 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:26.310 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:28.311 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:28.311 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:30.312 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:30.312 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:32.313 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:32.313 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:34.315 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:34.315 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:36.316 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:36.316 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:38.317 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:38.317 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:40.318 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:40.318 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:42.319 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:42.319 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:44.320 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:44.320 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:46.321 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:46.321 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:48.322 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:48.322 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:50.323 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:50.323 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:52.324 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:52.325 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:54.326 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:54.326 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:56.327 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:56.327 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:07:58.328 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:07:58.328 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:00.329 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:00.329 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:02.330 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:02.330 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:04.331 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:04.331 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:06.332 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:06.332 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:08.333 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:08.333 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:10.334 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:10.335 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:12.335 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:12.336 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:14.336 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:14.337 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:16.338 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:16.338 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:18.339 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:18.339 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:20.340 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:20.340 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:22.341 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:22.341 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:24.342 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:24.342 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:26.343 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:26.343 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:28.343 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:28.344 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:30.345 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:30.345 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:32.346 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:32.346 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:34.347 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:34.347 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:36.348 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:36.348 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:38.349 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:38.349 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:40.350 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:40.350 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:42.351 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:42.352 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:44.353 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:44.353 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:46.354 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:46.354 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:48.355 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:48.355 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:50.356 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:50.356 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:52.357 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:52.357 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:54.358 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:54.358 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:56.359 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:56.359 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:08:58.360 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:08:58.360 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:00.362 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:00.362 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:02.363 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:02.363 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:04.364 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:04.364 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:06.365 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:06.365 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:08.366 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:08.366 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:10.367 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:10.367 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:12.369 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:12.369 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:14.370 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:14.370 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:16.371 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:16.371 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:18.372 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:18.372 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:20.373 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:20.373 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:22.374 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:22.374 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:24.375 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:24.375 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:26.376 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:26.377 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:28.378 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:28.378 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:30.379 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:30.379 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:32.380 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:32.380 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:34.381 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:34.381 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:36.382 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:36.382 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:38.383 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:38.383 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:40.384 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:40.384 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:42.385 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:42.385 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:44.386 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:44.386 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:46.388 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:46.388 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:48.389 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:48.389 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:50.390 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:50.390 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:52.391 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:52.391 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:54.392 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:54.392 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:56.393 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:56.393 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:09:58.394 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:09:58.394 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:00.395 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:00.396 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:02.397 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:02.397 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:04.398 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:04.398 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:06.399 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:06.399 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:08.400 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:08.400 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:10.401 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:10.401 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:12.402 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:12.402 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:14.404 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:14.404 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:16.405 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:16.405 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:18.406 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:18.406 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:20.407 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:20.407 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:22.408 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:22.408 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:24.409 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:24.410 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:26.411 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:26.411 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:28.412 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:28.412 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:30.413 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:30.413 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:32.414 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:32.414 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:34.415 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:34.415 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:36.416 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:36.416 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:38.417 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:38.417 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:40.418 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:40.419 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:42.419 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:42.420 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:44.421 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:44.421 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:46.422 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:46.422 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:48.423 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:48.423 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:50.424 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:50.424 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:52.425 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:52.425 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:54.426 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:54.426 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:56.428 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:56.428 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:10:58.429 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:10:58.429 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:11:00.430 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:11:00.430 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:11:02.431 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:11:02.432 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL
+S17-0:11:04.433 000 RubyController: SOFTERROR: [SharedMem] Failed to open shared memory for read: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL, error: No such file or directory
+S17-0:11:04.433 000 RubyController: SOFTERROR: Failed to open shared mem to ruby central process watchdog for reading: /SYSTEM_SHARED_MEM_WATCHDOG_CENTRAL

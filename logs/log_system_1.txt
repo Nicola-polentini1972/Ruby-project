@@ -1,0 +1,862 @@
+S-1-0:00:01.313 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/config/* 2>/dev/null
+S-1-0:00:01.322 000 RubyStart: Read process output: 0 bytes in 8 ms
+S-1-0:00:01.323 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/config/models/
+S-1-0:00:01.334 000 RubyStart: Read process output: 0 bytes in 10 ms
+S-1-0:00:01.334 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/config/models/* 2>/dev/null
+S-1-0:00:01.343 000 RubyStart: Read process output: 0 bytes in 8 ms
+S-1-0:00:01.343 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/media/
+S-1-0:00:01.355 000 RubyStart: Read process output: 0 bytes in 10 ms
+S-1-0:00:01.355 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/media/
+S-1-0:00:01.363 000 RubyStart: Read process output: 0 bytes in 7 ms
+S-1-0:00:01.363 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/media/* 2>/dev/null
+S-1-0:00:01.372 000 RubyStart: Read process output: 0 bytes in 8 ms
+S-1-0:00:01.372 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/
+S-1-0:00:01.383 000 RubyStart: Read process output: 0 bytes in 10 ms
+S-1-0:00:01.400 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/pi/
+S-1-0:00:01.411 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:01.431 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/radxaz3/
+S-1-0:00:01.442 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:01.462 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/ssc338q/
+S-1-0:00:01.472 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:01.492 000 RubyStart: Executing command: mkdir -p /home/radxa/ruby/updates/bin/drivers/
+S-1-0:00:01.503 000 RubyStart: Read process output: 0 bytes in 10 ms
+S-1-0:00:01.594 000 RubyStart: Files are ok, checking processes and init log files...
+S-1-0:00:01.594 000 RubyStart: SOFTERROR: Failed to access previous system type.
+S-1-0:00:01.594 000 RubyStart: Executing command: rm -rf /home/radxa/ruby/config/system_type.txt
+S-1-0:00:01.602 000 RubyStart: Read process output: 0 bytes in 7 ms
+S-1-0:00:01.602 000 RubyStart: [Hardware] Failed to get GPIO access to Ruby type PIN.
+S-1-0:00:01.630 000 RubyStart: [Hardware] Detecting system type...
+S-1-0:00:01.630 000 RubyStart: [Hardware] Can't open any previous hardware detection type file.
+S-1-0:00:01.630 000 RubyStart: [Hardware] Do full detection of board and system type...
+S-1-0:00:01.630 000 RubyStart: Executing command raw (on PID 925): cat /proc/device-tree/model
+S-1-0:00:01.639 000 RubyStart: Read process output: 13 bytes in 8 ms. Content: [Radxa ZERO 3]
+S-1-0:00:01.640 000 RubyStart: [Hardware] Board description string: Radxa ZERO 3
+S-1-0:00:01.640 000 RubyStart: Executing command raw (on PID 925): uname -r
+S-1-0:00:01.650 000 RubyStart: Read process output: 19 bytes in 9 ms. Content: [5.10.160-34-rk356x]
+S-1-0:00:01.650 000 RubyStart: Executing command raw (on PID 925): uname -a
+S-1-0:00:01.660 000 RubyStart: Read process output: 103 bytes in 8 ms
+S-1-0:00:01.661 000 RubyStart: Executing command raw (on PID 925): lscpu | grep Model
+S-1-0:00:01.687 000 RubyStart: Read process output: 79 bytes in 25 ms. Content: [Model:                           0
+Model name:                      Cortex-A55]
+S-1-0:00:01.687 000 RubyStart: [Hardware] Detected board first time, board type for id (5.10.160-34-rk356x) (int: 60): Radxa Zero 3
+S-1-0:00:01.688 000 RubyStart: [Hardware] Board type is 60 (Radxa Zero 3)
+S-1-0:00:01.688 000 RubyStart: [Hardware] Detected board type: Radxa Zero 3
+S-1-0:00:01.688 000 RubyStart: Executing command: modprobe i2c-dev
+S-1-0:00:01.710 000 RubyStart: Read process output: 0 bytes in 21 ms
+S-1-0:00:01.711 000 RubyStart: [Hardware] Detected system as controller.
+S-1-0:00:01.711 000 RubyStart: [Hardware] Write system type (0) and board type (60) to file: /home/radxa/ruby/config/system_type.txt
+S-1-0:00:01.712 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/config/system_type.txt
+S-1-0:00:01.721 000 RubyStart: Read process output: 0 bytes in 8 ms
+S-1-0:00:01.723 000 RubyStart: Executing command: chmod 777 /home/radxa/ruby/tmp/board.txt
+S-1-0:00:01.733 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:01.733 000 RubyStart: [Hardware] Detected system Type: [controller]
+S-1-0:00:01.733 000 RubyStart: [Hardware] Detected system as controller.
+S-1-0:00:01.733 000 RubyStart: Executing command: rm -rf /home/radxa/ruby/tmp/updateinprogress
+S-1-0:00:01.744 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:01.744 000 RubyStart: Executing command: rm -rf /home/radxa/ruby/tmp/updateinprogressapply
+S-1-0:00:01.755 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:01.756 000 RubyStart: Ruby: Start on verison 11.8 (b-11810)
+S-1-0:00:01.757 000 RubyStart: [Config] Read raw base Ruby version: [11.7] from file (/home/radxa/ruby/version_ruby_base.txt)
+S-1-0:00:01.757 000 RubyStart: [Config] Parsed base Ruby version: 11.7
+S-1-0:00:01.757 000 RubyStart: Ruby: Base version is 11.7
+S-1-0:00:01.757 000 RubyStart: Executing command raw (on PID 925): uname -rn
+S-1-0:00:01.768 000 RubyStart: Read process output: 35 bytes in 9 ms. Content: [ruby-controller 5.10.160-34-rk356x]
+S-1-0:00:01.768 000 RubyStart: Ruby: Platform: Radxa, Board: Radxa Zero 3, ruby-controller 5.10.160-34-rk356x
+S-1-0:00:01.772 000 RubyStart: Executing command: mkdir -p /usr/share/fonts/truetype/noto/
+S-1-0:00:01.787 000 RubyStart: Read process output: 0 bytes in 13 ms
+S-1-0:00:01.788 000 RubyStart: Executing command: cp -rf /home/radxa/ruby/res/noto.ttf /usr/share/fonts/truetype/noto/
+S-1-0:00:02.242 000 RubyStart: Read process output: 0 bytes in 453 ms
+S-1-0:00:02.242 000 RubyStart: Executing command: chmod 777 /usr/share/fonts/truetype/noto
+S-1-0:00:02.252 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:02.253 000 RubyStart: Executing command: chmod 777 /usr/share/fonts/truetype/noto/noto.ttf
+S-1-0:00:02.266 000 RubyStart: Read process output: 0 bytes in 11 ms
+S-1-0:00:02.267 000 RubyStart: ---------------------------------------
+S-1-0:00:02.268 000 RubyStart: Do first time boot preinitialization...
+S-1-0:00:02.268 000 RubyStart: Executing command: lsmod
+S-1-0:00:02.319 000 RubyStart: Read process output: 1576 bytes in 49 ms
+S-1-0:00:02.319 000 RubyStart: Output of lsmod: [Module                  Size  Used by
+vfat                   20480  1
+fat                    65536  1 vfat
+snd_soc_hdmi_codec     20480  1
+hci_uart               81920  0
+btqca                  16384  1 hci_uart
+btrtl                  20480  1 hci_
+S-1-0:00:02.319 000 RubyStart: ------------------------------
+S-1-0:00:02.319 000 RubyStart: Executing command: systemctl disable glances
+S-1-0:00:09.631 000 RubyStart: Abandoning reading start process output.
+S-1-0:00:09.631 000 RubyStart: Read process output: 0 bytes in 7310 ms
+S-1-0:00:09.631 000 RubyStart: Executing command: uname -r
+S-1-0:00:09.642 000 RubyStart: Read process output: 19 bytes in 9 ms. Content: [5.10.160-34-rk356x]
+S-1-0:00:09.642 000 RubyStart: Platform: [5.10.160-34-rk356x]
+S-1-0:00:09.642 000 RubyStart: [HW-R] Installing drivers for platform: 5.10.160-34-rk356x, board: Radxa Zero 3 ...
+S-1-0:00:09.642 000 RubyStart: Executing command: rmmod 88XXau 2>&1 1>/dev/null
+S-1-0:00:09.663 000 RubyStart: Read process output: 52 bytes in 19 ms. Content: [rmmod: ERROR: Module 88XXau is not currently loaded
+ÿÿ]
+S-1-0:00:09.663 000 RubyStart: Executing command: rmmod 88XXau_wfb 2>&1 1>/dev/null
+S-1-0:00:09.685 000 RubyStart: Read process output: 56 bytes in 20 ms. Content: [rmmod: ERROR: Module 88XXau_wfb is not currently loaded
+<7Aÿÿ]
+S-1-0:00:09.685 000 RubyStart: Executing command: rmmod 8812au 2>&1 1>/dev/null
+S-1-0:00:09.708 000 RubyStart: Read process output: 52 bytes in 21 ms. Content: [rmmod: ERROR: Module 8812au is not currently loaded
+ded
+<7Aÿÿ]
+S-1-0:00:09.708 000 RubyStart: Executing command: rmmod 8812eu 2>&1 1>/dev/null
+S-1-0:00:09.732 000 RubyStart: Read process output: 52 bytes in 23 ms. Content: [rmmod: ERROR: Module 8812eu is not currently loaded
+ded
+<7Aÿÿ]
+S-1-0:00:09.733 000 RubyStart: Executing command: rm -rf /lib/modules/5.10.160-34-rk356x/updates/88XXau*
+S-1-0:00:09.748 000 RubyStart: Read process output: 0 bytes in 13 ms
+S-1-0:00:09.748 000 RubyStart: Executing command: rm -rf /lib/modules/5.10.160-34-rk356x/updates/8812au*
+S-1-0:00:09.762 000 RubyStart: Read process output: 0 bytes in 12 ms
+S-1-0:00:09.763 000 RubyStart: Executing command: rm -rf /lib/modules/5.10.160-34-rk356x/updates/8812eu*
+S-1-0:00:09.780 000 RubyStart: Read process output: 0 bytes in 15 ms
+S-1-0:00:09.780 000 RubyStart: Executing command: rm -rf /lib/modules/5.10.160-34-rk356x/kernel/drivers/net/wireless/8812eu*
+S-1-0:00:09.822 000 RubyStart: Read process output: 0 bytes in 39 ms
+S-1-0:00:09.822 000 RubyStart: Executing command: rm -rf /lib/modules/5.10.160-34-rk356x/kernel/drivers/net/wireless/88XXau*
+S-1-0:00:09.832 000 RubyStart: Read process output: 0 bytes in 9 ms
+S-1-0:00:09.832 000 RubyStart: Executing command (timeout: 60000 ms): depmod -a
+S-1-0:00:27.664 000 RubyStart: Read process output: 0 bytes in 17830 ms
+S-1-0:00:27.665 000 RubyStart: Executing command: uname -r
+S-1-0:00:27.677 000 RubyStart: Read process output: 19 bytes in 10 ms. Content: [5.10.160-34-rk356x]
+S-1-0:00:27.677 000 RubyStart: [HW-R] Installing RTL8812AU driver for platform: [5.10.160-34-rk356x]
+S-1-0:00:27.678 000 RubyStart: Executing command: sudo modprobe cfg80211
+S-1-0:00:27.759 000 RubyStart: Read process output: 0 bytes in 80 ms
+S-1-0:00:27.759 000 RubyStart: Executing command: uname -r
+S-1-0:00:27.767 000 RubyStart: Read process output: 19 bytes in 7 ms. Content: [5.10.160-34-rk356x]
+S-1-0:00:27.767 000 RubyStart: [HW-R] Driver file to use: [/home/radxa/ruby/drivers/88XXau-radxa.ko]
+S-1-0:00:27.767 000 RubyStart: Executing command: cp -rf /home/radxa/ruby/drivers/88XXau-radxa.ko /lib/modules/5.10.160-34-rk356x/kernel/drivers/net/wireless/88XXau.ko
+S-1-0:00:27.875 000 RubyStart: Read process output: 0 bytes in 106 ms
+S-1-0:00:27.875 000 RubyStart: Executing command raw (on PID 925): insmod /lib/modules/5.10.160-34-rk356x/kernel/drivers/net/wireless/88XXau.ko rtw_tx_pwr_idx_override=1 2>&1
+S-1-0:00:27.933 000 RubyStart: Read process output: 0 bytes in 56 ms
+S-1-0:00:27.934 000 RubyStart: [HW-R] Insert mod result: []
+S-1-0:00:27.934 000 RubyStart: Executing command (timeout: 60000 ms): depmod -a
+S-1-0:00:44.436 000 RubyStart: Read process output: 0 bytes in 16500 ms
+S-1-0:00:44.486 000 RubyStart: Executing command raw (on PID 925): modprobe 88XXau rtw_tx_pwr_idx_override=1 2>&1
+S-1-0:00:44.523 000 RubyStart: Read process output: 0 bytes in 36 ms
+S-1-0:00:44.523 000 RubyStart: [HW-R] Modprobe result: []
+S-1-0:00:44.523 000 RubyStart: [HW-R] Installed driver (/home/radxa/ruby/drivers/88XXau-radxa.ko) on platform (5.10.160-34-rk356x)
+S-1-0:00:44.523 000 RubyStart: Executing command (timeout: 60000 ms): depmod -a
+S-1-0:01:00.570 000 RubyStart: Read process output: 0 bytes in 16045 ms
+S-1-0:01:00.571 000 RubyStart: [HW-R] Installed RTL8812AU driver
+S-1-0:01:00.571 000 RubyStart: Executing command: uname -r
+S-1-0:01:00.582 000 RubyStart: Read process output: 19 bytes in 10 ms. Content: [5.10.160-34-rk356x]
+S-1-0:01:00.582 000 RubyStart: [HW-R] Installing RTL8812EU driver for platform: [5.10.160-34-rk356x]
+S-1-0:01:00.582 000 RubyStart: Executing command: sudo modprobe cfg80211
+S-1-0:01:00.652 000 RubyStart: Read process output: 0 bytes in 68 ms
+S-1-0:01:00.653 000 RubyStart: Executing command: uname -r
+S-1-0:01:00.661 000 RubyStart: Read process output: 19 bytes in 7 ms. Content: [5.10.160-34-rk356x]
+S-1-0:01:00.661 000 RubyStart: [HW-R] Driver file to use: [/home/radxa/ruby/drivers/8812eu-radxa.ko]
+S-1-0:01:00.661 000 RubyStart: Executing command: cp -rf /home/radxa/ruby/drivers/8812eu-radxa.ko /lib/modules/5.10.160-34-rk356x/kernel/drivers/net/wireless/8812eu.ko
+S-1-0:01:00.757 000 RubyStart: Read process output: 0 bytes in 95 ms
+S-1-0:01:00.758 000 RubyStart: Executing command raw (on PID 925): insmod /lib/modules/5.10.160-34-rk356x/kernel/drivers/net/wireless/8812eu.ko rtw_tx_pwr_by_rate=0 rtw_tx_pwr_lmt_enable=0 2>&1
+S-1-0:01:01.567 000 RubyStart: Read process output: 0 bytes in 808 ms
+S-1-0:01:01.567 000 RubyStart: [HW-R] Insert mod result: []
+S-1-0:01:01.567 000 RubyStart: Executing command (timeout: 60000 ms): depmod -a
+S-1-0:01:17.663 000 RubyStart: Read process output: 0 bytes in 16095 ms
+S-1-0:01:17.714 000 RubyStart: Executing command raw (on PID 925): modprobe 8812eu rtw_tx_pwr_by_rate=0 rtw_tx_pwr_lmt_enable=0 2>&1
+S-1-0:01:17.733 000 RubyStart: Read process output: 0 bytes in 18 ms
+S-1-0:01:17.734 000 RubyStart: [HW-R] Modprobe result: []
+S-1-0:01:17.734 000 RubyStart: [HW-R] Installed driver (/home/radxa/ruby/drivers/8812eu-radxa.ko) on platform (5.10.160-34-rk356x)
+S-1-0:01:17.734 000 RubyStart: Executing command (timeout: 60000 ms): depmod -a
+S-1-0:01:34.339 000 RubyStart: Read process output: 0 bytes in 16604 ms
+S-1-0:01:34.339 000 RubyStart: [HW-R] Installed RTL8812EU driver
+S-1-0:01:34.340 000 RubyStart: Executing command: uname -r
+S-1-0:01:34.350 000 RubyStart: Read process output: 19 bytes in 9 ms. Content: [5.10.160-34-rk356x]
+S-1-0:01:34.350 000 RubyStart: [HW-R] Installing RTL8733BU driver for platform: [5.10.160-34-rk356x]
+S-1-0:01:34.350 000 RubyStart: [HW-R] Installed RTL8733BU driver
+S-1-0:01:34.351 000 RubyStart: Executing command: lsusb
+S-1-0:01:34.410 000 RubyStart: Read process output: 526 bytes in 58 ms
+S-1-0:01:34.411 000 RubyStart: Executing command: lsusb
+S-1-0:01:34.462 000 RubyStart: Read process output: 526 bytes in 50 ms
+S-1-0:01:34.463 000 RubyStart: Executing command: lsmod
+S-1-0:01:34.495 000 RubyStart: Read process output: 1640 bytes in 31 ms
+S-1-0:01:34.496 000 RubyStart: Executing command: ip link
+S-1-0:01:34.543 000 RubyStart: Read process output: 627 bytes in 46 ms
+S-1-0:01:34.543 000 RubyStart: Executing command (timeout: 60000 ms): depmod -a
+S-1-0:01:50.312 000 RubyStart: Read process output: 0 bytes in 15767 ms
+S-1-0:01:50.312 000 RubyStart: Executing command: sync
+S-1-0:01:50.372 000 RubyStart: Read process output: 0 bytes in 58 ms
+S-1-0:01:50.373 000 RubyStart: [HW-R] Done installing drivers.
+S-1-0:01:50.373 000 RubyStart: Executing command raw (on PID 925): echo 'performance' | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+S-1-0:01:50.449 000 RubyStart: Read process output: 12 bytes in 75 ms. Content: [performance
+ÿÿ]
+1-0:01:50.463 000 RubyStartFirst: Starting (PID: 925, parent PID: 921)...
+1-0:01:50.463 000 RubyStartFirst: Starting additional log output to file: /tmp/ruby/log_first_radxa.log
+1-0:01:50.464 000 RubyStartFirst: Executing command: echo "
+Ruby: Doing first time ever initialization on Radxa...
+" > /tmp/ruby/log_first_radxa.log
+1-0:01:50.472 000 RubyStartFirst: Read process output: 0 bytes in 6 ms
+1-0:01:50.473 000 RubyStartFirst: Executing command: mkdir -p /home/radxa/ruby/config/
+1-0:01:50.486 000 RubyStartFirst: Read process output: 0 bytes in 11 ms
+1-0:01:50.487 000 RubyStartFirst: Executing command raw (on PID 925): echo 'performance' | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+1-0:01:50.501 000 RubyStartFirst: Read process output: 12 bytes in 12 ms. Content: [performance
+š;
+›]
+1-0:01:50.502 000 RubyStartFirst: Executing command raw (on PID 925): echo 1416000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
+1-0:01:50.516 000 RubyStartFirst: Read process output: 8 bytes in 12 ms. Content: [1416000]
+1-0:01:50.516 000 RubyStartFirst: Executing command raw (on PID 925): echo 1400000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_min_freq
+1-0:01:50.530 000 RubyStartFirst: Read process output: 8 bytes in 12 ms. Content: [1400000]
+1-0:01:50.531 000 RubyStartFirst: Executing command: sync
+1-0:01:50.549 000 RubyStartFirst: Read process output: 0 bytes in 16 ms
+1-0:01:50.550 000 RubyStartFirst: Executing command: ruby_init_wifi -rename 2>/dev/null
+1-0:01:50.556 000 RubyStartFirst: Read process output: 0 bytes in 4 ms
+1-0:01:50.557 000 RubyStartFirst: Executing command: echo "
+Ruby: Done doing first time ever initialization on Radxa.
+" > /tmp/ruby/log_first_radxa.log
+1-0:01:50.564 000 RubyStartFirst: Read process output: 0 bytes in 5 ms
+1-0:01:50.565 000 RubyStartFirst: Done first time boot preinitialization.
+1-0:01:50.566 000 RubyStartFirst: ---------------------------------------
+1-0:01:50.566 000 RubyStartFirst: Executing command: ip link set wlx down 2>&1 1>/dev/null
+1-0:01:50.616 000 RubyStartFirst: Read process output: 25 bytes in 48 ms. Content: [Cannot find device "wlx"
+&Kåÿÿ]
+1-0:01:50.617 000 RubyStartFirst: Executing command: modprobe i2c-dev
+1-0:01:50.639 000 RubyStartFirst: Read process output: 0 bytes in 20 ms
+1-0:01:50.640 000 RubyStartFirst: Executing command raw (on PID 925): lsusb
+1-0:01:50.693 000 RubyStartFirst: Read process output: 526 bytes in 50 ms
+1-0:01:50.694 000 RubyStartFirst: USB Devices:
+1-0:01:50.695 000 RubyStartFirst: Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 002: ID 0bda:a81a Realtek Semiconductor Corp. 802.11ac NIC
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 0bda:a81a Realtek Semiconductor Corp. 802.11ac NIC
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+*END*
+
+1-0:01:50.695 000 RubyStartFirst: Executing command raw (on PID 925): lsmod
+1-0:01:50.727 000 RubyStartFirst: Read process output: 1640 bytes in 30 ms
+1-0:01:50.728 000 RubyStartFirst: Loaded Modules:
+1-0:01:50.729 000 RubyStartFirst: Module                  Size  Used by
+8812eu               1994752  0
+88XXau_wfb           2281472  0
+vfat                   20480  1
+fat                    65536  1 vfat
+snd_soc_hdmi_codec     20480  1
+hci_uart               81920  0
+btqca                  16384  1 hci_uart
+btrtl                  20480  1 hci_uart
+btbcm                  16384  1 hci_uart
+btintel                20480  1 hci_uart
+bluetooth             466944  6 btrtl,btqca,btintel,hci_uart,btbcm
+ecdh_generic           16384  1 bluetooth
+ecc                    24576  1 ecdh_generic
+snd_soc_simple_card    20480  0
+snd_soc_simple_card_utils    20480  1 snd_soc_simple_card
+bifrost_kbase         794624  0
+snd_soc_rockchip_i2s_tdm    28672  2
+snd_soc_core          172032  4 snd_soc_rockchip_i2s_tdm,snd_soc_hdmi_codec,snd_soc_simple_card_utils,snd_soc_simple_card
+snd_pcm_dmaengine      16384  1 snd_soc_core
+snd_pcm                90112  4 snd_soc_rockchip_i2s_tdm,snd_soc_hdmi_codec,snd_soc_core,snd_pcm_dmaengine
+snd_timer              28672  1 snd_pcm
+snd                    61440  4 snd_soc_hdmi_codec,snd_timer,snd_soc_core,snd_pcm
+soundcore              16384  1 snd
+dw_hdmi_cec            16384  0
+dw_hdmi_i2s_audio      16384  0
+zstd                   16384  4
+zstd_compress         167936  1 zstd
+zram                   24576  1
+ledtrig_timer          16384  0
+ledtrig_pattern        16384  0
+ledtrig_heartbeat      16384  0
+ledtrig_default_on     16384  0
+fuse                  106496  1
+ip_tables              24576  0
+x_tables               28672  1 ip_tables
+ipv6                  413696  42
+sdhci_of_dwcmshc       16384  0
+rtc_rk808              16384  1
+
+*END*
+
+1-0:01:50.729 000 RubyStartFirst: Executing command raw (on PID 925): i2cdetect -l
+1-0:01:50.771 000 RubyStartFirst: Read process output: 186 bytes in 40 ms
+1-0:01:50.772 000 RubyStartFirst: I2C buses:
+1-0:01:50.772 000 RubyStartFirst: i2c-3	i2c       	rk3x-i2c                        	I2C adapter
+i2c-6	i2c       	DesignWare HDMI                 	I2C adapter
+i2c-0	i2c       	rk3x-i2c                        	I2C adapter
+
+*END*
+
+1-0:01:50.773 000 RubyStartFirst: Ruby: Finding external I2C devices add-ons...
+1-0:01:50.773 000 RubyStartFirst: [Hardware]: Enumerating I2C busses...
+1-0:01:50.774 000 RubyStartFirst: [Hardware]: Found I2C bus: /dev/i2c-0
+1-0:01:50.774 000 RubyStartFirst: [Hardware]: Found I2C bus: /dev/i2c-3
+1-0:01:50.775 000 RubyStartFirst: [Hardware]: Found I2C bus: /dev/i2c-6
+1-0:01:50.775 000 RubyStartFirst: [Hardware]: Found 3 I2C busses.
+1-0:01:50.823 000 RubyStartFirst: [Hardware]: Found I2C device on bus I2C-0 at address 0x1C, device type: Unknown
+1-0:01:51.151 000 RubyStartFirst: [Hardware]: Found I2C device on bus I2C-6 at address 0x30, device type: Unknown
+1-0:01:51.220 000 RubyStartFirst: [Hardware]: Found a total of 2 I2C devices on all busses.
+1-0:01:51.221 000 RubyStartFirst: SOFT_ERROR: [Hardware]: Failed to load I2C devices settings from file: /home/radxa/ruby/config/i2c_devices_settings.cfg (missing file). Recreated the file.
+1-0:01:51.222 000 RubyStartFirst: [Hardware]: Saved I2C devices settings to file: /home/radxa/ruby/config/i2c_devices_settings.cfg
+1-0:01:51.222 000 RubyStartFirst: [Hardware]: Saved I2C devices settings for 0 I2C devices.
+1-0:01:51.223 000 RubyStartFirst: [Hardware]: Loaded I2C devices settings from file: /home/radxa/ruby/config/i2c_devices_settings.cfg
+1-0:01:51.223 000 RubyStartFirst: [Hardware]: Loaded I2C devices settings for 0 I2C devices
+1-0:01:51.224 000 RubyStartFirst: [Hardware] -----------------------------------------
+1-0:01:51.224 000 RubyStartFirst: [Hardware] I2C Buses: 3
+1-0:01:51.224 000 RubyStartFirst: [Hardware] 1 I2C devices on bus 0 (0 i2c-0): 28
+1-0:01:51.225 000 RubyStartFirst: [Hardware] No I2C devices on bus 1 (3 i2c-3)
+1-0:01:51.225 000 RubyStartFirst: [Hardware] 1 I2C devices on bus 2 (6 i2c-6): 48
+1-0:01:51.226 000 RubyStartFirst: [Hardware] -----------------------------------------
+1-0:01:51.226 000 RubyStartFirst: [Hardware] Settings stored for 0 I2C devices:
+1-0:01:51.226 000 RubyStartFirst: [Hardware] -----------------------------------------
+1-0:01:51.228 000 RubyStartFirst: [Hardware]: Saved I2C devices settings to file: /home/radxa/ruby/config/i2c_devices_settings.cfg
+1-0:01:51.228 000 RubyStartFirst: [Hardware]: Saved I2C devices settings for 0 I2C devices.
+1-0:01:51.228 000 RubyStartFirst: Ruby: Done finding external I2C devices add-ons. None known found.
+1-0:01:51.229 000 RubyStartFirst: Ruby: Finding serial ports...
+1-0:01:51.229 000 RubyStartFirst: [HW-S] Initializing serial ports...
+1-0:01:51.230 000 RubyStartFirst: [HW-S] Enumerating hardware serial ports...
+1-0:01:51.230 000 RubyStartFirst: [HW-S] Enumerated hardware serial ports. 0 serial ports found.
+1-0:01:51.231 000 RubyStartFirst: [HW-S] Loading and validating serial ports settings...
+1-0:01:51.231 000 RubyStartFirst: [HW-S] No serial ports configuration file [/home/radxa/ruby/config/hw_serial.cfg]
+1-0:01:51.231 000 RubyStartFirst: [HW-S] Restored hw serial ports settings: 0 of 0 hw serial ports have been restored from stored configuration. 0 where updated.
+1-0:01:51.232 000 RubyStartFirst: [HW-S] Initialized 0 serial ports:
+1-0:01:51.232 000 RubyStartFirst: Ruby: Initialized 0 serial ports.
+1-0:01:51.233 000 RubyStartFirst: Loading previous radio configuration...
+1-0:01:51.233 000 RubyStartFirst: [HW-R] Loading hardware radio config from file (/home/radxa/ruby/config/current_radios.cfg)...
+1-0:01:51.233 000 RubyStartFirst: No radio HW info file.
+1-0:01:51.234 000 RubyStartFirst: Loaded previous radio configuration.
+1-0:01:51.234 000 RubyStartFirst: Executing command: rm -rf /home/radxa/ruby/config/current_radios.cfg
+1-0:01:51.243 000 RubyStartFirst: Read process output: 0 bytes in 7 ms
+1-0:01:51.244 000 RubyStartFirst: [HW-R] Finding USB radio interfaces and devices for linux/raspberry platform...
+1-0:01:51.244 000 RubyStartFirst: Executing command: lsusb | grep 1a86:8094
+1-0:01:51.293 000 RubyStartFirst: Read process output: 0 bytes in 47 ms
+1-0:01:51.293 000 RubyStartFirst: Executing command raw timeout 4000 ms: lsusb
+1-0:01:51.341 000 RubyStartFirst: Read process output: 526 bytes in 46 ms
+1-0:01:51.342 000 RubyStartFirst: [HW-R] Output of lsusb: <<<Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 002: ID 0bda:a81a Realtek Semiconductor Corp. 802.11ac NIC
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 0bda:a81a Realtek Semiconductor Corp. 802.11ac NIC
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+>>>
+1-0:01:51.343 000 RubyStartFirst: [HW-R] Ignored USB device: bus 6, device 1: prod id: 1d6b:0003, name: Generic
+1-0:01:51.343 000 RubyStartFirst: [HW-R] Ignored USB device: bus 5, device 1: prod id: 1d6b:0002, name: Generic
+1-0:01:51.344 000 RubyStartFirst: [HW-R] Ignored USB device: bus 4, device 1: prod id: 1d6b:0001, name: Generic
+1-0:01:51.344 000 RubyStartFirst: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+1-0:01:51.345 000 RubyStartFirst: [HW-R] Ignored USB device: bus 2, device 1: prod id: 1d6b:0002, name: Generic
+1-0:01:51.345 000 RubyStartFirst: [HW-R] Ignored USB device: bus 3, device 1: prod id: 1d6b:0001, name: Generic
+1-0:01:51.345 000 RubyStartFirst: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+1-0:01:51.346 000 RubyStartFirst: [HW-R] Ignored USB device: bus 1, device 1: prod id: 1d6b:0002, name: Generic
+1-0:01:51.346 000 RubyStartFirst: [HW-R] Done finding USB devices. Found 8 USB devices of which 2 are known radio cards.
+1-0:01:51.347 000 RubyStartFirst: [HW-R] Adding radio modules on Radxa for 2 detected supported radio cards...
+1-0:01:51.347 000 RubyStartFirst: [HW-R] Loading radio modules...
+1-0:01:51.347 000 RubyStartFirst: [HW-R] Found RTL8812EU cards. Loading module...
+1-0:01:51.348 000 RubyStartFirst: Executing command: uname -r
+1-0:01:51.357 000 RubyStartFirst: Read process output: 19 bytes in 7 ms. Content: [5.10.160-34-rk356x]
+1-0:01:51.358 000 RubyStartFirst: [Hardware] Loading driver RTL8812EU for platform: 5.10.160-34-rk356x ...
+1-0:01:51.358 000 RubyStartFirst: Executing command: sudo modprobe cfg80211
+1-0:01:51.441 000 RubyStartFirst: Read process output: 0 bytes in 81 ms
+1-0:01:51.442 000 RubyStartFirst: Executing command: sudo modprobe 8812eu rtw_tx_pwr_by_rate=0 rtw_tx_pwr_lmt_enable=0 2>&1
+1-0:01:51.524 000 RubyStartFirst: Read process output: 0 bytes in 80 ms
+1-0:01:51.525 000 RubyStartFirst: Modprobe result: []
+1-0:01:51.526 000 RubyStartFirst: [HW-R] Added 1 modules. Added RTL8812AU? no. Added RTL8812EU? yes. Added RTL8733BU? no. Added Atheros? no
+1-0:01:52.026 000 RubyStartFirst: Executing command raw (on PID 925): lsmod | grep 88
+1-0:01:52.061 000 RubyStartFirst: Read process output: 64 bytes in 32 ms. Content: [8812eu               1994752  0
+88XXau_wfb           2281472  0]
+1-0:01:52.062 000 RubyStartFirst: Content of lsmod: [8812eu               1994752  0*88XXau_wfb           2281472  0]
+1-0:01:52.062 000 RubyStartFirst: Executing command raw (on PID 925): ip link | grep wl
+1-0:01:52.082 000 RubyStartFirst: Read process output: 200 bytes in 18 ms
+1-0:01:52.083 000 RubyStartFirst: Content of ip link: [3: wlan0: <BROADCAST,MULTICAST> mtu 4052 qdisc noop state DOWN mode DEFAULT group default qlen 1000*4: wlan1: <BROADCAST,MULTICAST> mtu 4052 qdisc noop state DOWN mode DEFAULT group default qlen 1000]
+1-0:01:52.083 000 RubyStartFirst: Executing command raw (on PID 925): ls /sys/class/net/
+1-0:01:52.097 000 RubyStartFirst: Read process output: 20 bytes in 12 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+1-0:01:52.098 000 RubyStartFirst: Content of class net: [eth0*lo*wlan0*wlan1]
+1-0:01:52.099 000 RubyStartFirst: wlan0 detected on the first try: [eth0*lo*wlan0*wlan1]
+1-0:01:52.099 000 RubyStartFirst: Executing command raw (on PID 925): ip link 2>&1 | grep wlan0
+1-0:01:52.119 000 RubyStartFirst: Read process output: 100 bytes in 18 ms
+1-0:01:52.120 000 RubyStartFirst: Radio interface wlan0 state: [3: wlan0: <BROADCAST,MULTICAST> mtu 4052 qdisc noop state DOWN mode DEFAULT group default qlen 1000]
+1-0:01:52.121 000 RubyStartFirst: Executing command raw (on PID 925): ls /sys/class/net/
+1-0:01:52.135 000 RubyStartFirst: Read process output: 20 bytes in 12 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+1-0:01:52.136 000 RubyStartFirst: Network devices found: [eth0*lo*wlan0*wlan1]
+1-0:01:52.136 000 RubyStartFirst: Executing command raw (on PID 925): cat /sys/class/net/wlan0/device/uevent
+1-0:01:52.148 000 RubyStartFirst: Read process output: 150 bytes in 9 ms
+1-0:01:52.149 000 RubyStartFirst: Network wlan0 info: [DEVTYPE=usb_interface*DRIVER=rtl88x2eu*PRODUCT=bda/a81a/0*TYPE=0/0/0*INTERFACE=255/255/255*MODALIAS=usb:v0BDApA81Ad0000dc00dsc00dp00icFFiscFFipFFin00]
+1-0:01:52.149 000 RubyStartFirst: Executing command raw (on PID 925): cat /sys/class/net/wlan1/device/uevent
+1-0:01:52.161 000 RubyStartFirst: Read process output: 150 bytes in 9 ms
+1-0:01:52.161 000 RubyStartFirst: Network wlan1 info: [DEVTYPE=usb_interface*DRIVER=rtl88x2eu*PRODUCT=bda/a81a/0*TYPE=0/0/0*INTERFACE=255/255/255*MODALIAS=usb:v0BDApA81Ad0000dc00dsc00dp00icFFiscFFipFFin00]
+1-0:01:52.162 000 RubyStartFirst: Executing command raw (on PID 925): ls /sys/class/net/ | grep eth0
+1-0:01:52.177 000 RubyStartFirst: Read process output: 5 bytes in 13 ms. Content: [eth0]
+1-0:01:52.178 000 RubyStartFirst: Executing command: ip link set dev eth0 up
+1-0:01:53.227 000 RubyStartFirst: Read process output: 0 bytes in 1047 ms
+1-0:01:53.228 000 RubyStartFirst: Device has an ETH port.
+1-0:01:53.229 000 RubyStartFirst: Ruby: Enumerating supported 2.4/5.8Ghz radio interfaces...
+1-0:01:53.229 000 RubyStartFirst: =================================================================
+1-0:01:53.229 000 RubyStartFirst: [HW-R] Enumerating radios (step 0)...
+1-0:01:53.230 000 RubyStartFirst: [HW-R] HW Enumerate: no existing radio HW info file. Enumerating HW radios from scratch.
+1-0:01:53.230 000 RubyStartFirst: [HW-R] Enumerating wifi radios for Radxa platform...
+1-0:01:53.231 000 RubyStartFirst: [HW-R] Finding USB radio interfaces and devices for linux/raspberry platform...
+1-0:01:53.231 000 RubyStartFirst: Executing command: lsusb | grep 1a86:8094
+1-0:01:53.286 000 RubyStartFirst: Read process output: 0 bytes in 53 ms
+1-0:01:53.287 000 RubyStartFirst: Executing command raw timeout 4000 ms: lsusb
+1-0:01:53.340 000 RubyStartFirst: Read process output: 526 bytes in 51 ms
+1-0:01:53.341 000 RubyStartFirst: [HW-R] Output of lsusb: <<<Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 002: ID 0bda:a81a Realtek Semiconductor Corp. 802.11ac NIC
+Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 001 Device 002: ID 0bda:a81a Realtek Semiconductor Corp. 802.11ac NIC
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+>>>
+1-0:01:53.341 000 RubyStartFirst: [HW-R] Ignored USB device: bus 6, device 1: prod id: 1d6b:0003, name: Generic
+1-0:01:53.342 000 RubyStartFirst: [HW-R] Ignored USB device: bus 5, device 1: prod id: 1d6b:0002, name: Generic
+1-0:01:53.342 000 RubyStartFirst: [HW-R] Ignored USB device: bus 4, device 1: prod id: 1d6b:0001, name: Generic
+1-0:01:53.343 000 RubyStartFirst: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+1-0:01:53.343 000 RubyStartFirst: [HW-R] Ignored USB device: bus 2, device 1: prod id: 1d6b:0002, name: Generic
+1-0:01:53.343 000 RubyStartFirst: [HW-R] Ignored USB device: bus 3, device 1: prod id: 1d6b:0001, name: Generic
+1-0:01:53.344 000 RubyStartFirst: [HW-R] USB device 0bda:a81a is a known radio interface, type: Blue RTL8812EU
+1-0:01:53.344 000 RubyStartFirst: [HW-R] Ignored USB device: bus 1, device 1: prod id: 1d6b:0002, name: Generic
+1-0:01:53.345 000 RubyStartFirst: [HW-R] Done finding USB devices. Found 8 USB devices of which 2 are known radio cards.
+1-0:01:53.345 000 RubyStartFirst: [HW-R] Finding wireless radio cards...
+1-0:01:53.402 000 RubyStartFirst: [HW-R] Parsing found wireless radio: [wlan0]
+1-0:01:53.402 000 RubyStartFirst: [HW-R] Parsing found wireless radio: [wlan1]
+1-0:01:53.403 000 RubyStartFirst: [HW-R] Found a total of 2 wifi cards. Get info about them...
+1-0:01:53.404 000 RubyStartFirst: Executing command: cat /sys/class/net/wlan0/device/uevent | nice grep DRIVER | sed 's/DRIVER=//'
+1-0:01:53.424 000 RubyStartFirst: Read process output: 10 bytes in 18 ms. Content: [rtl88x2eu]
+1-0:01:53.425 000 RubyStartFirst: [HW-R] Driver for wlan0: (rtl88x2eu)
+1-0:01:53.426 000 RubyStartFirst: [HW-R] Driver for wlan0 (last part): (8x2eu)
+1-0:01:53.426 000 RubyStartFirst: [HW-R] Minimised driver string: (rtl88x2eu)
+1-0:01:53.427 000 RubyStartFirst: [HW-R] Found supported radio type: Realtek, driver: 8812eu, driver string short: rtl88x2eu, driver string: [rtl88x2eu]
+1-0:01:53.427 000 RubyStartFirst: Executing command raw (on PID 925): iw dev wlan0 info | grep addr
+1-0:01:53.449 000 RubyStartFirst: Read process output: 24 bytes in 20 ms. Content: [ addr dc:84:03:28:f4:bb]
+1-0:01:53.450 000 RubyStartFirst: Found MAC address dc:84:03:28:f4:bb for wlan0
+1-0:01:53.450 000 RubyStartFirst: Executing command raw (on PID 925): iw dev | grep -B 1 wlan0
+1-0:01:53.497 000 RubyStartFirst: Read process output: 23 bytes in 45 ms. Content: [phy#0
+	Interface wlan0]
+1-0:01:53.498 000 RubyStartFirst: phy string: [phy#0], length: 5
+1-0:01:53.498 000 RubyStartFirst: Executing command raw (on PID 925): iw phy0 info | grep 2377
+1-0:01:53.544 000 RubyStartFirst: Read process output: 0 bytes in 44 ms
+1-0:01:53.545 000 RubyStartFirst: Executing command raw (on PID 925): iw phy0 info | grep 2427
+1-0:01:53.597 000 RubyStartFirst: Read process output: 29 bytes in 50 ms. Content: [   * 2427 MHz [4] (19.0 dBm)]
+1-0:01:53.598 000 RubyStartFirst: Executing command raw (on PID 925): iw phy0 info | grep 2512
+1-0:01:53.650 000 RubyStartFirst: Read process output: 0 bytes in 50 ms
+1-0:01:53.651 000 RubyStartFirst: Executing command raw (on PID 925): iw phy0 info | grep 5745
+1-0:01:53.703 000 RubyStartFirst: Read process output: 39 bytes in 50 ms. Content: [   * 5745 MHz [149] (19.0 dBm) (no IR)]
+1-0:01:53.704 000 RubyStartFirst: [HW-R] Interface wlan0 supported bands: [5.8 Ghz band]
+1-0:01:53.704 000 RubyStartFirst: Executing command: cat /sys/class/net/wlan1/device/uevent | nice grep DRIVER | sed 's/DRIVER=//'
+1-0:01:53.725 000 RubyStartFirst: Read process output: 10 bytes in 19 ms. Content: [rtl88x2eu]
+1-0:01:53.726 000 RubyStartFirst: [HW-R] Driver for wlan1: (rtl88x2eu)
+1-0:01:53.726 000 RubyStartFirst: [HW-R] Driver for wlan1 (last part): (8x2eu)
+1-0:01:53.726 000 RubyStartFirst: [HW-R] Minimised driver string: (rtl88x2eu)
+1-0:01:53.727 000 RubyStartFirst: [HW-R] Found supported radio type: Realtek, driver: 8812eu, driver string short: rtl88x2eu, driver string: [rtl88x2eu]
+1-0:01:53.727 000 RubyStartFirst: Executing command raw (on PID 925): iw dev wlan1 info | grep addr
+1-0:01:53.744 000 RubyStartFirst: Read process output: 24 bytes in 15 ms. Content: [ addr dc:84:03:28:f4:ba]
+1-0:01:53.745 000 RubyStartFirst: Found MAC address dc:84:03:28:f4:ba for wlan1
+1-0:01:53.746 000 RubyStartFirst: Executing command raw (on PID 925): iw dev | grep -B 1 wlan1
+1-0:01:53.796 000 RubyStartFirst: Read process output: 23 bytes in 48 ms. Content: [phy#1
+	Interface wlan1]
+1-0:01:53.796 000 RubyStartFirst: phy string: [phy#1], length: 5
+1-0:01:53.797 000 RubyStartFirst: Executing command raw (on PID 925): iw phy1 info | grep 2377
+1-0:01:53.848 000 RubyStartFirst: Read process output: 0 bytes in 49 ms
+1-0:01:53.849 000 RubyStartFirst: Executing command raw (on PID 925): iw phy1 info | grep 2427
+1-0:01:53.901 000 RubyStartFirst: Read process output: 29 bytes in 50 ms. Content: [   * 2427 MHz [4] (19.0 dBm)]
+1-0:01:53.902 000 RubyStartFirst: Executing command raw (on PID 925): iw phy1 info | grep 2512
+1-0:01:53.953 000 RubyStartFirst: Read process output: 0 bytes in 49 ms
+1-0:01:53.954 000 RubyStartFirst: Executing command raw (on PID 925): iw phy1 info | grep 5745
+1-0:01:54.006 000 RubyStartFirst: Read process output: 39 bytes in 49 ms. Content: [   * 5745 MHz [149] (19.0 dBm) (no IR)]
+1-0:01:54.007 000 RubyStartFirst: [HW-R] Interface wlan1 supported bands: [5.8 Ghz band]
+1-0:01:54.008 000 RubyStartFirst: [HW-R] Finding USB ports for 2 radio interfaces...
+1-0:01:54.008 000 RubyStartFirst: Executing command: lsusb | grep 1a86:8094
+1-0:01:54.063 000 RubyStartFirst: Read process output: 0 bytes in 53 ms
+1-0:01:54.065 000 RubyStartFirst: [HW-R] Quering USB device path: [usb5]...
+1-0:01:54.109 000 RubyStartFirst: [HW-R] Quering USB device path: [6-0:1.0]...
+1-0:01:54.152 000 RubyStartFirst: [HW-R] Quering USB device path: [usb3]...
+1-0:01:54.196 000 RubyStartFirst: [HW-R] Quering USB device path: [2-1]...
+1-0:01:54.239 000 RubyStartFirst: [HW-R] Quering USB device path: [usb1]...
+1-0:01:54.283 000 RubyStartFirst: [HW-R] Quering USB device path: [2-1:1.0]...
+1-0:01:54.341 000 RubyStartFirst: [HW-R] Found USB port tree position for radio interface 2: [2-1:1.0]
+1-0:01:54.357 000 RubyStartFirst: [HW-R] Found product/vendor id for radio interface 2: [bda:a81a:0
+], card model: 15: [Blue RTL8812EU]
+1-0:01:54.357 000 RubyStartFirst: [HW-R] Found USB port part for radio interface 2: [2-1]
+1-0:01:54.358 000 RubyStartFirst: [HW-R] Assigned short USB port to radio interface 2: [A]
+1-0:01:54.358 000 RubyStartFirst: [HW-R] Quering USB device path: [3-0:1.0]...
+1-0:01:54.401 000 RubyStartFirst: [HW-R] Quering USB device path: [usb6]...
+1-0:01:54.445 000 RubyStartFirst: [HW-R] Quering USB device path: [1-1]...
+1-0:01:54.488 000 RubyStartFirst: [HW-R] Quering USB device path: [4-0:1.0]...
+1-0:01:54.531 000 RubyStartFirst: [HW-R] Quering USB device path: [usb4]...
+1-0:01:54.575 000 RubyStartFirst: [HW-R] Quering USB device path: [usb2]...
+1-0:01:54.619 000 RubyStartFirst: [HW-R] Quering USB device path: [1-0:1.0]...
+1-0:01:54.662 000 RubyStartFirst: [HW-R] Quering USB device path: [5-0:1.0]...
+1-0:01:54.706 000 RubyStartFirst: [HW-R] Quering USB device path: [1-1:1.0]...
+1-0:01:54.749 000 RubyStartFirst: [HW-R] Found USB port tree position for radio interface 1: [1-1:1.0]
+1-0:01:54.764 000 RubyStartFirst: [HW-R] Found product/vendor id for radio interface 1: [bda:a81a:0
+], card model: 15: [Blue RTL8812EU]
+1-0:01:54.765 000 RubyStartFirst: [HW-R] Found USB port part for radio interface 1: [1-1]
+1-0:01:54.765 000 RubyStartFirst: [HW-R] Assigned short USB port to radio interface 1: [A]
+1-0:01:54.780 000 RubyStartFirst: [HW-R] Quering USB device path: [2-0:1.0]...
+1-0:01:54.823 000 RubyStartFirst: [HW-R] Done assigning USB ports to radio interfaces:
+1-0:01:54.824 000 RubyStartFirst: [HW-R] Radio interface 1 USB port: [A]
+1-0:01:54.824 000 RubyStartFirst: [HW-R] Radio interface 2 USB port: [A]
+1-0:01:54.825 000 RubyStartFirst: [HW-R] Found 2 2.4/5.8 radio modules.
+1-0:01:54.825 000 RubyStartFirst: [HW-R] Total: 2 radios found
+1-0:01:54.826 000 RubyStartFirst: =================================================================
+1-0:01:54.826 000 RubyStartFirst: Ruby: 2 radio interfaces found on 2.4/5.8 Ghz bands
+1-0:01:54.827 000 RubyStartFirst: Ruby: 2 of 2 radio interfaces are supported on 2.4/5.8 Ghz bands
+1-0:01:54.827 000 RubyStartFirst: Ruby: Finding SiK radio interfaces...
+1-0:01:54.827 000 RubyStartFirst: =================================================================
+1-0:01:54.828 000 RubyStartFirst: [HW-R] Enumerating radios (step 1)...
+1-0:01:54.828 000 RubyStartFirst: [HW-RSK]: Enumerating Sik radios...
+1-0:01:54.829 000 RubyStartFirst: [HW-RSK]: No last known good SiK radio configuration file. Nothing to load.
+1-0:01:54.829 000 RubyStartFirst: [HW-RSK]: Try to find SiK radio on interface [/dev/ttyUSB0]...
+1-0:01:54.830 000 RubyStartFirst: [HW-RSK]: Device [/dev/ttyUSB0] is not present.
+1-0:01:54.830 000 RubyStartFirst: [HW-RSK]: Try to find SiK radio on interface [/dev/ttyUSB1]...
+1-0:01:54.830 000 RubyStartFirst: [HW-RSK]: Device [/dev/ttyUSB1] is not present.
+1-0:01:54.831 000 RubyStartFirst: [HW-RSK]: Try to find SiK radio on interface [/dev/ttyUSB2]...
+1-0:01:54.831 000 RubyStartFirst: [HW-RSK]: Device [/dev/ttyUSB2] is not present.
+1-0:01:54.832 000 RubyStartFirst: [HW-RSK]: Found 0 SiK radios.
+1-0:01:54.832 000 RubyStartFirst: [HW-RSK]: Saving current SiK radios configuration (0 SiK radio interfaces).
+1-0:01:54.833 000 RubyStartFirst: [HW-RSK]: Saved current SiK radios configuration to file [/home/radxa/ruby/config/last_sik_radios_detected.cfg]:
+1-0:01:54.833 000 RubyStartFirst: [HW-R] Total: 2 radios found
+1-0:01:54.834 000 RubyStartFirst: =================================================================
+1-0:01:54.834 000 RubyStartFirst: 
+1-0:01:54.834 000 RubyStartFirst: * RadioInterface 1: wlan0 MAC:DC840328F4BB phy#0, supported: yes, USBPort: A now at 0 Mhz;
+1-0:01:54.835 000 RubyStartFirst:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+1-0:01:54.835 000 RubyStartFirst: 
+1-0:01:54.836 000 RubyStartFirst: * RadioInterface 2: wlan1 MAC:DC840328F4BA phy#1, supported: yes, USBPort: A now at 0 Mhz;
+1-0:01:54.836 000 RubyStartFirst:    Type: Blue RTL8812EU, Realtek, pid/vid: bda:a81a:0
+ driver: rtl88x2eu, 5.8 Ghz band
+1-0:01:54.836 000 RubyStartFirst: 
+1-0:01:54.837 000 RubyStartFirst: =================================================================
+1-0:01:54.837 000 RubyStartFirst: [HW-R] Saving hardware radio config to file (/home/radxa/ruby/config/current_radios.cfg)...
+1-0:01:54.838 000 RubyStartFirst: [HW-R] Saved hardware radio config to file (/home/radxa/ruby/config/current_radios.cfg).
+1-0:01:54.838 000 RubyStartFirst: Ruby: No SiK radio interfaces found.
+1-0:01:54.839 000 RubyStartFirst: Ruby: Finding serial radio interfaces...
+1-0:01:54.839 000 RubyStartFirst: [HW-RS] Parsing serial ports and adding hardware radio info...
+1-0:01:54.840 000 RubyStartFirst: [HW-RS] Parsed serial ports. Added 0 hardware radio serial interfaces.
+1-0:01:54.840 000 RubyStartFirst: Ruby: No serial radio interfaces found.
+1-0:01:54.840 000 RubyStartFirst: Ruby: Done finding radio interfaces.
+1-0:01:54.841 000 RubyStartFirst: [Hardware] Detecting camera type...
+1-0:01:54.841 000 RubyStartFirst: [Hardware] No camera detected.
+1-0:01:54.842 000 RubyStartFirst: Executing Ruby process: [ruby_initdhcp], no prefixes, params: [None], wait: no
+1-0:01:54.855 000 RubyStartFirst: Launched Ruby process: [./ruby_initdhcp &]
+1-0:01:54.856 000 RubyStartFirst: Executing command: ruby_init_wifi -rename 2>/dev/null
+1-0:01:54.862 000 RubyStartFirst: Read process output: 0 bytes in 4 ms
+1-0:01:54.862 000 RubyStartFirst: Executing Ruby process: [ruby_init_wifi], no prefixes, params: [None], wait: no
+1-0:01:54.863 000 RubyStartFirst: ERROR: Can't execute Ruby process. Not found here: [ruby_init_wifi] or here: [/home/radxa/ruby/ruby_init_wifi]
+1-0:01:54.864 000 RubyStartFirst: Detected system as controller.
+1-0:01:54.864 000 RubyStartFirst: 
+1-0:01:54.865 000 RubyStartFirst: ===========================================================================
+1-0:01:54.865 000 RubyStartFirst: | System detected as controller.
+1-0:01:54.865 000 RubyStartFirst: ===========================================================================
+1-0:01:54.866 000 RubyStartFirst: 
+1-0:01:54.867 000 RubyStartFirst: [Hardware] Released!
+1-0:01:54.867 000 RubyStartFirst: Starting Ruby system...
+1-0:01:54.868 000 RubyStartFirst: Running on Radxa Zero 3 hardware
+1-0:01:54.868 000 RubyStartFirst: Feature local audio recording is: Off.
+1-0:01:54.869 000 RubyStartFirst: Feature radio RxTx thread synchronization is: Off.
+1-0:01:54.869 000 RubyStartFirst: -------------------------------------------------------
+1-0:01:54.870 000 RubyStartFirst: First Boot detected. Doing first boot initialization...
+1-0:01:54.870 000 RubyStartFirst: Executing command: mkdir -p /home/radxa/ruby/bin_org
+1-0:01:54.885 000 RubyStartFirst: Read process output: 0 bytes in 13 ms
+1-0:01:54.886 000 RubyStartFirst: Executing command: cp -rf /home/radxa/ruby/ruby_* /home/radxa/ruby/bin_org/
+1-0:01:55.003 000(F) RubyDHCPInit: Generate a new key for accessing logger message queue, from PID: 2589, parent PID: 1...
+1-0:01:55.004 000(F) RubyDHCPInit: Generated message queue key 0x7B030A9D for msg queue id 123, from file [/home/radxa/ruby/ruby_logger]
+1-0:01:55.004 000(F) RubyDHCPInit: Got access to logger service. Using logger service for log. key id: 0x7B030A9D, msgqueue id: 0
+1-0:01:55.004 000(F) RubyDHCPInit: Starting (PID: 2589, parent PID: 1)...
+1-0:01:55.004 000(F) RubyDHCPInit: Current clock (id 1) resolution: 0 sec, 1 nanosec
+1-0:01:55.078 000 RubyStartFirst: Read process output: 0 bytes in 190 ms
+1-0:01:55.078 000 RubyStartFirst: Executing command: chmod 777 /home/radxa/ruby/config/*
+1-0:01:55.088 000 RubyStartFirst: Read process output: 0 bytes in 8 ms
+1-0:01:55.089 000 RubyStartFirst: Doing first time boot setup for Radxa platform...
+1-0:01:55.089 000 RubyStartFirst: Executing command: sudo sysctl -w net.ipv6.conf.all.disable_ipv6=0
+1-0:01:55.156 000 RubyStartFirst: Read process output: 35 bytes in 65 ms. Content: [net.ipv6.conf.all.disable_ipv6 = 0]
+1-0:01:55.157 000 RubyStartFirst: Executing command: sudo sysctl -w net.ipv6.conf.default.disable_ipv6=0
+1-0:01:55.228 000 RubyStartFirst: Read process output: 39 bytes in 69 ms. Content: [net.ipv6.conf.default.disable_ipv6 = 0]
+1-0:01:55.230 000 RubyStartFirst: Executing command: sudo sysctl -p
+1-0:01:55.301 000 RubyStartFirst: Read process output: 0 bytes in 70 ms
+1-0:01:55.302 000 RubyStartFirst: Executing command: PATH="/usr/sbin:/usr/local/sbin:$PATH"
+1-0:01:55.308 000 RubyStartFirst: Read process output: 0 bytes in 4 ms
+1-0:01:55.309 000 RubyStartFirst: Executing command: rm -rf /usr/bin/pulseaudio
+1-0:01:55.348 000 RubyStartFirst: Read process output: 0 bytes in 37 ms
+1-0:01:55.349 000 RubyStartFirst: Executing command: sudo systemctl stop systemd-timesyncd
+1-0:01:55.490 000 RubyStartFirst: Read process output: 0 bytes in 139 ms
+1-0:01:55.491 000 RubyStartFirst: Executing command: sudo systemctl disable systemd-timesyncd
+1-0:01:57.032 000 RubyStartFirst: Read process output: 0 bytes in 1539 ms
+1-0:01:57.033 000 RubyStartFirst: Executing command: /etc/init.d/avahi-daemon stop
+1-0:01:57.282 000 RubyStartFirst: Read process output: 61 bytes in 247 ms. Content: [Stopping avahi-daemon (via systemctl): avahi-daemon.service.]
+1-0:01:57.283 000 RubyStartFirst: Executing command: rm -rf /etc/init.d/avahi-daemon
+1-0:01:57.295 000 RubyStartFirst: Read process output: 0 bytes in 10 ms
+1-0:01:57.296 000 RubyStartFirst: Executing command: rm -rf /usr/sbin/avahi-daemon
+1-0:01:57.335 000 RubyStartFirst: Read process output: 0 bytes in 37 ms
+1-0:01:57.336 000 RubyStartFirst: Creating a default model.
+1-0:01:57.336 000 RubyStartFirst: Reseting vehicle settings to default...
+1-0:01:57.337 000 RubyStartFirst: Generating a new unique vehicle ID...
+1-0:01:57.337 000 RubyStartFirst: Executing command: lsusb
+1-0:01:57.387 000 RubyStartFirst: Read process output: 526 bytes in 48 ms
+1-0:01:57.388 000 RubyStartFirst: Generated new unique vehicle ID: 1320630631
+1-0:01:57.388 000 RubyStartFirst: Model: Detecting HW board type...
+1-0:01:57.389 000 RubyStartFirst: Model: Detected HW board type: Unknown
+1-0:01:57.389 000 RubyStartFirst: SW Version: 11.8 (b-11810)
+1-0:01:57.389 000 RubyStartFirst: Model: Detecting HW board type...
+1-0:01:57.390 000 RubyStartFirst: Model: Detected HW board type: Unknown
+1-0:01:57.390 000 RubyStartFirst: Model: Reset radio links params...
+1-0:01:57.391 000 RubyStartFirst: Models: Did reset radio link 1 to default rates and flags, current freq: 0 kHz
+1-0:01:57.391 000 RubyStartFirst: Models: Did reset radio link 2 to default rates and flags, current freq: 0 kHz
+1-0:01:57.392 000 RubyStartFirst: Models: Did reset radio link 3 to default rates and flags, current freq: 0 kHz
+1-0:01:57.392 000 RubyStartFirst: Models: Did reset radio link 4 to default rates and flags, current freq: 0 kHz
+1-0:01:57.392 000 RubyStartFirst: Models: Did reset radio link 5 to default rates and flags, current freq: 0 kHz
+1-0:01:57.393 000 RubyStartFirst: Model: Did reset radio links params.
+1-0:01:57.393 000 RubyStartFirst: Models: Did reset all processes priorities and settings.
+1-0:01:57.393 000 RubyStartFirst: Model: Detecting HW board type...
+1-0:01:57.394 000 RubyStartFirst: Model: Detected HW board type: Unknown
+1-0:01:57.394 000 RubyStartFirst: Model: Detecting HW board type...
+1-0:01:57.395 000 RubyStartFirst: Model: Detected HW board type: Unknown
+1-0:01:57.395 000 RubyStartFirst: Model: Detecting HW board type...
+1-0:01:57.395 000 RubyStartFirst: Model: Detected HW board type: Unknown
+1-0:01:57.396 000 RubyStartFirst: Models: Did reset video profile HQ to defaults.
+1-0:01:57.396 000 RubyStartFirst: Models: Did reset video profile HP to defaults.
+1-0:01:57.397 000 RubyStartFirst: Models: Did reset video profile LR to defaults.
+1-0:01:57.397 000 RubyStartFirst: Models: Did reset video profile USR to defaults.
+1-0:01:57.398 000 RubyStartFirst: Models: Did reset video profile CUST to defaults.
+1-0:01:57.398 000 RubyStartFirst: Models: Did reset video profile PIP to defaults.
+1-0:01:57.398 000 RubyStartFirst: Models: Did reset video profile N/A to defaults.
+1-0:01:57.399 000 RubyStartFirst: Models: Did reset video profile N/A to defaults.
+1-0:01:57.399 000 RubyStartFirst: Reset OSD screen 0 layout to 2
+1-0:01:57.400 000 RubyStartFirst: Reset OSD screen 1 layout to 3
+1-0:01:57.400 000 RubyStartFirst: Reset OSD screen 2 layout to 3
+1-0:01:57.400 000 RubyStartFirst: Reset OSD screen 3 layout to 3
+1-0:01:57.401 000 RubyStartFirst: Reset OSD screen 4 layout to 3
+1-0:01:57.401 000 RubyStartFirst: Model: Did reset audio params.
+1-0:01:57.401 000 RubyStartFirst: Model: Detecting HW board type...
+1-0:01:57.402 000 RubyStartFirst: Model: Detected HW board type: Unknown
+1-0:01:57.402 000 RubyStartFirst: Reseting vehicle settings to default: complete.
+1-0:01:57.403 000 RubyStartFirst: Model: Reset radio links params...
+1-0:01:57.403 000 RubyStartFirst: Models: Did reset radio link 1 to default rates and flags, current freq: 0 kHz
+1-0:01:57.403 000 RubyStartFirst: Models: Did reset radio link 2 to default rates and flags, current freq: 0 kHz
+1-0:01:57.404 000 RubyStartFirst: Models: Did reset radio link 3 to default rates and flags, current freq: 0 kHz
+1-0:01:57.404 000 RubyStartFirst: Models: Did reset radio link 4 to default rates and flags, current freq: 0 kHz
+1-0:01:57.405 000 RubyStartFirst: Models: Did reset radio link 5 to default rates and flags, current freq: 0 kHz
+1-0:01:57.405 000 RubyStartFirst: Model: Did reset radio links params.
+1-0:01:57.405 000 RubyStartFirst: Model: Populate default radio interfaces info from radio hardware (2 hardware radio interfaces).
+1-0:01:57.406 000 RubyStartFirst: Add hardware radio interface 1: name: (wlan0), driver: (rtl88x2eu), model: (Blue RTL8812EU), high capacity: yes, supported bands: 5.8 Ghz band
+1-0:01:57.406 000 RubyStartFirst: Added a vehicle radio link 1, supported radio flags: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY], capabilities: [LEG&MCS rates] [Fr: DATA] [HT40]
+1-0:01:57.406 000 RubyStartFirst: Add hardware radio interface 2: name: (wlan1), driver: (rtl88x2eu), model: (Blue RTL8812EU), high capacity: yes, supported bands: 5.8 Ghz band
+1-0:01:57.407 000 RubyStartFirst: Added a vehicle radio link 2, supported radio flags: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY], capabilities: [LEG&MCS rates] [Fr: DATA] [HT40]
+1-0:01:57.407 000 RubyStartFirst: Model: Validating model settings...
+1-0:01:57.408 000 RubyStartFirst: Model VID 1320630631: Validating radio settings...
+1-0:01:57.408 000 RubyStartFirst: Model VID 1320630631: Finished validating radio settings. No updates done, all radio params are consistent.
+1-0:01:57.409 000 RubyStartFirst: Model: Validated model settings.
+1-0:01:57.409 000 RubyStartFirst: Model: Populate default radio links info from radio hardware.
+1-0:01:57.409 000 RubyStartFirst: Models: Did reset radio link 1 to default rates and flags, current freq: 0 kHz
+1-0:01:57.410 000 RubyStartFirst: Models: Did reset radio link 2 to default rates and flags, current freq: 0 kHz
+1-0:01:57.410 000 RubyStartFirst: Models: Did reset radio link 3 to default rates and flags, current freq: 0 kHz
+1-0:01:57.411 000 RubyStartFirst: Models: Did reset radio link 4 to default rates and flags, current freq: 0 kHz
+1-0:01:57.411 000 RubyStartFirst: Models: Did reset radio link 5 to default rates and flags, current freq: 0 kHz
+1-0:01:57.411 000 RubyStartFirst: Models: Did reset radio link 1 to default rates and flags, current freq: 0 kHz
+1-0:01:57.412 000 RubyStartFirst: Model VID 1320630631: Validating radio settings...
+1-0:01:57.412 000 RubyStartFirst: Model VID 1320630631: Finished validating radio settings. No updates done, all radio params are consistent.
+1-0:01:57.413 000 RubyStartFirst: Model: Added a new radio link (link 1) on 5825 Mhz for radio interface 1 (wlan0)
+1-0:01:57.413 000 RubyStartFirst: Models: Did reset radio link 2 to default rates and flags, current freq: 0 kHz
+1-0:01:57.413 000 RubyStartFirst: Model VID 1320630631: Validating radio settings...
+1-0:01:57.414 000 RubyStartFirst: Model VID 1320630631: Finished validating radio settings. No updates done, all radio params are consistent.
+1-0:01:57.414 000 RubyStartFirst: Model: Added a new radio link (link 2) on 5805 Mhz for radio interface 2 (wlan1)
+1-0:01:57.415 000 RubyStartFirst: Model VID 1320630631: Validating radio settings...
+1-0:01:57.415 000 RubyStartFirst: Model VID 1320630631: Finished validating radio settings. No updates done, all radio params are consistent.
+1-0:01:57.416 000 RubyStartFirst: ------------------------------------------------------
+1-0:01:57.416 000 RubyStartFirst: Vehicle (Unknown) current radio links (2 links, 2 radio interfaces):
+1-0:01:57.416 000 RubyStartFirst: 
+1-0:01:57.417 000 RubyStartFirst: * Radio Link 1: 5825 Mhz, used on radio interfaces: [1]
+1-0:01:57.417 000 RubyStartFirst: * Radio Link 1 radio tx frame flags: [MCS rates] [Fr: DATA]
+1-0:01:57.418 000 RubyStartFirst: * Radio Link 1 radio rx frame flags: [MCS rates] [Fr: DATA]
+1-0:01:57.418 000 RubyStartFirst:   Radio Link 1 capabilities flags: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+1-0:01:57.418 000 RubyStartFirst:   Radio Link 1 datarates (video / data (downlink/uplink)): 0 / (0/0), max load: 40%
+1-0:01:57.419 000 RubyStartFirst: * Radio Link 2: 5805 Mhz, used on radio interfaces: [2]
+1-0:01:57.419 000 RubyStartFirst: * Radio Link 2 radio tx frame flags: [MCS rates] [Fr: DATA]
+1-0:01:57.419 000 RubyStartFirst: * Radio Link 2 radio rx frame flags: [MCS rates] [Fr: DATA]
+1-0:01:57.420 000 RubyStartFirst:   Radio Link 2 capabilities flags: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+1-0:01:57.420 000 RubyStartFirst:   Radio Link 2 datarates (video / data (downlink/uplink)): 0 / (0/0), max load: 40%
+1-0:01:57.421 000 RubyStartFirst: ------------------------------------------------------
+1-0:01:57.421 000 RubyStartFirst: Vehicle current radio interfaces (2 radio interfaces):
+1-0:01:57.421 000 RubyStartFirst: 
+1-0:01:57.422 000 RubyStartFirst: * Radio Interface 1: DC840328F4BB, Blue RTL8812EU on port A, 8812eu, bands: 5.8 Ghz band, current freq: 5825 Mhz, assigned to radio link 1, current capab: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+1-0:01:57.422 000 RubyStartFirst: * Radio Interface 1: Supported radio flags: [LEG&MCS rates] [Fr: DATA] [HT40], raw_tx_power: 20
+1-0:01:57.423 000 RubyStartFirst: * Radio Interface 2: DC840328F4BA, Blue RTL8812EU on port A, 8812eu, bands: 5.8 Ghz band, current freq: 5805 Mhz, assigned to radio link 2, current capab: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+1-0:01:57.423 000 RubyStartFirst: * Radio Interface 2: Supported radio flags: [LEG&MCS rates] [Fr: DATA] [HT40], raw_tx_power: 20
+1-0:01:57.423 000 RubyStartFirst: ------------------------------------------------------
+1-0:01:57.424 000 RubyStartFirst: Vehicle's global radio flags & info:
+1-0:01:57.424 000 RubyStartFirst:  * Interfaces runtime capabilities: Computed? yes
+1-0:01:57.424 000 RubyStartFirst:  * Radio links global flags: Has negociated links? no
+1-0:01:57.425 000 RubyStartFirst:  * Int 1: Max supported legacy/MCS rates: 18000000/MCS-2
+1-0:01:57.425 000 RubyStartFirst:  * Int 2: Max supported legacy/MCS rates: 18000000/MCS-2
+1-0:01:57.426 000 RubyStartFirst: ------------------------------------------------------
+1-0:01:57.426 000 RubyStartFirst: Model: Validating model settings...
+1-0:01:57.426 000 RubyStartFirst: Model VID 1320630631: Validating radio settings...
+1-0:01:57.427 000 RubyStartFirst: Model VID 1320630631: Finished validating radio settings. No updates done, all radio params are consistent.
+1-0:01:57.427 000 RubyStartFirst: Model: Will decrease video bitrate (6000 kbps) for video profile HQ to max allowed on current links: 5874 kbps
+1-0:01:57.428 000 RubyStartFirst: Model: Will decrease video bitrate (5000 kbps) for video profile HP to max allowed on current links: 3775 kbps
+1-0:01:57.428 000 RubyStartFirst: Model: Will decrease video bitrate (5000 kbps) for video profile LR to max allowed on current links: 4699 kbps
+1-0:01:57.429 000 RubyStartFirst: Model: Will decrease video bitrate (6000 kbps) for video profile USR to max allowed on current links: 5034 kbps
+1-0:01:57.429 000 RubyStartFirst: Model: Will decrease video bitrate (6000 kbps) for video profile CUST to max allowed on current links: 5034 kbps
+1-0:01:57.429 000 RubyStartFirst: Model: Will decrease video bitrate (6000 kbps) for video profile PIP to max allowed on current links: 4699 kbps
+1-0:01:57.430 000 RubyStartFirst: Model: Will decrease video bitrate (6000 kbps) for video profile N/A to max allowed on current links: 4699 kbps
+1-0:01:57.430 000 RubyStartFirst: Model: Will decrease video bitrate (6000 kbps) for video profile N/A to max allowed on current links: 4699 kbps
+1-0:01:57.431 000 RubyStartFirst: Model: Validated model settings.
+1-0:01:57.433 000 RubyStartFirst: Saved vehicle successfully to file: [/home/radxa/ruby/config/current_vehicle.mdl] name: [], VID: 1320630631, software: 11.8 (b-11810), has negociated radio: no, is on controller: no, control mode, on time: 00:00
+1-0:01:57.434 000 RubyStartFirst: SOFT_ERROR: Failed to load controller settings from file: /home/radxa/ruby/config/controller_settings.cfg (missing file). Resetted controller settings to default.
+1-0:01:57.435 000 RubyStartFirst: Reseted controller processes priorities.
+1-0:01:57.435 000 RubyStartFirst: Reseted controller settings.
+1-0:01:57.436 000 RubyStartFirst: Executing command: chmod 777 /home/radxa/ruby/config/controller_settings.cfg
+1-0:01:57.447 000 RubyStartFirst: Read process output: 0 bytes in 9 ms
+1-0:01:57.448 000 RubyStartFirst: Saved controller settings to file: /home/radxa/ruby/config/controller_settings.cfg
+1-0:01:57.461 000 RubyStartFirst: Saved controller settings to file: /home/radxa/ruby/config/controller_settings.cfg
+1-0:01:57.523 000 RubyStartFirst: Setting radio interface 1 RTL8812EU raw tx power to: 10
+1-0:01:57.524 000 RubyStartFirst: Executing command: iw dev wlan0 set txpower fixed 400
+1-0:01:57.538 000 RubyStartFirst: Read process output: 0 bytes in 12 ms
+1-0:01:57.539 000 RubyStartFirst: Radio interface 1 RTL8812EU raw tx power changed to: 10
+1-0:01:57.539 000 RubyStartFirst: Setting radio interface 2 RTL8812EU raw tx power to: 10
+1-0:01:57.540 000 RubyStartFirst: Executing command: iw dev wlan1 set txpower fixed 400
+1-0:01:57.555 000 RubyStartFirst: Read process output: 0 bytes in 13 ms
+1-0:01:57.555 000 RubyStartFirst: Radio interface 2 RTL8812EU raw tx power changed to: 10
+1-0:01:57.556 000 RubyStartFirst: Executing command: chmod 777 /home/radxa/ruby/config/*
+1-0:01:57.568 000 RubyStartFirst: Read process output: 0 bytes in 10 ms
+1-0:01:57.569 000 RubyStartFirst: First boot initialization completed.
+1-0:01:57.569 000 RubyStartFirst: ---------------------------------------------------------
+1-0:01:57.570 000 RubyStartFirst: Executing command: cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+1-0:01:57.581 000 RubyStartFirst: Read process output: 0 bytes in 9 ms
+1-0:01:57.582 000 RubyStartFirst: Executing command raw (on PID 925): echo 'performance' | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+1-0:01:57.596 000 RubyStartFirst: Read process output: 12 bytes in 12 ms. Content: [performance
+š;
+›]
+1-0:01:57.597 000 RubyStartFirst: Executing command raw (on PID 925): echo 1416000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
+1-0:01:57.610 000 RubyStartFirst: Read process output: 8 bytes in 11 ms. Content: [1416000]
+1-0:01:57.611 000 RubyStartFirst: Executing command raw (on PID 925): echo 1400000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_min_freq
+1-0:01:57.626 000 RubyStartFirst: Read process output: 8 bytes in 13 ms. Content: [1400000]
+1-0:01:57.627 000 RubyStartFirst: Executing command: systemctl disable systemd-journald.service 2>&1 1>/dev/null
+1-0:01:59.034 000 RubyStartFirst: Read process output: 0 bytes in 1405 ms
+1-0:01:59.035 000 RubyStartFirst: Executing command: systemctl mask systemd-journald.service 2>&1 1>/dev/null
+1-0:02:00.440 000 RubyStartFirst: Read process output: 76 bytes in 1403 ms. Content: [Created symlink /etc/systemd/system/systemd-journald.service â†’ /dev/null.
+ÿÿ]
+1-0:02:00.441 000 RubyStartFirst: Executing command: systemctl disable rknpu2.service 2>&1 1>/dev/null
+1-0:02:01.872 000 RubyStartFirst: Read process output: 68 bytes in 1429 ms. Content: [Removed /etc/systemd/system/multi-user.target.wants/rknpu2.service.
+v/null.
+ÿÿ]
+1-0:02:01.873 000 RubyStartFirst: Executing command: systemctl mask rknpu2.service 2>&1 1>/dev/null
+S1-0:02:03.005 000 RubyDHCPInit: Finished waiting. Checking DHCP...
+S1-0:02:03.005 000 RubyDHCPInit: [Hardware] Detecting system type...
+S1-0:02:03.005 000 RubyDHCPInit: [Hardware] Loaded system Type: [controller], board type: Radxa Zero 3
+S1-0:02:03.005 000 RubyDHCPInit: [Hardware] Detected system as controller.
+S1-0:02:03.005 000 RubyDHCPInit: Executing command raw (on PID 2589): ls /sys/class/net/
+S1-0:02:03.020 000 RubyDHCPInit: Read process output: 20 bytes in 13 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S1-0:02:03.020 000 RubyDHCPInit: Network devices found: [eth0
+lo
+wlan0
+wlan1
+]
+S1-0:02:03.020 000 RubyDHCPInit: Board type: 60 -> Radxa Zero 3
+S1-0:02:03.020 000 RubyDHCPInit: Executing command raw (on PID 2589): ls /sys/class/net/ | grep eth0
+S1-0:02:03.036 000 RubyDHCPInit: Read process output: 5 bytes in 14 ms. Content: [eth0]
+S1-0:02:03.037 000 RubyDHCPInit: Executing command: ip link set dev eth0 up
+1-0:02:03.300 000 RubyStartFirst: Read process output: 66 bytes in 1424 ms. Content: [Created symlink /etc/systemd/system/rknpu2.service â†’ /dev/null.
+.
+v/null.
+ÿÿ]
+1-0:02:03.301 000 RubyStartFirst: CtrlInterfaces: Added new radio interface at index 0 (1 in list now): MAC: DC840328F4BB
+1-0:02:03.302 000 RubyStartFirst: CtrlInterfaces: Added new radio interface at index 1 (2 in list now): MAC: DC840328F4BA
+1-0:02:03.302 000 RubyStartFirst: Executing Ruby process: [ruby_start], no prefixes, params: [-ver], wait: yes
+1-0:02:03.500 000 RubyStartFirst: Read process output for process (ruby_start): 36 bytes in 196 ms
+1-0:02:03.501 000 RubyStartFirst: Launched Ruby process: [./ruby_start -ver]
+1-0:02:03.501 000 RubyStartFirst: ruby_start: [11.8 (b-11810) Built for Radxa Zero3]
+1-0:02:03.502 000 RubyStartFirst: Executing Ruby process: [ruby_rt_vehicle], no prefixes, params: [-ver], wait: yes
+1-0:02:03.643 000 RubyStartFirst: Read process output for process (ruby_rt_vehicle): 14 bytes in 139 ms
+1-0:02:03.644 000 RubyStartFirst: Launched Ruby process: [./ruby_rt_vehicle -ver]
+1-0:02:03.645 000 RubyStartFirst: ruby_rt_vehicle: [11.8 (b-11801)]
+1-0:02:03.645 000 RubyStartFirst: Executing Ruby process: [ruby_tx_telemetry], no prefixes, params: [-ver], wait: yes
+1-0:02:03.781 000 RubyStartFirst: Read process output for process (ruby_tx_telemetry): 14 bytes in 134 ms
+1-0:02:03.782 000 RubyStartFirst: Launched Ruby process: [./ruby_tx_telemetry -ver]
+1-0:02:03.783 000 RubyStartFirst: ruby_tx_telemetry: [11.8 (b-11801)]
+1-0:02:03.783 000 RubyStartFirst: Executing Ruby process: [ruby_rt_station], no prefixes, params: [-ver], wait: yes
+1-0:02:03.915 000 RubyStartFirst: Read process output for process (ruby_rt_station): 14 bytes in 130 ms
+1-0:02:03.916 000 RubyStartFirst: Launched Ruby process: [./ruby_rt_station -ver]
+1-0:02:03.917 000 RubyStartFirst: ruby_rt_station: [11.8 (b-11810)]
+1-0:02:03.917 000 RubyStartFirst: Executing Ruby process: [ruby_rx_telemetry], no prefixes, params: [-ver], wait: yes
+1-0:02:04.051 000 RubyStartFirst: Read process output for process (ruby_rx_telemetry): 14 bytes in 132 ms
+1-0:02:04.052 000 RubyStartFirst: Launched Ruby process: [./ruby_rx_telemetry -ver]
+1-0:02:04.053 000 RubyStartFirst: ruby_rx_telemetry: [11.8 (b-11810)]
+1-0:02:04.053 000 RubyStartFirst: Executing Ruby process: [ruby_tx_rc], no prefixes, params: [-ver], wait: yes
+S1-0:02:04.083 000 RubyDHCPInit: Read process output: 0 bytes in 1044 ms
+S1-0:02:04.084 000 RubyDHCPInit: Loaded controller settings from file: /home/radxa/ruby/config/controller_settings.cfg
+S1-0:02:04.084 000 RubyDHCPInit: Executing command raw (on PID 2589): ls /sys/class/net/
+S1-0:02:04.099 000 RubyDHCPInit: Read process output: 20 bytes in 13 ms. Content: [eth0
+lo
+wlan0
+wlan1]
+S1-0:02:04.099 000 RubyDHCPInit: Network devices found: [eth0
+lo
+wlan0
+wlan1
+]
+S1-0:02:04.099 000 RubyDHCPInit: Executing command raw (on PID 2589): hostname
+S1-0:02:04.140 000 RubyDHCPInit: Read process output: 16 bytes in 39 ms. Content: [ruby-controller]
+S1-0:02:04.140 000 RubyDHCPInit: Hostname: (ruby-controller)
+S1-0:02:04.140 000 RubyDHCPInit: Executing command raw (on PID 2589): hostname -I
+S1-0:02:04.152 000 RubyDHCPInit: Read process output: 1 bytes in 10 ms. Content: []
+S1-0:02:04.152 000 RubyDHCPInit: Hostname IP: ()
+S1-0:02:04.152 000 RubyDHCPInit: Executing command raw (on PID 2589): ip link | grep -A 5 eth
+S1-0:02:04.175 000 RubyDHCPInit: Read process output: 464 bytes in 22 ms
+S1-0:02:04.175 000 RubyDHCPInit: ip link:
+S1-0:02:04.175 000 RubyDHCPInit: 2: eth0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether c2:e5:4e:28:11:6d brd ff:ff:ff:ff:ff:ff
+3: wlan0: <BROADCAST,MULTICAST> mtu 4052 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/e
+S1-0:02:04.175 000 RubyDHCPInit: Executing command raw (on PID 2589): ifconfig | grep -A 5 eth
+S1-0:02:04.196 000 RubyDHCPInit: Read process output: 0 bytes in 19 ms
+S1-0:02:04.197 000 RubyDHCPInit: ifconfig:
+S1-0:02:04.197 000 RubyDHCPInit: ***END***
+S1-0:02:04.197 000 RubyDHCPInit: Executing command raw (on PID 2589): pidof pump
+1-0:02:04.202 000 RubyStartFirst: Read process output for process (ruby_tx_rc): 14 bytes in 147 ms
+1-0:02:04.203 000 RubyStartFirst: Launched Ruby process: [./ruby_tx_rc -ver]
+1-0:02:04.204 000 RubyStartFirst: ruby_tx_rc: [11.8 (b-11810)]
+1-0:02:04.205 000 RubyStartFirst: Executing Ruby process: [ruby_central], no prefixes, params: [-ver], wait: yes
+S1-0:02:04.247 000 RubyDHCPInit: Read process output: 0 bytes in 48 ms
+S1-0:02:04.247 000 RubyDHCPInit: pump proc: ()
+S1-0:02:04.247 000 RubyDHCPInit: Executing command raw (on PID 2589): pgrep pump
+S1-0:02:04.310 000 RubyDHCPInit: Read process output: 0 bytes in 62 ms
+S1-0:02:04.310 000 RubyDHCPInit: pump proc: ()
+S1-0:02:04.310 000 RubyDHCPInit: Done DHCP config process.
+-1-0:02:30.094 000 : Initializing localization data for 1357 strings for 7 languages
+1-0:02:04.367 000 RubyStartFirst: Read process output for process (ruby_central): 14 bytes in 161 ms
+1-0:02:04.368 000 RubyStartFirst: Launched Ruby process: [./ruby_central -ver]
+1-0:02:04.368 000 RubyStartFirst: ruby_central: [11.8 (b-11810)]
+1-0:02:04.370 000 RubyStartFirst: Ruby: First install initialization complete. Rebooting now...
+1-0:02:04.371 000 RubyStartFirst: Executing command: cp -rf /home/radxa/ruby/logs/log_start.txt /home/radxa/ruby/logs/log_firstboot_start.txt
+1-0:02:04.384 000 RubyStartFirst: Read process output: 0 bytes in 11 ms
+1-0:02:04.385 000 RubyStartFirst: Executing command: cp -rf /home/radxa/ruby/logs/log_system.txt /home/radxa/ruby/logs/log_firstboot.txt
+1-0:02:04.399 000 RubyStartFirst: Read process output: 0 bytes in 13 ms
+1-0:02:04.399 000 RubyStartFirst: Executing command: sync
+1-0:02:04.433 000 RubyStartFirst: Read process output: 0 bytes in 32 ms
+1-0:02:04.934 000 RubyStartFirst: Executing command: sudo raspi-config --expand-rootfs > /dev/null 2>&1
+1-0:02:04.990 000 RubyStartFirst: Read process output: 0 bytes in 53 ms
+1-0:02:04.991 000 RubyStartFirst: [Hardware] Entered reboot sequence...
+1-0:02:05.191 000 RubyStartFirst: Executing command: sync
+1-0:02:05.233 000 RubyStartFirst: Read process output: 0 bytes in 39 ms
+1-0:02:05.734 000 RubyStartFirst: Executing command nonblock: reboot -f 2>/dev/null &
+1-0:02:05.741 000 RubyStartFirst: Executed command nonblock: [reboot -f 2>/dev/null &]
+1-0:02:05.742 000 RubyStartFirst: SOFT_ERROR: [Hardware] Done executing reboot command
+-1-0:00:16.874 000 : Executing command: mkdir -p /home/radxa/ruby/config/
+-1-0:00:16.918 000 : Read process output: 0 bytes in 13 ms
+-1-0:00:16.918 000 : Executing command: chmod 777 /home/radxa/ruby/ruby* 2>/dev/null
+-1-0:00:16.932 000 : Read process output: 0 bytes in 13 ms
+-1-0:00:16.932 000 : Executing command: chmod 777 /home/radxa/ruby/onyx* 2>/dev/null
+-1-0:00:16.943 000 : Read process output: 0 bytes in 9 ms
+-1-0:00:16.943 000 : Executing command: chown -hR root *
+-1-0:00:17.023 000 : Read process output: 0 bytes in 78 ms
+-1-0:00:17.024 000 : Executing command: chgrp -hR root *
+-1-0:00:17.058 000 : Read process output: 0 bytes in 33 ms
+-1-0:00:17.058 000 : Executing command: chmod 777 /home/radxa/ruby/config/* 2>/dev/null
+-1-0:00:17.069 000 : Read process output: 0 bytes in 10 ms
+-1-0:00:17.070 000 : Executing command: mkdir -p /home/radxa/ruby/cal/
+-1-0:00:17.085 000 : Read process output: 0 bytes in 13 ms
+-1-0:00:17.086 000 : Executing command: chmod 777 /home/radxa/ruby/cal/
+-1-0:00:17.097 000 : Read process output: 0 bytes in 9 ms
