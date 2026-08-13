@@ -1160,9 +1160,9 @@ void log_dword(const char* szText, u32 value)
 
    
    if ( NULL != fd )
-   {   fprintf(fd, szText); fprintf(fd, ": "); }
+   {   fprintf(fd, "%s", szText); fprintf(fd, ": "); }
    if ( ! s_logDisabledStdout )
-   {   printf(szText); printf(": "); }
+   {   printf("%s", szText); printf(": "); }
 
    for( int i=31; i>=0; i-- )
    {
@@ -1220,12 +1220,12 @@ void log_dword_bits(const char* szText, u32 value)
    
    if ( NULL != fd )
    {
-       fprintf(fd, szText);
+       fprintf(fd, "%s", szText);
        fprintf(fd, ": ");
    }
    if ( ! s_logDisabledStdout )
    {
-      printf(szText);
+      printf("%s", szText);
       printf(": ");
    }
 
@@ -1607,7 +1607,7 @@ key_t generate_msgqueue_key(int iMsgQueueId)
    strcat(szFile, "ruby_logger");
    if ( access(szFile, R_OK) == -1 )
    {
-      if ( access("/tmp/ruby_start", R_OK) != -1 )
+      if ( access(szFile, R_OK) != -1 )
          strcpy(szFile, "/tmp/ruby_start");
       else if ( access("/tmp/debug", R_OK) != -1 )
          strcpy(szFile, "/tmp/debug");

@@ -33,7 +33,6 @@
 #include "../base/base.h"
 #include "../base/config.h"
 #include "../base/models.h"
-#include <math.h>
 
 
 int camera_get_active_camera_h264_slices(Model* pModel)
@@ -51,59 +50,4 @@ int camera_get_active_camera_h264_slices(Model* pModel)
    if ( (pModel->video_params.iVideoWidth > 1280) || (pModel->video_params.iVideoHeight > 720) )
       return 1;
    return pModel->video_params.iH264Slices;
-}
-
-// Approximates the red/blue AWB correction gains needed to neutralize a light
-// source of a given color temperature, using the Tanner Helland blackbody
-// approximation to get that light's RGB tint, then inverting it around green.
-void camera_get_awb_gains_for_color_temperature(u32 uColorTempK, float* pfGainR, float* pfGainB)
-{
-   if ( (NULL == pfGainR) || (NULL == pfGainB) )
-      return;
-
-   if ( uColorTempK < 1000 )
-      uColorTempK = 1000;
-   if ( uColorTempK > 12000 )
-      uColorTempK = 12000;
-
-   float fTemp = ((float)uColorTempK) / 100.0f;
-   float fRed, fGreen, fBlue;
-
-   if ( fTemp <= 66.0f )
-      fRed = 255.0f;
-   else
-   {
-      fRed = 329.698727446f * powf(fTemp - 60.0f, -0.1332047592f);
-      if ( fRed < 0.0f ) fRed = 0.0f;
-      if ( fRed > 255.0f ) fRed = 255.0f;
-   }
-
-   if ( fTemp <= 66.0f )
-      fGreen = 99.4708025861f * logf(fTemp) - 161.1195681661f;
-   else
-      fGreen = 288.1221695283f * powf(fTemp - 60.0f, -0.0755148492f);
-   if ( fGreen < 0.0f ) fGreen = 0.0f;
-   if ( fGreen > 255.0f ) fGreen = 255.0f;
-
-   if ( fTemp >= 66.0f )
-      fBlue = 255.0f;
-   else if ( fTemp <= 19.0f )
-      fBlue = 0.0f;
-   else
-   {
-      fBlue = 138.5177312231f * logf(fTemp - 10.0f) - 305.0447927307f;
-      if ( fBlue < 0.0f ) fBlue = 0.0f;
-      if ( fBlue > 255.0f ) fBlue = 255.0f;
-   }
-
-   if ( fRed < 1.0f ) fRed = 1.0f;
-   if ( fBlue < 1.0f ) fBlue = 1.0f;
-
-   *pfGainR = fGreen / fRed;
-   *pfGainB = fGreen / fBlue;
-
-   if ( *pfGainR < 0.1f ) *pfGainR = 0.1f;
-   if ( *pfGainR > 5.0f ) *pfGainR = 5.0f;
-   if ( *pfGainB < 0.1f ) *pfGainB = 0.1f;
-   if ( *pfGainB > 5.0f ) *pfGainB = 5.0f;
 }

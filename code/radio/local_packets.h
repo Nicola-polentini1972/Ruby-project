@@ -68,6 +68,5 @@
 #define PACKET_TYPE_LOCAL_CONTROL_VEHICLE_ROUTER_READY 220
 #define PACKET_TYPE_LOCAL_CONTROL_VEHICLE_SET_SIK_RADIO_SERIAL_SPEED 221 // vehicle_id_src is the index of the radio interface, vehicle_id_dest is the baudrate to use to connect to radio (old baud rate)
 #define PACKET_TYPE_LOCAL_CONTROL_VEHICLE_SEND_MODEL_SETTINGS 222
-#define PACKET_TYPE_LOCAL_CONTROL_VEHICLE_ARM_STATE_CHANGED 223 // vehicle_id_src: 1 armed, 0 disarmed; sent locally from the telemetry process to the router process
 
 #define PACKET_TYPE_APPLY_SIK_PARAMS 230

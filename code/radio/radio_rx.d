@@ -1,0 +1,68 @@
+code/radio/radio_rx.o: code/radio/radio_rx.c code/radio/../base/base.h \
+ code/radio/../base/config_hw.h code/radio/../base/encr.h \
+ code/radio/../base/hardware_procs.h code/radio/../common/radio_stats.h \
+ code/radio/../common/../base/shared_mem.h \
+ code/radio/../common/../base/config.h \
+ code/radio/../common/../base/alarms.h \
+ code/radio/../common/../base/flags.h \
+ code/radio/../common/../base/flags_osd.h \
+ code/radio/../common/../base/flags_video.h \
+ code/radio/../common/../base/config_rc.h \
+ code/radio/../common/../base/config_file_names.h \
+ code/radio/../common/../base/config_obj_names.h \
+ code/radio/../common/../base/config_radio.h \
+ code/radio/../common/../base/config_video.h \
+ code/radio/../common/../base/config_timers.h \
+ code/radio/../common/../base/../radio/radiopackets2.h \
+ code/radio/../common/../base/../radio/../public/telemetry_info.h \
+ code/radio/../common/../base/../radio/local_packets.h \
+ code/radio/../common/../base/../radio/radiopackets_short.h \
+ code/radio/../common/../base/../radio/radiopackets_rc.h \
+ code/radio/../common/../base/shared_mem_radio.h \
+ code/radio/../common/../base/hardware_radio.h \
+ code/radio/../common/../base/hardware_radio_txpower.h \
+ code/radio/../common/../base/../radio/radiotap.h \
+ code/radio/../common/../base/../radio/ieee80211_radiotap.h \
+ code/radio/../common/string_utils.h code/radio/radio_rx.h \
+ code/radio/../base/hardware.h code/radio/../base/hardware_radio_sik.h \
+ code/radio/../base/hardware_i2c.h \
+ code/radio/../base/../public/i2c_protocols.h \
+ code/radio/../base/hardware_serial.h code/radio/radiolink.h \
+ code/radio/radioflags.h code/radio/radio_duplicate_det.h
+code/radio/../base/base.h:
+code/radio/../base/config_hw.h:
+code/radio/../base/encr.h:
+code/radio/../base/hardware_procs.h:
+code/radio/../common/radio_stats.h:
+code/radio/../common/../base/shared_mem.h:
+code/radio/../common/../base/config.h:
+code/radio/../common/../base/alarms.h:
+code/radio/../common/../base/flags.h:
+code/radio/../common/../base/flags_osd.h:
+code/radio/../common/../base/flags_video.h:
+code/radio/../common/../base/config_rc.h:
+code/radio/../common/../base/config_file_names.h:
+code/radio/../common/../base/config_obj_names.h:
+code/radio/../common/../base/config_radio.h:
+code/radio/../common/../base/config_video.h:
+code/radio/../common/../base/config_timers.h:
+code/radio/../common/../base/../radio/radiopackets2.h:
+code/radio/../common/../base/../radio/../public/telemetry_info.h:
+code/radio/../common/../base/../radio/local_packets.h:
+code/radio/../common/../base/../radio/radiopackets_short.h:
+code/radio/../common/../base/../radio/radiopackets_rc.h:
+code/radio/../common/../base/shared_mem_radio.h:
+code/radio/../common/../base/hardware_radio.h:
+code/radio/../common/../base/hardware_radio_txpower.h:
+code/radio/../common/../base/../radio/radiotap.h:
+code/radio/../common/../base/../radio/ieee80211_radiotap.h:
+code/radio/../common/string_utils.h:
+code/radio/radio_rx.h:
+code/radio/../base/hardware.h:
+code/radio/../base/hardware_radio_sik.h:
+code/radio/../base/hardware_i2c.h:
+code/radio/../base/../public/i2c_protocols.h:
+code/radio/../base/hardware_serial.h:
+code/radio/radiolink.h:
+code/radio/radioflags.h:
+code/radio/radio_duplicate_det.h:

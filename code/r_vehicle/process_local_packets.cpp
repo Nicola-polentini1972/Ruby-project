@@ -69,7 +69,6 @@
 #include "adaptive_video.h"
 #include "video_sources.h"
 #include "radio_links.h"
-#include "onboard_video_recording.h"
 
 u32 _get_previous_frequency_switch(int nLink)
 {
@@ -1137,12 +1136,6 @@ void process_local_control_packet(t_packet_header* pPH)
       if ( g_pCurrentModel->isActiveCameraHDMI() )
          hardware_sleep_ms(800);
       video_sources_start_capture();
-      return;
-   }
-
-   if ( pPH->packet_type == PACKET_TYPE_LOCAL_CONTROL_VEHICLE_ARM_STATE_CHANGED )
-   {
-      onboard_video_recording_notify_armed(pPH->vehicle_id_src != 0);
       return;
    }
 

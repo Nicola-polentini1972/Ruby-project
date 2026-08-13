@@ -1,0 +1,22 @@
+S10-0:00:14.627 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S10-0:00:14.627 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S10-0:00:14.627 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S10-0:00:14.627 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S11-0:00:15.193 000 RubyRadioInit: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S11-0:00:20.969 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 8 ms, stall count: 4
+S11-0:00:20.978 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 7 ms, stall count: 7
+S11-0:00:24.295 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S11-0:00:24.296 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S11-0:00:24.296 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S11-0:00:24.296 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S11-0:00:24.923 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 6 ms, stall count: 5
+S11-0:00:29.171 000 RubyController: SOFTERROR: Main processing loop took too long (555 ms).
+S11-0:00:29.404 000 Router: SOFTERROR: Received a response from set freq command: [Error for wireless request "Set Frequency" (8B04) :
+    SET failed on device wlan0 ; No such device.
+]
+S11-0:00:29.704 000 Router: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S11-0:00:30.188 000 Router: SOFTERROR: Failed to switch radio interface 1 (wlan0, 8812eu) to frequency 5825 Mhz, returned error: [Error for wireless request "Set Frequency" (8B04) :.    SET failed on device wlan0 ; No such device..]
+S11-0:00:30.646 000 Router: SOFTERROR: Error setting [wlan0] to immediate mode: SIOCGIFHWADDR: No such device
+S11-0:00:30.646 000 Router: SOFTERROR: ERROR: unknown encapsulation on [wlan0]! check if monitor mode is supported and enabled

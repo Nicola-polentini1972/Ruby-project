@@ -539,7 +539,7 @@ int ruby_ipc_channel_send_message(int iChannelUniqueId, u8* pMessage, int iLengt
       return 0;
    }
 
-   if ( (iLength >= IPC_CHANNEL_MAX_MSG_SIZE-6) || (iLength >= MAX_PACKET_TOTAL_SIZE) )
+   if ( iLength >= IPC_CHANNEL_MAX_MSG_SIZE-6 )
    {
       log_softerror_and_alarm("[IPC] Tried to write a message too big (%d bytes) on channel %s, channel unique id %d", iLength, _ruby_ipc_get_channel_name(s_iRubyIPCChannelsType[iFoundIndex]), iChannelUniqueId );
       return 0;
@@ -794,7 +794,7 @@ u8* ruby_ipc_try_read_message(int iChannelUniqueId, u8* pTempBuffer, int* pTempB
    if ( lenReadIPCMsgQueue > 6 )
    {
       int iMsgLen = ipcMessage.data[5] + 256*(int)ipcMessage.data[6];
-      if ( iMsgLen <= 0 || iMsgLen >= IPC_CHANNEL_MAX_MSG_SIZE - 6 || iMsgLen >= MAX_PACKET_TOTAL_SIZE )
+      if ( iMsgLen <= 0 || iMsgLen >= IPC_CHANNEL_MAX_MSG_SIZE - 6 )
          log_softerror_and_alarm("[IPC] Received invalid message on channel %s, id: %d, length: %d", _ruby_ipc_get_channel_name(iChannelType), ipcMessage.data[4], iMsgLen );
       else
       {

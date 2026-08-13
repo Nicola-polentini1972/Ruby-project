@@ -1,0 +1,52 @@
+code/radio/radiopackets2.o: code/radio/radiopackets2.c \
+ code/radio/../base/base.h code/radio/../base/config_hw.h \
+ code/radio/radiopackets2.h code/radio/../base/config.h \
+ code/radio/../base/alarms.h code/radio/../base/flags.h \
+ code/radio/../base/flags_osd.h code/radio/../base/flags_video.h \
+ code/radio/../base/config_rc.h code/radio/../base/config_file_names.h \
+ code/radio/../base/config_obj_names.h code/radio/../base/config_radio.h \
+ code/radio/../base/config_video.h code/radio/../base/config_timers.h \
+ code/radio/../public/telemetry_info.h code/radio/local_packets.h \
+ code/radio/radiopackets_short.h code/radio/radiolink.h \
+ code/radio/../base/hardware.h code/radio/../base/hardware_radio.h \
+ code/radio/../base/hardware_radio_txpower.h \
+ code/radio/../base/../radio/radiotap.h \
+ code/radio/../base/../radio/ieee80211_radiotap.h \
+ code/radio/../base/hardware_radio_sik.h \
+ code/radio/../base/../base/shared_mem.h \
+ code/radio/../base/../base/../radio/radiopackets_rc.h \
+ code/radio/../base/../base/shared_mem_radio.h \
+ code/radio/../base/hardware_i2c.h \
+ code/radio/../base/../public/i2c_protocols.h \
+ code/radio/../base/hardware_serial.h code/radio/radioflags.h
+code/radio/../base/base.h:
+code/radio/../base/config_hw.h:
+code/radio/radiopackets2.h:
+code/radio/../base/config.h:
+code/radio/../base/alarms.h:
+code/radio/../base/flags.h:
+code/radio/../base/flags_osd.h:
+code/radio/../base/flags_video.h:
+code/radio/../base/config_rc.h:
+code/radio/../base/config_file_names.h:
+code/radio/../base/config_obj_names.h:
+code/radio/../base/config_radio.h:
+code/radio/../base/config_video.h:
+code/radio/../base/config_timers.h:
+code/radio/../public/telemetry_info.h:
+code/radio/local_packets.h:
+code/radio/radiopackets_short.h:
+code/radio/radiolink.h:
+code/radio/../base/hardware.h:
+code/radio/../base/hardware_radio.h:
+code/radio/../base/hardware_radio_txpower.h:
+code/radio/../base/../radio/radiotap.h:
+code/radio/../base/../radio/ieee80211_radiotap.h:
+code/radio/../base/hardware_radio_sik.h:
+code/radio/../base/../base/shared_mem.h:
+code/radio/../base/../base/../radio/radiopackets_rc.h:
+code/radio/../base/../base/shared_mem_radio.h:
+code/radio/../base/hardware_i2c.h:
+code/radio/../base/../public/i2c_protocols.h:
+code/radio/../base/hardware_serial.h:
+code/radio/radioflags.h:

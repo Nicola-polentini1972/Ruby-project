@@ -50,6 +50,32 @@ void getSystemVersionString(char* p, u32 swversion)
    sprintf(p, "%u.%u", major, minor);
 }
 
+int hardware_file_check_and_fix_access_c(const char* szFullFileName)
+{
+   if ( (NULL == szFullFileName) || (0 == szFullFileName[0]) )
+      return 0;
+   if ( access(szFullFileName, F_OK) == -1 )
+      return 0;
+
+   int iUpdate = 0;
+   if ( access(szFullFileName, R_OK) == -1 )
+      iUpdate = 1;
+   if ( access(szFullFileName, X_OK) == -1 )
+      iUpdate = 1;
+
+   if ( iUpdate )
+   {
+      char szComm[MAX_FILE_PATH_SIZE];
+      snprintf(szComm, sizeof(szComm)/sizeof(szComm[0]), "chmod 777 %s", szFullFileName);
+      hw_execute_bash_command(szComm, NULL);
+   }
+
+   if ( access(szFullFileName, R_OK) != -1 )
+   if ( access(szFullFileName, X_OK) != -1 )
+      return 1;
+   return 0;
+}
+
 int config_file_get_value(const char* szPropName)
 {
    char szComm[MAX_FILE_PATH_SIZE];
@@ -297,7 +323,7 @@ void get_Ruby_BaseVersion(int* pMajor, int* pMinor)
       return;
    }
    char szBuff[64];
-   if ( 1 != fscanf(fd, "%63s", szBuff) )
+   if ( 1 != fscanf(fd, "%s", szBuff) )
    {
       fclose(fd);
       log_softerror_and_alarm("[Config] Failed to read base Ruby version file (%s).", szFile);
@@ -347,7 +373,7 @@ void get_Ruby_UpdatedVersion(int* pMajor, int* pMinor)
    if ( NULL == fd )
       return;
 
-   if ( 1 != fscanf(fd, "%63s", szBuff) )
+   if ( 1 != fscanf(fd, "%s", szBuff) )
    {
       fclose(fd);
       return;

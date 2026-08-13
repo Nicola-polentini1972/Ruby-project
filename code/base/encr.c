@@ -65,8 +65,7 @@ int lpp(char* szOutputBuffer, int maxLength)
    int pos = 0;
    szBuffer[pos] = 0;
 
-   while ( ((pos + ENC_BLOCK_SIZE) < (int)sizeof(szBuffer)) &&
-           (2*ENC_BLOCK_SIZE == fread(sBlockEnc, 1, 2*ENC_BLOCK_SIZE, fd)) )
+   while ( 2*ENC_BLOCK_SIZE == fread(sBlockEnc, 1, 2*ENC_BLOCK_SIZE, fd) )
    {
       for( int k=0; k<ENC_BLOCK_SIZE; k++ )
       {
@@ -112,8 +111,6 @@ int spp(char* szBuffer)
       return 0;
 
    s_eppl = strlen(szBuffer);
-   if ( s_eppl > MAX_PASS_LENGTH )
-      s_eppl = MAX_PASS_LENGTH;
    strncpy((char*)s_epp, szBuffer, MAX_PASS_LENGTH);
    s_epp[MAX_PASS_LENGTH] = 0;
 

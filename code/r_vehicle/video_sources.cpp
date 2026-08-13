@@ -36,6 +36,7 @@
 #include "../base/hardware_procs.h"
 #include "../base/hardware_camera.h"
 #include "../base/hardware_cam_maj.h"
+#include "../base/hardware_cam_backend.h"
 #include "../base/ruby_ipc.h"
 #include "../base/camera_utils.h"
 #include "../base/utils.h"
@@ -55,7 +56,6 @@
 #include "adaptive_video.h"
 #include "video_source_csi.h"
 #include "video_source_majestic.h"
-#include "onboard_video_recording.h"
 #include "negociate_radio.h"
 #include "packets_utils.h"
 #include "ruby_rt_vehicle.h"
@@ -184,8 +184,11 @@ bool video_sources_is_caputure_process_running()
    if ( (NULL != g_pCurrentModel) && g_pCurrentModel->isActiveCameraOpenIPC() )
    {
       szOutput[0] = 0;
-      hw_execute_bash_command("ps -aef | grep maj | grep estic", szOutput);
-      if ( NULL != strstr(szOutput, "majestic") )
+      char szPsCmd[128];
+      const char* szProc = hwcam_be_process_name();
+      snprintf(szPsCmd, sizeof(szPsCmd), "ps -aef | grep %s | grep -v grep", szProc);
+      hw_execute_bash_command(szPsCmd, szOutput);
+      if ( NULL != strstr(szOutput, szProc) )
          return true;
    }
    else
@@ -321,7 +324,6 @@ bool video_sources_try_read_camera_frame(bool* pbOutEndOfFrameDetected)
          bEndOfFrame = false;
          if ( (iTotalBytes > iThresholdBytes) && (iReadSize > iThresholdBytes) && (iReadSize != video_source_csi_get_buffer_size()) )
             bEndOfFrame = true;
-         onboard_video_recording_on_new_data(pVideoData, iReadSize);
          if ( NULL != g_pVideoTxBuffers )
             g_pVideoTxBuffers->appendDataToCurrentFrame(pVideoData, iReadSize, uNALPresenceFlags, bEndOfFrame, uTimeDataAvailable);
 
@@ -399,7 +401,6 @@ bool video_sources_try_read_camera_frame(bool* pbOutEndOfFrameDetected)
          if ( bEnd && (iTotalBytes > 0) )
          if ( ! parser_h264_is_signaling_nal(uNALType) )
             bEndOfFrame = true;
-         onboard_video_recording_on_new_data(pVideoData, iReadSize);
          if ( NULL != g_pVideoTxBuffers )
             g_pVideoTxBuffers->appendDataToCurrentFrame(pVideoData, iReadSize, uNALPresenceFlags, bEndOfFrame, uTimeDataAvailable);
 

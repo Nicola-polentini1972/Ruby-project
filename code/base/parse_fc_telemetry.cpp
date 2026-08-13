@@ -314,17 +314,13 @@ void _process_mav_message(t_packet_header_fc_telemetry* pdpfct, t_packet_header_
    switch (msgMav.msgid)
    { 
       case MAVLINK_MSG_ID_STATUSTEXT:
-         memset(szBuff, 0, sizeof(szBuff));
          mavlink_msg_statustext_get_text(&msgMav, szBuff);
-         szBuff[50] = 0;
          if ( _check_add_fc_message(szBuff) )
             log_line("MAV status text: %s", szBuff);
          break;
 
       case MAVLINK_MSG_ID_STATUSTEXT_LONG:
-         memset(szBuff, 0, sizeof(szBuff));
          mavlink_msg_statustext_long_get_text(&msgMav, szBuff);
-         szBuff[254] = 0;
          if ( _check_add_fc_message(szBuff) )
             log_line("MAV status text long: %s", szBuff);
          break;

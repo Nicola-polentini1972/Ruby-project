@@ -50,7 +50,7 @@ typedef struct
    u8 wdr; // used for IMX327 camera for WDR mode
    u8 dayNightMode; // 0 - day mode, 1 - night mode, only for Veye cameras
    u8 hue; // 0...100
-   u32 uColorTempK; // manual color temperature in Kelvin, used to derive awbGainR/awbGainB when whitebalance is off, 0 if not set
+   u32 uDummyCamP;
 } camera_profile_parameters_t;
 
 typedef struct
@@ -294,13 +294,6 @@ typedef struct
       //   0...255 buffering size
    u32 uDummyA1;
 } audio_parameters_t;
-
-typedef struct
-{
-   u8 uEnabled; // 0/1: automatically start onboard video recording when the vehicle arms, stop when it disarms
-   u8 uRecordOSD; // 0/1: also record a .osd MSP-OSD overlay file locally, alongside the onboard video
-   u8 uReserved[14];
-} onboard_recording_params_t;
 
 
 #define MAX_MODEL_I2C_BUSSES 6
@@ -611,7 +604,6 @@ class Model
       rc_parameters_t rc_params;
       telemetry_parameters_t telemetry_params;
       audio_parameters_t audio_params;
-      onboard_recording_params_t onboard_recording_params;
       type_functions_parameters functions_params;
       type_relay_parameters relay_params;
       type_alarms_parameters alarms_params;

@@ -727,7 +727,7 @@ bool Model::loadVersion10(FILE* fd)
 
          if ( 1 != fscanf(fd, "%d", &tmp1) )
             { log_softerror_and_alarm("10-50 %d", i); return false; }
-         camera_params[k].profiles[i].uColorTempK = tmp1;
+         camera_params[k].profiles[i].uDummyCamP = tmp1;
       }
 
    }
@@ -1121,28 +1121,6 @@ bool Model::loadVersion10(FILE* fd)
    else
       uControllerBoardType = 0;
 
-   if ( bOk )
-   {
-      u32 uTmpOnboardRecEnabled = 0;
-      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecEnabled) )
-         onboard_recording_params.uEnabled = 0;
-      else
-         onboard_recording_params.uEnabled = (u8)uTmpOnboardRecEnabled;
-   }
-   else
-      onboard_recording_params.uEnabled = 0;
-
-   if ( bOk )
-   {
-      u32 uTmpOnboardRecOSD_v10 = 0;
-      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecOSD_v10) )
-         onboard_recording_params.uRecordOSD = 0;
-      else
-         onboard_recording_params.uRecordOSD = (u8)uTmpOnboardRecOSD_v10;
-   }
-   else
-      onboard_recording_params.uRecordOSD = 0;
-
    //--------------------------------------------------
    // End reading file;
    //----------------------------------------
@@ -1448,7 +1426,7 @@ bool Model::loadVersion11(FILE* fd)
 
          if ( 1 != fscanf(fd, "%u", &u1) )
             { bOk = false; log_softerror_and_alarm("11-44 %d", i); return false; }
-         camera_params[k].profiles[i].uColorTempK = u1;
+         camera_params[k].profiles[i].uDummyCamP = u1;
       }
 
    }
@@ -1719,28 +1697,6 @@ bool Model::loadVersion11(FILE* fd)
    }
    else
       uControllerBoardType = 0;
-
-   if ( bOk )
-   {
-      u32 uTmpOnboardRecEnabled = 0;
-      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecEnabled) )
-         onboard_recording_params.uEnabled = 0;
-      else
-         onboard_recording_params.uEnabled = (u8)uTmpOnboardRecEnabled;
-   }
-   else
-      onboard_recording_params.uEnabled = 0;
-
-   if ( bOk )
-   {
-      u32 uTmpOnboardRecOSD_v11 = 0;
-      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecOSD_v11) )
-         onboard_recording_params.uRecordOSD = 0;
-      else
-         onboard_recording_params.uRecordOSD = (u8)uTmpOnboardRecOSD_v11;
-   }
-   else
-      onboard_recording_params.uRecordOSD = 0;
 
    //--------------------------------------------------
    // End reading file;
@@ -2081,7 +2037,7 @@ bool Model::loadVersion12(FILE* fd)
 
          if ( 1 != fscanf(fd, "%u", &u1) )
             { bOk = false; log_softerror_and_alarm("11-44 %d", i); return false; }
-         camera_params[k].profiles[i].uColorTempK = u1;
+         camera_params[k].profiles[i].uDummyCamP = u1;
       }
 
    }
@@ -2295,28 +2251,6 @@ bool Model::loadVersion12(FILE* fd)
    }
    else
       uControllerBoardType = 0;
-
-   if ( bOk )
-   {
-      u32 uTmpOnboardRecEnabled = 0;
-      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecEnabled) )
-         onboard_recording_params.uEnabled = 0;
-      else
-         onboard_recording_params.uEnabled = (u8)uTmpOnboardRecEnabled;
-   }
-   else
-      onboard_recording_params.uEnabled = 0;
-
-   if ( bOk )
-   {
-      u32 uTmpOnboardRecOSD_v12 = 0;
-      if ( 1 != fscanf(fd, "%u", &uTmpOnboardRecOSD_v12) )
-         onboard_recording_params.uRecordOSD = 0;
-      else
-         onboard_recording_params.uRecordOSD = (u8)uTmpOnboardRecOSD_v12;
-   }
-   else
-      onboard_recording_params.uRecordOSD = 0;
 
    //--------------------------------------------------
    // End reading file;
@@ -2635,7 +2569,7 @@ bool Model::saveVersion12(FILE* fd, bool isOnController)
       sprintf(szSetting, "%d %d ", (int)camera_params[k].profiles[i].dayNightMode, (int)camera_params[k].profiles[i].hue);
       strcat(szModel, szSetting);
 
-      sprintf(szSetting, " %u\n", camera_params[k].profiles[i].uColorTempK); 
+      sprintf(szSetting, " %u\n", camera_params[k].profiles[i].uDummyCamP); 
       strcat(szModel, szSetting);
       }
    }
@@ -2772,15 +2706,6 @@ bool Model::saveVersion12(FILE* fd, bool isOnController)
    //-------------------------------------------
    // Start of extra params, might be zero on load
 
-   sprintf(szSetting, "%u\n", uControllerBoardType);
-   strcat(szModel, szSetting);
-
-   sprintf(szSetting, "%u\n", (u32)onboard_recording_params.uEnabled);
-   strcat(szModel, szSetting);
-
-   sprintf(szSetting, "%u\n", (u32)onboard_recording_params.uRecordOSD);
-   strcat(szModel, szSetting);
-
    // End writing values to file
    // ---------------------------------------------------
 
@@ -2819,6 +2744,10 @@ void Model::resetVideoParamsToDefaults()
    video_params.lowestAllowedAdaptiveVideoBitrate = DEFAULT_LOWEST_ALLOWED_ADAPTIVE_VIDEO_BITRATE;
    video_params.uMaxAutoKeyframeIntervalMs = DEFAULT_VIDEO_MAX_AUTO_KEYFRAME_INTERVAL;
    video_params.uVideoExtraFlags = VIDEO_FLAG_ENABLE_FOCUS_MODE_BW | VIDEO_FLAG_ENABLE_FOCUS_MODE_BARS;
+   // SigmaStar (SSC338Q) vehicles run waybeam_venc, whose codec is hardcoded H.265 — a fresh
+   // model must default to H.265 so the GS loads the matching decoder (h264 default => black screen).
+   if ( hardware_board_is_sigmastar(hardware_getBoardType()) )
+      video_params.uVideoExtraFlags |= VIDEO_FLAG_GENERATE_H265;
    resetVideoLinkProfiles();
 }
 
@@ -4098,7 +4027,7 @@ bool Model::validate_settings()
 
    for( int i=0; i<MODEL_MAX_OSD_SCREENS; i++ )
    {
-      if ( (osd_params.osd_layout_preset[i] < 0) || (osd_params.osd_layout_preset[i] > OSD_PRESET_CUSTOM) )
+      if ( osd_params.osd_layout_preset[i] > OSD_PRESET_CUSTOM )
          osd_params.osd_layout_preset[i] = OSD_PRESET_DEFAULT;
    }
 
@@ -4186,15 +4115,13 @@ bool Model::validate_settings()
    if ( (rc_params.rc_failsafe_timeout_ms < 50) || (rc_params.rc_failsafe_timeout_ms > 5000) )
       bRCOk = false;
 
-   if ( rc_params.iRCTranslationType < 0 )
-      bRCOk = false;
-   else if ( (rc_params.iRCTranslationType != RC_TRANSLATION_TYPE_2000) && (rc_params.iRCTranslationType != RC_TRANSLATION_TYPE_2000) )
+   if ( (rc_params.iRCTranslationType != RC_TRANSLATION_TYPE_NONE) &&
+        (rc_params.iRCTranslationType != RC_TRANSLATION_TYPE_2000) &&
+        (rc_params.iRCTranslationType != RC_TRANSLATION_TYPE_4000) )
       bRCOk = false;
 
    for( int i=0; i<MAX_RC_CHANNELS; i++ )
    {
-      if ( rc_params.rcChExpo[i] < 0 )
-         bRCOk = false;
       if ( rc_params.rcChExpo[i] > 90 )
          bRCOk = false;
 
@@ -4552,8 +4479,6 @@ void Model::resetToDefaults(bool generateId)
    
    uControllerId = 0;
    uControllerBoardType = 0;
-   onboard_recording_params.uEnabled = 0;
-   onboard_recording_params.uRecordOSD = 0;
    sw_version = (SYSTEM_SW_VERSION_MAJOR * 256 + SYSTEM_SW_VERSION_MINOR) | (SYSTEM_SW_BUILD_NUMBER<<16);
    log_line("SW Version: %d.%d (b-%d)", get_sw_version_major(this), get_sw_version_minor(this), get_sw_version_build(this));
    
@@ -5205,7 +5130,7 @@ void Model::resetCameraProfileToDefaults(camera_profile_parameters_t* pCamParams
    pCamParams->ev = 0; // not set, auto
    pCamParams->iso = 0; // auto
    pCamParams->dayNightMode = 0; // day mode
-   pCamParams->uColorTempK = 0;
+   pCamParams->uDummyCamP = 0;
 }
 
 void Model::resetFunctionsParamsToDefaults()
@@ -5986,8 +5911,8 @@ void Model::log_camera_profiles_differences(camera_profile_parameters_t* pCamPro
       log_line(" * Cam wdr is different: %u - %u", pCamProfile1->wdr, pCamProfile2->wdr);
    if ( pCamProfile1->dayNightMode != pCamProfile2->dayNightMode )
       log_line(" * Cam dayNightMode is different: %u - %u", pCamProfile1->dayNightMode, pCamProfile2->dayNightMode);
-   if ( pCamProfile1->uColorTempK != pCamProfile2->uColorTempK )
-      log_line(" * Cam uColorTempK is different: %u - %u", pCamProfile1->uColorTempK, pCamProfile2->uColorTempK);
+   if ( pCamProfile1->uDummyCamP != pCamProfile2->uDummyCamP )
+      log_line(" * Cam uDummyCamP is different: %u - %u", pCamProfile1->uDummyCamP, pCamProfile2->uDummyCamP);
 
    if ( fabsf(pCamProfile1->analogGain - pCamProfile2->analogGain) > 0.000001 )
       log_line(" * Cam analogGain is different: %f - %f", pCamProfile1->analogGain, pCamProfile2->analogGain);

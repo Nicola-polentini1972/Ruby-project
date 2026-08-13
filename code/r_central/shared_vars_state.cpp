@@ -195,6 +195,7 @@ void reset_vehicle_telemetry_runtime_info(t_structure_vehicle_info* pInfo)
    
    pInfo->uLastFCFlightMode = 0;
    pInfo->uLastFCFlags = 0;
+   pInfo->bGotFirstFCFlagsSample = false;
 
    memset( &(pInfo->headerFCTelemetry), 0, sizeof(t_packet_header_fc_telemetry));
    memset( &(pInfo->headerFCTelemetryExtra), 0, sizeof(t_packet_header_fc_extra));

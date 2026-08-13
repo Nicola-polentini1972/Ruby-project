@@ -1,105 +1,92 @@
 /*
     Ruby Licence
     Copyright (c) 2020-2025 Petru Soroaga petrusoroaga@yahoo.com
-    All rights reserved.
+    Phase 2: Onboard SD recording menu added by the waybeam-integration branch.
 
     Redistribution and/or use in source and/or binary forms, with or without
     modification, are permitted provided that the following conditions are met:
-        * Redistributions and/or use of the source code (partially or complete) must retain
-        the above copyright notice, this list of conditions and the following disclaimer
-        in the documentation and/or other materials provided with the distribution.
-        * Redistributions in binary form (partially or complete) must reproduce
-        the above copyright notice, this list of conditions and the following disclaimer
-        in the documentation and/or other materials provided with the distribution.
-        * Copyright info and developer info must be preserved as is in the user
-        interface, additions could be made to that info.
-        * Neither the name of the organization nor the
-        names of its contributors may be used to endorse or promote products
-        derived from this software without specific prior written permission.
+        * Redistributions and/or use of the source code (partially or complete)
+          must retain the above copyright notice, this list of conditions and
+          the following disclaimer in the documentation and/or other materials
+          provided with the distribution.
+        * Neither the name of the organization nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
         * Military use is not permitted.
 
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-    DISCLAIMED. IN NO EVENT SHALL THE AUTHOR (PETRU SOROAGA) BE LIABLE FOR ANY
-    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES ARE
+    DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DAMAGE.
 */
 
 #include "menu.h"
 #include "menu_vehicle_onboard_recording.h"
 #include "menu_item_select.h"
 #include "menu_item_text.h"
+#include "../shared_vars.h"
+#include "../ruby_central.h"
+#include "../vehicle_backend_cache.h"
+#include "../../base/commands.h"
+#include "../../base/ctrl_settings.h"
+#include "../handle_commands.h"
+
+// Quality preset: { label, kbps }
+static const char* s_szQualityLabels[4] = { "Low — 8 Mbps", "Medium — 16 Mbps", "High — 25 Mbps", "Max — 40 Mbps" };
+static const unsigned s_uQualityKbps[4] = { 8000, 16000, 25000, 40000 };
 
 MenuVehicleOnboardRecording::MenuVehicleOnboardRecording(void)
-:Menu(MENU_ID_VEHICLE_ONBOARD_RECORDING, L("Onboard Video Recording"), NULL)
+: Menu(MENU_ID_VEHICLE_ONBOARD_RECORDING, L("Onboard Recording"), NULL)
 {
-   m_Width = 0.32;
-   m_xPos = menu_get_XStartPos(m_Width); m_yPos = 0.3;
-}
+   m_Width = 0.36;
+   m_xPos = menu_get_XStartPos(m_Width);
+   m_yPos = 0.16;
+   m_bBackendSupported = false;
 
-MenuVehicleOnboardRecording::~MenuVehicleOnboardRecording()
-{
+   m_pItemsSelect[0] = new MenuItemSelect(L("Recording Target"), L("Where the video is saved when you press the record button. Ground = laptop/goggles SD (classic Ruby). Onboard SD = drone's micro SD card (waybeam only). Both = record on the ground AND on the drone SD at the same time."));
+   m_pItemsSelect[0]->addSelection(L("Ground"));
+   m_pItemsSelect[0]->addSelection(L("Onboard SD"));
+   m_pItemsSelect[0]->addSelection(L("Both"));
+   m_pItemsSelect[0]->setIsEditable();
+   m_IndexTarget = addMenuItem(m_pItemsSelect[0]);
+
+   m_pItemsSelect[1] = new MenuItemSelect(L("Recording Quality"), L("Recording bitrate for the onboard SD stream. Higher = better quality but fills the card faster."));
+   for ( int i = 0; i < 4; i++ )
+      m_pItemsSelect[1]->addSelection(s_szQualityLabels[i]);
+   m_pItemsSelect[1]->setIsEditable();
+   m_IndexQuality = addMenuItem(m_pItemsSelect[1]);
 }
 
 void MenuVehicleOnboardRecording::onShow()
 {
-   int iTmp = getSelectedMenuItemIndex();
-   addItems();
+   removeAllTopLines();
+
+   // Probe and refresh backend on open.
+   m_bBackendSupported = false;
+   if ( NULL != g_pCurrentModel )
+   {
+      // Probe on EVERY open: the backend can change between boots/repairs, so a
+      // stale cached value must be refreshed. The reply lands in handle_commands
+      // and overwrites the cache unconditionally.
+      handle_commands_send_to_vehicle(COMMAND_ID_GET_VIDEO_BACKEND, 0, NULL, 0);
+
+      u8 uBackend = vehicle_backend_cache_get(g_pCurrentModel->uVehicleId);
+      if ( uBackend == VEHICLE_BACKEND_UNKNOWN )
+      {
+         // Heuristic gate for the first view, before the reply lands.
+         m_bBackendSupported = vehicle_backend_likely_supports_waybeam(g_pCurrentModel);
+         addTopLine(L("Detecting video encoder backend..."));
+      }
+      else
+      {
+         m_bBackendSupported = (uBackend == VEHICLE_BACKEND_WAYBEAM);
+         if ( ! m_bBackendSupported )
+            addTopLine(L("Onboard SD recording is not supported by this vehicle. It requires the waybeam encoder (OpenIPC SigmaStar boards)."));
+      }
+   }
+
+   addTopLine(L("Onboard recordings are saved as .ts video under /mnt/mmcblk0p1/ruby/ on the drone's SD card, with a matching .osd telemetry sidecar when available. The GS also keeps its own .osd sidecar as backup."));
+   addTopLine(L("Changing these settings requires the vehicle encoder to restart; stream will pause briefly."));
+
    Menu::onShow();
-   if ( iTmp >= 0 )
-      m_SelectedIndex = iTmp;
-   if ( m_SelectedIndex >= m_ItemsCount )
-      m_SelectedIndex = m_ItemsCount-1;
-}
-
-void MenuVehicleOnboardRecording::addItems()
-{
-   int iTmp = getSelectedMenuItemIndex();
-   removeAllItems();
-
-   m_IndexEnableOnArm = -1;
-   m_IndexRecordOSD = -1;
-
-   if ( (NULL == g_pCurrentModel) || (! g_pCurrentModel->hasCamera()) )
-   {
-      addMenuItem(new MenuItemText(L("This vehicle doesn't have a camera. Onboard recording can't be used.")));
-      return;
-   }
-
-   if ( ! g_pCurrentModel->isRunningOnRadxaHardware() )
-   {
-      addMenuItem(new MenuItemText(L("Onboard recording is only available on Radxa based vehicles.")));
-      return;
-   }
-
-   m_pItemsSelect[0] = new MenuItemSelect(L("Start Recording on Arm"), L("Automatically starts saving the video stream to the vehicle's SD card when the vehicle arms, and stops it when it disarms."));
-   m_pItemsSelect[0]->addSelection(L("Disabled"));
-   m_pItemsSelect[0]->addSelection(L("Enabled"));
-   m_pItemsSelect[0]->setIsEditable();
-   m_IndexEnableOnArm = addMenuItem(m_pItemsSelect[0]);
-   m_pItemsSelect[0]->setSelectedIndex(g_pCurrentModel->onboard_recording_params.uEnabled ? 1 : 0);
-
-   m_pItemsSelect[1] = new MenuItemSelect(L("Record OSD data"), L("Also records a .osd overlay data file locally, alongside the onboard video, using the flight controller's OSD telemetry received directly on the vehicle (independent of the radio link to the controller)."));
-   m_pItemsSelect[1]->addSelection(L("Disabled"));
-   m_pItemsSelect[1]->addSelection(L("Enabled"));
-   m_pItemsSelect[1]->setIsEditable();
-   m_IndexRecordOSD = addMenuItem(m_pItemsSelect[1]);
-   m_pItemsSelect[1]->setSelectedIndex(g_pCurrentModel->onboard_recording_params.uRecordOSD ? 1 : 0);
-
-   if ( iTmp >= 0 )
-      m_SelectedIndex = iTmp;
-   if ( m_SelectedIndex >= m_ItemsCount )
-      m_SelectedIndex = m_ItemsCount-1;
-}
-
-void MenuVehicleOnboardRecording::valuesToUI()
-{
-   addItems();
 }
 
 void MenuVehicleOnboardRecording::Render()
@@ -107,34 +94,48 @@ void MenuVehicleOnboardRecording::Render()
    RenderPrepare();
    float yTop = RenderFrameAndTitle();
    float y = yTop;
-   for( int i=0; i<m_ItemsCount; i++ )
-      y += RenderItem(i,y);
+   for ( int i = 0; i < m_ItemsCount; i++ )
+      y += RenderItem(i, y);
    RenderEnd(yTop);
 }
 
-void MenuVehicleOnboardRecording::sendParams()
+void MenuVehicleOnboardRecording::valuesToUI()
 {
-   if ( -1 == m_IndexEnableOnArm )
+   ControllerSettings* pCS = get_ControllerSettings();
+   if ( NULL == pCS )
       return;
 
-   onboard_recording_params_t params;
-   memcpy(&params, &(g_pCurrentModel->onboard_recording_params), sizeof(onboard_recording_params_t));
-   params.uEnabled = (u8) m_pItemsSelect[0]->getSelectedIndex();
-   if ( -1 != m_IndexRecordOSD )
-      params.uRecordOSD = (u8) m_pItemsSelect[1]->getSelectedIndex();
+   int iTarget = pCS->iRecordingTarget;
+   if ( iTarget < 0 || iTarget > 2 ) iTarget = 0;
+   int iQuality = pCS->iOnboardRecordingQuality;
+   if ( iQuality < 0 || iQuality > 3 ) iQuality = 1;
 
-   if ( (params.uEnabled == g_pCurrentModel->onboard_recording_params.uEnabled) &&
-        (params.uRecordOSD == g_pCurrentModel->onboard_recording_params.uRecordOSD) )
+   m_pItemsSelect[0]->setSelection(iTarget);
+   m_pItemsSelect[1]->setSelection(iQuality);
+
+   m_pItemsSelect[0]->setEnabled(m_bBackendSupported);
+   // Quality applies to the onboard SD stream — relevant for Onboard (1) and Both (2).
+   m_pItemsSelect[1]->setEnabled(m_bBackendSupported && (iTarget >= 1));
+}
+
+void MenuVehicleOnboardRecording::_pushSettingsToVehicle()
+{
+   if ( NULL == g_pCurrentModel )
+      return;
+   ControllerSettings* pCS = get_ControllerSettings();
+   if ( NULL == pCS )
       return;
 
-   if ( g_pCurrentModel->is_spectator )
-   {
-      memcpy(&(g_pCurrentModel->onboard_recording_params), &params, sizeof(onboard_recording_params_t));
-      saveControllerModel(g_pCurrentModel);
-      valuesToUI();
-   }
-   else if ( ! handle_commands_send_to_vehicle(COMMAND_ID_SET_ONBOARD_RECORDING_PARAMS, 0, (u8*)&params, sizeof(onboard_recording_params_t)) )
-      valuesToUI();
+   command_packet_onboard_recording params;
+   memset(&params, 0, sizeof(params));
+   // Drone records onboard for both Onboard (1) and Both (2); only Ground (0) skips it.
+   params.uTarget = (u8)((pCS->iRecordingTarget >= 1) ? 1 : 0);
+   int iQ = pCS->iOnboardRecordingQuality;
+   if ( iQ < 0 || iQ > 3 ) iQ = 1;
+   params.uQualityIdx = (u8)iQ;
+   params.uBitrateKbps = s_uQualityKbps[iQ];
+
+   handle_commands_send_to_vehicle(COMMAND_ID_SET_ONBOARD_RECORDING, 0, (u8*)&params, sizeof(params));
 }
 
 void MenuVehicleOnboardRecording::onSelectItem()
@@ -142,22 +143,48 @@ void MenuVehicleOnboardRecording::onSelectItem()
    Menu::onSelectItem();
    if ( (-1 == m_SelectedIndex) || (m_pMenuItems[m_SelectedIndex]->isEditing()) )
       return;
+   if ( ! m_bBackendSupported )
+      return; // grayed out — nothing to do
 
-   if ( handle_commands_is_command_in_progress() )
+   ControllerSettings* pCS = get_ControllerSettings();
+   if ( NULL == pCS )
+      return;
+
+   if ( g_bIsVideoRecording )
    {
-      handle_commands_show_popup_progress();
+      addMessage(L("Stop the current recording before changing onboard recording settings."));
+      valuesToUI();
       return;
    }
 
-   if ( m_IndexEnableOnArm == m_SelectedIndex )
+   if ( m_SelectedIndex == m_IndexTarget )
    {
-      sendParams();
+      int iNew = m_pItemsSelect[0]->getSelectedIndex();
+      if ( iNew != pCS->iRecordingTarget )
+      {
+         pCS->iRecordingTarget = iNew;
+         save_ControllerSettings();
+         _pushSettingsToVehicle();
+         if ( iNew == 2 )
+            addMessage(L("Recording to Both: the drone's SD card fills about twice as fast as Ground-only."));
+      }
+      valuesToUI();
       return;
    }
 
-   if ( m_IndexRecordOSD == m_SelectedIndex )
+   if ( m_SelectedIndex == m_IndexQuality )
    {
-      sendParams();
+      int iNew = m_pItemsSelect[1]->getSelectedIndex();
+      if ( iNew != pCS->iOnboardRecordingQuality )
+      {
+         pCS->iOnboardRecordingQuality = iNew;
+         save_ControllerSettings();
+         // Push to vehicle only if onboard recording is part of the current target
+         // (Onboard or Both); otherwise stored locally, applied on next toggle.
+         if ( pCS->iRecordingTarget >= 1 )
+            _pushSettingsToVehicle();
+      }
+      valuesToUI();
       return;
    }
 }

@@ -1662,8 +1662,6 @@ char* str_get_model_change_type(int iModelChangeType)
       strcpy(s_szModelChangeTypeString, "MODEL_CHANGED_STATS");
    else if ( iModelChangeType == MODEL_CHANGED_THREADS_PRIORITIES )
       strcpy(s_szModelChangeTypeString, "MODEL_CHANGED_THREADS_PRIORITIES");
-   else if ( iModelChangeType == MODEL_CHANGED_ONBOARD_RECORDING_PARAMS )
-      strcpy(s_szModelChangeTypeString, "MODEL_CHANGED_ONBOARD_RECORDING_PARAMS");
    else if ( iModelChangeType == MODEL_CHANGED_OVERCLOCKING )
       strcpy(s_szModelChangeTypeString, "MODEL_CHANGED_OVERCLOCKING");
 

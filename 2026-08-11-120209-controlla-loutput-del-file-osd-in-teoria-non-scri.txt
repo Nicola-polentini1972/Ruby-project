@@ -1,0 +1,444 @@
+ ▐▛███▜▌   Claude Code v2.1.227
+▝▜█████▛▘  Sonnet 5 · Claude Pro
+  ▘▘ ▝▝    ~/ruby119
+
+
+❯ controlla loutput del file osd in teoria non scrive dati all'interno          
+
+  Searched for 3 patterns, read 4 files (ctrl+o to expand)
+
+● User answered Claude's questions:
+  ⎿  · Con "il file osd" intendi il file .osd generato dalla registrazione OSD 
+     onboard (rx_osd_recording_vehicle.cpp / rx_video_recording_data.cpp), e il 
+     problema è che dopo una registrazione il file risulta vuoto o contiene solo
+     l'header da 40 byte (nessun frame)? → Sì, file .osd senza frame dati 
+     (Recommended)
+
+  Searched for 8 patterns, read 4 files (ctrl+o to expand)
+
+● Ho tracciato l'intera pipeline di scrittura del file .osd (registrazione OSD
+  onboard, feature "Phase 2"):
+
+  Flusso: ruby_rt_vehicle (comando COMMAND_ID_ONBOARD_RECORD,
+  ruby_rx_commands.cpp:968) scrive il control file onboard_osd_rec.path →
+  ruby_tx_telemetry lo pollina in rx_osd_recording_vehicle_periodic_loop()
+  (chiamato da telemetry_msp_periodic_loop(), a sua volta da
+  telemetry_periodic_loop() in telemetry.cpp:444) → apre il .osd, scrive
+  l'header da 40 byte, poi un frame ogni ~50ms in _write_frame()
+  (rx_osd_recording_vehicle.cpp:135).
+
+  Strutturalmente il ciclo dovrebbe scrivere un frame ad ogni tick da 50ms
+  indipendentemente da tutto (il controllo anti-duplicato in _write_frame() non
+  blocca mai il primo frame dopo l'header). Quindi se il file resta a 40 byte
+  per l'intera durata di una registrazione non brevissima, il sospetto più
+  concreto che ho trovato nel codice è:
+
+  msp.cpp:65-68 — _parse_msp_osd_add_string() (che scrive i caratteri nel buffer
+  schermo) esce subito se uMSPFlags & MSP_FLAGS_FC_TYPE_MASK == 0 sul parser
+  locale del recorder (s_MSPState, separato da quello principale s_PHTMSP).
+  Questo flag viene risincronizzato dal parser principale ad ogni chiamata
+  (rx_osd_recording_vehicle.cpp:61-62), quindi se la registrazione parte prima
+  che telemetry_msp abbia già rilevato il tipo di FC (s_bMSPGotFCInfo), i frame 
+  vengono comunque scritti nel file (byte, timestamp, dimensioni corrette) ma
+  con contenuto interamente a zero — nessun testo OSD leggibile. Questo combacia
+  con "il file non contiene dati" anche se la dimensione cresce.
+
+  Per capire quale dei due casi hai davanti, sul device controlla:
+  1. Dimensione del .osd: se resta esattamente 40 byte → il periodic loop non ha
+  mai girato una seconda volta (probabile stop quasi immediato, o
+  telemetry_params.fc_telemetry_type non è MSP in quel momento).
+  2. Le righe di log [OnboardOSD] Started onboard OSD recording to [...] e, allo
+  stop, Stopped onboard OSD recording (N frames written) — ti dicono se e
+  quanti frame sono stati effettivamente scritti.
+  3. Se N è alto ma il video risultante in VueOSD è vuoto → è il problema del
+  FC-type gating sopra.
+
+  Vuoi che aggiunga un log/fix mirato (es. avviare la registrazione solo dopo
+  s_bMSPGotFCInfo, o loggare quando _parse_msp_osd_add_string scarta una stringa
+  per FC type sconosciuto) per confermarlo sul campo?
+
+✻ Cogitated for 4m 39s
+
+❯ osd arriva output video regolarmente                                          
+
+  Searched for 1 pattern, read 1 file (ctrl+o to expand)
+
+● Utile: se l'overlay OSD sul video live arriva regolarmente, il parsing MSP e
+  il rilevamento del tipo di FC funzionano — quindi la mia ipotesi sul gating
+  FC-type nel writer è da scartare (quel percorso live passa comunque dal parser
+  principale s_PHTMSP, che è ovviamente a posto).
+
+  Questo sposta il sospetto su un bug più concreto che avevo notato ma non avevo
+  ancora collegato: il file .osd viene aperto in modalità "wb" (troncante) in 
+  rx_osd_recording_vehicle_start() (rx_osd_recording_vehicle.cpp:80), e il 
+  control file che pilota lo start (onboard_osd_rec.path in FOLDER_RUBY_TEMP) 
+  non viene mai ripulito da un eventuale riavvio del processo.
+
+  ruby_start ha un watchdog che riavvia ruby_tx_telemetry se lo rileva
+  bloccato/crashato (r_start_vehicle.cpp:1042-1064, s_pProcessStatsTelemetry).
+  Se durante una registrazione onboard il processo ruby_tx_telemetry viene
+  riavviato per qualsiasi motivo (watchdog, crash, ecc.):
+
+  1. Tutto lo stato statico del writer si azzera (s_bStarted=false,
+  s_iFramesWritten=0, ecc.) — normale dopo un restart di processo.
+  2. Il control file però è ancora sul disco (viene rimosso solo quando l'utente
+  ferma esplicitamente la registrazione, da ruby_rx_commands.cpp:1037).
+  3. Al primo _poll_control_file() del processo appena riavviato, trova il
+  control file, vede s_bStarted == false e richiama
+  rx_osd_recording_vehicle_start() con lo stesso path già in uso.
+  4. fopen(szFile, "wb") tronca il file esistente, cancellando tutti i frame già
+  scritti, e riparte da un header vuoto.
+
+  Se questo accade anche una sola volta durante la sessione (o si ripete), il
+  file finale resta a "solo header" nonostante l'OSD stia arrivando regolarmente
+  sul video — perché quel flusso live è indipendente dal processo che scrive il
+  file.
+
+  Vuoi che applichi il fix (es. "ab" invece di "wb" se il file esiste già,
+  oppure marcare/consumare il control file in modo che un restart non
+  ri-triggeri lo start da zero)? Posso anche aggiungere un log esplicito quando
+  questo accade, per confermarlo sul campo prima di modificare il comportamento.
+
+✻ Brewed for 1m 10s
+
+❯ si                                                                            
+
+  Searched for 3 patterns, read 1 file (ctrl+o to expand)
+● Update(code/r_vehicle/rx_osd_recording_vehicle.cpp)
+  ⎿  Added 38 lines, removed 6 lines
+       77     char szFile[512];
+       78     snprintf(szFile, sizeof(szFile), "%s.osd", szBasePath);
+       79  
+       80 -   s_pOSDFile = fopen(szFile, "wb");                          
+       80 +   s_uTimeStartedMs = g_TimeNow;                              
+       81 +   s_uLastFrameWriteMs = 0;                                   
+       82 +   s_iFramesWritten = 0;                                      
+       83 +   s_bHeaderWritten = false;                                  
+       84 +                                                              
+       85 +   // If a .osd file with a valid header already exists at thi
+          +s path, resume                                                
+       86 +   // by appending instead of truncating: this happens when th
+          +e writer                                                      
+       87 +   // process (ruby_tx_telemetry) gets restarted by the watchd
+          +og mid-recording                                              
+       88 +   // while the control file signaling "recording active" is s
+          +till present,                                                 
+       89 +   // which would otherwise re-enter here and wipe out every f
+          +rame recorded                                                 
+       90 +   // so far via fopen(...,"wb").                             
+       91 +   bool bResuming = false;                                    
+       92 +   struct stat st;                                            
+       93 +   if ( 0 == stat(szFile, &st) && st.st_size >= 40 )          
+       94 +   {                                                          
+       95 +      s_pOSDFile = fopen(szFile, "r+b");                      
+       96 +      if ( NULL != s_pOSDFile )                               
+       97 +      {                                                       
+       98 +         bResuming = true;                                    
+       99 +         s_bHeaderWritten = true;                             
+      100 +         const long iFrameSize = (long)sizeof(u32) + (long)(DE
+          +FAULT_MSPOSD_RECORDING_COLS * DEFAULT_MSPOSD_RECORDING_ROWS) *
+          + (long)sizeof(u16);                                           
+      101 +         long iDataSize = (long)st.st_size - 40;              
+      102 +         if ( (iDataSize > 0) && (0 == (iDataSize % iFrameSize
+          +)) )                                                          
+      103 +         {                                                    
+      104 +            long iLastFrameOffset = 40 + iDataSize - iFrameSiz
+          +e;                                                            
+      105 +            u32 uLastElapsedMs = 0;                           
+      106 +            if ( (0 == fseek(s_pOSDFile, iLastFrameOffset, SEE
+          +K_SET)) &&                                                    
+      107 +                 (1 == fread(&uLastElapsedMs, sizeof(u32), 1, 
+          +s_pOSDFile)) &&                                               
+      108 +                 (uLastElapsedMs < g_TimeNow) )               
+      109 +               s_uTimeStartedMs = g_TimeNow - uLastElapsedMs; 
+      110 +         }                                                    
+      111 +         fseek(s_pOSDFile, 0, SEEK_END);                      
+      112 +      }                                                       
+      113 +   }                                                          
+      114 +                                                              
+      115     if ( NULL == s_pOSDFile )
+      116 +      s_pOSDFile = fopen(szFile, "wb");                       
+      117 +   if ( NULL == s_pOSDFile )                                  
+      118     {
+      119        log_softerror_and_alarm("[OnboardOSD] Failed to create [
+           %s]: errno=%d (%s)", szFile, errno, strerror(errno));
+      120        return;
+      121     }
+      122  
+       87 -   s_uTimeStartedMs = g_TimeNow;                              
+       88 -   s_uLastFrameWriteMs = 0;                                   
+       89 -   s_iFramesWritten = 0;                                      
+       90 -   s_bHeaderWritten = false;                                  
+      123     s_bStarted = true;
+       92 -   log_line("[OnboardOSD] Started onboard OSD recording to [%s
+          -]", szFile);                                                  
+      124 +   log_line("[OnboardOSD] %s onboard OSD recording to [%s]", b
+          +Resuming ? "Resumed" : "Started", szFile);                    
+      125  }
+      126  
+      127  void rx_osd_recording_vehicle_stop()
+
+● Ora verifico che compili.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● No errors. Let's use the project's actual Makefile to compile this translation
+  unit for a real sanity check.
+
+  Listed 1 directory, ran 1 shell command (ctrl+o to expand)
+
+● Fix applicato in code/r_vehicle/rx_osd_recording_vehicle.cpp, funzione
+  rx_osd_recording_vehicle_start():
+
+  - Prima di aprire il file, controlla con stat() se esiste già un .osd con un
+  header valido (≥40 byte) allo stesso path.
+  - Se sì (caso: ruby_tx_telemetry è stato riavviato dal watchdog mentre il
+  control file onboard_osd_rec.path era ancora presente), apre in "r+b" e si
+  posiziona in fondo al file invece di troncarlo con "wb" — i frame già
+  registrati non vengono più persi.
+  - Salta la riscrittura dell'header (s_bHeaderWritten = true).
+  - Recupera il timestamp dell'ultimo frame scritto (leggendo i 4 byte iniziali
+  dell'ultimo blocco frame) e ricalibra s_uTimeStartedMs in modo che i nuovi
+  timestamp continuino a crescere invece di ripartire da zero.
+  - Se il file non esiste o non è valido, si comporta come prima (crea da zero
+  con header).
+  - Log aggiornato: "Resumed" vs "Started" per distinguere i due casi.
+
+  Compilazione verificata con g++ -fsyntax-only sulla singola unità (nessun
+  toolchain cross ARM disponibile in questo ambiente per un build reale OpenIPC)
+  — nessun errore, solo warning preesistenti/non correlati dovuti alle define
+  di piattaforma passate manualmente per il test.
+
+  Prossimo passo naturale sarebbe una build reale (make vehicle 
+  RUBY_BUILD_ENV=openipc, come da CLAUDE.md) e un test su hardware che forzi un
+  riavvio di ruby_tx_telemetry durante una registrazione onboard, per confermare
+  che il .osd continui a crescere invece di azzerarsi.
+
+✻ Brewed for 1m 52s
+
+❯ aggiungi auto rec dopo armamento motori.  E presente nel menu ma non funziona 
+
+  Searched for 16 patterns, read 10 files, ran 2 shell commands (ctrl+o to expand)
+
+● Ho trovato il bug reale. Applico il fix.
+
+● Update(code/r_central/shared_vars_state.h)
+  ⎿  Added 1 line
+      71     u32  uTimeLastRecvFCTelemetryShort;
+      72     u8   uLastFCFlightMode;
+      73     u8   uLastFCFlags;
+      74 +   bool bGotFirstFCFlagsSample;                                
+      75  
+      76     t_packet_header_fc_telemetry headerFCTelemetry;
+      77     t_packet_header_fc_extra     headerFCTelemetryExtra;
+● Update(code/r_central/shared_vars_state.cpp)
+  ⎿  Added 1 line
+      195     
+      196     pInfo->uLastFCFlightMode = 0;
+      197     pInfo->uLastFCFlags = 0;
+      198 +   pInfo->bGotFirstFCFlagsSample = false;                     
+      199  
+      200     memset( &(pInfo->headerFCTelemetry), 0, sizeof(t_packet_hea
+           der_fc_telemetry));
+      201     memset( &(pInfo->headerFCTelemetryExtra), 0, sizeof(t_packe
+           t_header_fc_extra));
+
+● Update(code/r_central/link_watch.cpp)
+  ⎿  Added 8 lines, removed 1 line
+      717           // FC telemetry flags changed ?
+      718           if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFl
+           ags != g_VehiclesRuntimeInfo[i].uLastFCFlags )
+      719           {
+      720 -            if ( 0 != g_VehiclesRuntimeInfo[i].uLastFCFlags ) 
+      720 +            // Only the very first sample after (re)connecting
+          + is used just to seed                                         
+      721 +            // the baseline (uLastFCFlags starts at 0, same as
+          + a normal disarmed                                            
+      722 +            // state, so using "0 != uLastFCFlags" to detect "
+          +no baseline yet" would                                        
+      723 +            // permanently swallow the very first arm event of
+          + every session — the                                          
+      724 +            // vehicle is disarmed at connect, uFCFlags reads 
+          +0, and arming then                                            
+      725 +            // flips 0 -> ARMED, which looked exactly like "no
+          + baseline yet").                                              
+      726 +            if ( g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSamp
+          +le )                                                          
+      727              {
+      728                 if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry
+           .uFCFlags & FC_TELE_FLAGS_ARMED )
+      729                 if ( !(g_VehiclesRuntimeInfo[i].uLastFCFlags & 
+           FC_TELE_FLAGS_ARMED) )
+     ...
+      736                    onEventDisarmed(g_VehiclesRuntimeInfo[i].uVe
+           hicleId);
+      737                 }
+      738              }
+      739 +            g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSample = 
+          +true;                                                         
+      740              g_VehiclesRuntimeInfo[i].uLastFCFlags = g_Vehicles
+           RuntimeInfo[i].headerFCTelemetry.uFCFlags;
+      741           }
+      742        }
+
+  Read 1 file (ctrl+o to expand)
+
+● Update(code/r_central/link_watch.cpp)
+  ⎿  Added 11 lines
+      685  
+      686        if ( g_VehiclesRuntimeInfo[i].bGotFCTelemetry )
+      687        {
+      688 +         // Seed the arm/disarm baseline from the first sample
+          + without treating it                                          
+      689 +         // as a transition: uLastFCFlags starts at 0, same va
+          +lue as a normal                                               
+      690 +         // disarmed state, so without this seeding step the c
+          +hange-detection below                                         
+      691 +         // would either misfire on connect or (if seeded lazi
+          +ly inside the change                                          
+      692 +         // check) permanently miss the very first arm of ever
+          +y session.                                                    
+      693 +         if ( ! g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSampl
+          +e )                                                           
+      694 +         {                                                    
+      695 +            g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSample = 
+          +true;                                                         
+      696 +            g_VehiclesRuntimeInfo[i].uLastFCFlags = g_Vehicles
+          +RuntimeInfo[i].headerFCTelemetry.uFCFlags;                    
+      697 +         }                                                    
+      698 +                                                              
+      699           // Flight mode changed?
+      700  
+      701           if ( g_VehiclesRuntimeInfo[i].uLastFCFlightMode != (g
+           _VehiclesRuntimeInfo[i].headerFCTelemetry.flight_mode & (~FLIG
+           HT_MODE_ARMED)) )
+
+● Ora semplifico il blocco successivo, rimuovendo il guard ridondante (la
+  baseline è già garantita dal seeding sopra):
+
+● Update(code/r_central/link_watch.cpp)
+  ⎿  Added 8 lines, removed 18 lines
+      728           // FC telemetry flags changed ?
+      729           if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFl
+           ags != g_VehiclesRuntimeInfo[i].uLastFCFlags )
+      730           {
+      731 -            // Only the very first sample after (re)connecting
+          - is used just to seed                                         
+      732 -            // the baseline (uLastFCFlags starts at 0, same as
+          - a normal disarmed                                            
+      733 -            // state, so using "0 != uLastFCFlags" to detect "
+          -no baseline yet" would                                        
+      734 -            // permanently swallow the very first arm event of
+          - every session — the                                          
+      735 -            // vehicle is disarmed at connect, uFCFlags reads 
+          -0, and arming then                                            
+      736 -            // flips 0 -> ARMED, which looked exactly like "no
+          - baseline yet").                                              
+      737 -            if ( g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSamp
+          -le )                                                          
+      731 +            if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry.uF
+          +CFlags & FC_TELE_FLAGS_ARMED )                                
+      732 +            if ( !(g_VehiclesRuntimeInfo[i].uLastFCFlags & FC_
+          +TELE_FLAGS_ARMED) )                                           
+      733              {
+      739 -               if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry
+          -.uFCFlags & FC_TELE_FLAGS_ARMED )                             
+      740 -               if ( !(g_VehiclesRuntimeInfo[i].uLastFCFlags & 
+          -FC_TELE_FLAGS_ARMED) )                                        
+      741 -               {                                              
+      742 -                  onEventArmed(g_VehiclesRuntimeInfo[i].uVehic
+          -leId);                                                        
+      743 -               }                                              
+      744 -               if ( !(g_VehiclesRuntimeInfo[i].headerFCTelemet
+          -ry.uFCFlags & FC_TELE_FLAGS_ARMED) )                          
+      745 -               if ( g_VehiclesRuntimeInfo[i].uLastFCFlags & FC
+          -_TELE_FLAGS_ARMED )                                           
+      746 -               {                                              
+      747 -                  onEventDisarmed(g_VehiclesRuntimeInfo[i].uVe
+          -hicleId);                                                     
+      748 -               }                                              
+      734 +               onEventArmed(g_VehiclesRuntimeInfo[i].uVehicleI
+          +d);                                                           
+      735              }
+      750 -            g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSample = 
+          -true;                                                         
+      736 +            if ( !(g_VehiclesRuntimeInfo[i].headerFCTelemetry.
+          +uFCFlags & FC_TELE_FLAGS_ARMED) )                             
+      737 +            if ( g_VehiclesRuntimeInfo[i].uLastFCFlags & FC_TE
+          +LE_FLAGS_ARMED )                                              
+      738 +            {                                                 
+      739 +               onEventDisarmed(g_VehiclesRuntimeInfo[i].uVehic
+          +leId);                                                        
+      740 +            }                                                 
+      741              g_VehiclesRuntimeInfo[i].uLastFCFlags = g_Vehicles
+           RuntimeInfo[i].headerFCTelemetry.uFCFlags;
+      742           }
+      743        }
+
+  Read 1 file (ctrl+o to expand)
+
+● Ora verifico la sintassi.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+● No errors. Let's also check shared_vars_state.cpp compiles cleanly.
+
+  Searched for 1 pattern, ran 1 shell command (ctrl+o to expand)
+
+● Solo un punto di reset — coerente con la fix. Riepilogo del fix:
+
+  Bug trovato
+
+  code/r_central/link_watch.cpp (rilevamento arm/disarm, funzione
+  link_watch_loop_telemetry()) usava 0 != uLastFCFlags per distinguere "nessun
+  campione base ancora ricevuto" da "cambio di stato reale". Ma uLastFCFlags
+  parte a 0, lo stesso valore che ha normalmente il veicolo disarmato (nessun
+  bit settato). Sequenza reale in ogni volo:
+
+  1. Ti connetti, veicolo disarmato → uFCFlags = 0, uLastFCFlags resta 0.
+  2. Armi → uFCFlags diventa 1 (bit ARMED). Il codice vede uLastFCFlags == 0 e
+  lo tratta come "primo campione, sto solo inizializzando la baseline" → non 
+  chiama mai onEventArmed().
+  3. Disarmi → uFCFlags torna a 0, uLastFCFlags (che era 1) viene rilevato come
+  cambiato → onEventDisarmed() scatta correttamente, e uLastFCFlags torna a 0.
+  4. Riarmi → si ripete il punto 2, di nuovo silenziosamente ignorato.
+
+  Quindi "Start recording on Arm" non scattava mai, mentre "Stop recording on
+  Disarm" funzionava — a meno che tu non abbia mai armato il motore nella
+  sessione corrente prima di verificarlo, il che spiega perfettamente "presente
+  nel menu ma non funziona".
+
+  Fix applicato
+
+  - code/r_central/shared_vars_state.h / .cpp: aggiunto un booleano dedicato
+  bGotFirstFCFlagsSample (invece di riusare uLastFCFlags != 0 come proxy).
+  - code/r_central/link_watch.cpp: la baseline viene ora "seminata"
+  esplicitamente al primo campione telemetria FC ricevuto (senza scatenare
+  eventi), poi ogni cambio successivo del bit ARMED — incluso il primo vero arm
+  della sessione — attiva correttamente onEventArmed()/onEventDisarmed(), che a
+  loro volta chiamano ruby_start_recording() / ruby_stop_recording() (già
+  cablati correttamente per Ground/Onboard/Both).
+
+  Verificato con g++ -fsyntax-only (nessun errore). La menu option era già
+  collegata correttamente (p->iStartVideoRecOnArm → onEventArmed), quindi non
+  serviva aggiungere nulla lì — il problema era solo nel rilevamento della
+  transizione di stato.
+
+✻ Brewed for 5m 14s
+
+❯ bene                                                                          
+
+● Perfetto. Riepilogo di quanto fatto in questa sessione:
+
+  1. Fix truncamento .osd (rx_osd_recording_vehicle.cpp): la registrazione OSD
+  onboard riprende in append invece di troncare il file se il processo
+  ruby_tx_telemetry viene riavviato a metà registrazione.
+  2. Fix "Start recording on Arm" (link_watch.cpp + shared_vars_state.h/.cpp):
+  il rilevamento del primo arm della sessione veniva sempre ignorato per un bug
+  nella logica di baseline dei flag FC.
+
+  Se vuoi procedere con una build reale (make vehicle RUBY_BUILD_ENV=openipc per
+  il primo fix, make ruby_central RUBY_BUILD_ENV=radxa per il secondo) e un
+  test su hardware, fammi sapere.
+
+✻ Brewed for 8s

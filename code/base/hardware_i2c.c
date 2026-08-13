@@ -523,7 +523,7 @@ int hardware_i2c_load_device_settings()
       int i2cAddress = 0;
       int deviceType = 0;
       int nVersion = 0;
-      if ( 4 != fscanf(fd, "%d %d %d %31s", &i2cAddress, &nVersion, &deviceType, s_listI2CDevicesSettings[i].szDeviceName) )
+      if ( 4 != fscanf(fd, "%d %d %d %s", &i2cAddress, &nVersion, &deviceType, s_listI2CDevicesSettings[i].szDeviceName) )
       {
          log_softerror_and_alarm("[Hardware]: Failed to load I2C devices settings from file: %s (invalid i2c data)", szFile);
          failed = 17;

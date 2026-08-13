@@ -100,7 +100,6 @@
 #include "test_link_params.h"
 #include "adaptive_video.h"
 #include "video_sources.h"
-#include "onboard_video_recording.h"
 #include "video_source_csi.h"
 #include "video_source_majestic.h"
 #include "video_tx_buffers.h"
@@ -762,8 +761,6 @@ void cleanUp()
    video_sources_flush_discard_all_pending_data();
    video_sources_uninit();
 
-   onboard_video_recording_uninit();
-
    ruby_close_ipc_channel(s_fIPCRouterToCommands);
    ruby_close_ipc_channel(s_fIPCRouterFromCommands);
    ruby_close_ipc_channel(s_fIPCRouterToTelemetry);
@@ -1302,10 +1299,8 @@ int main(int argc, char *argv[])
    video_sources_init();
 
    adaptive_video_init();
-   video_sources_start_capture();
-
-   onboard_video_recording_init();
-
+   video_sources_start_capture();   
+   
    g_pVideoTxBuffers = new VideoTxPacketsBuffer(0,0);
    g_pVideoTxBuffers->init(g_pCurrentModel);
    
@@ -1823,7 +1818,6 @@ void _main_loop2()
          process_data_tx_video_loop();
          if ( bEndOfFrame || (!bReadAnyCameraFrameData) )
             adaptive_video_periodic_loop();
-         onboard_video_recording_periodic_loop();
       }
       g_pProcessStats->uLoopSubStep = 45;
 

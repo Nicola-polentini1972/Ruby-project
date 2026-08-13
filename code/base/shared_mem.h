@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include "base.h"
 #include "config.h"
-#include "msp.h"
 #include "../radio/radiopackets2.h"
 #include "../radio/radiopackets_rc.h"
 
@@ -28,8 +27,6 @@
 #define SHARED_MEM_WATCHDOG_TELEMETRY_TX "/SYSTEM_SHARED_MEM_WATCHDOG_TELEMETRY_TX"
 #define SHARED_MEM_WATCHDOG_COMMANDS_RX "/SYSTEM_SHARED_MEM_WATCHDOG_COMMANDS_RX"
 #define SHARED_MEM_WATCHDOG_RC_RX "/SYSTEM_SHARED_MEM_WATCHDOG_RC_RX"
-
-#define SHARED_MEM_MSP_OSD_SCREEN "/SYSTEM_SHARED_MEM_VEHICLE_MSP_OSD_SCREEN"
 
 #define SHARED_MEM_RASPIVIDEO_COMMAND "/SYSTEM_SHARED_MEM_RASPIVID_COMM"
 #define SIZE_OF_SHARED_MEM_RASPIVID_COMM 32
@@ -142,23 +139,6 @@ typedef struct
 
 } ALIGN_STRUCT_SPEC_INFO shared_mem_video_frames_stats;
 
-// Screen buffer of the MSP-OSD overlay, published by ruby_tx_telemetry (which parses
-// the raw MSP DisplayPort stream from the flight controller) and consumed by
-// ruby_rt_vehicle (onboard_video_recording.cpp), so that the onboard-recorded video
-// can be paired with a .osd overlay file, same format as the station-side recording.
-typedef struct
-{
-   u32 uGenerationCounter; // Incremented last, after a full buffer update. Used by the
-                            // reader to detect and discard a torn read (no locking is
-                            // used for shared mem elsewhere in this codebase).
-   u32 uMSPFlags; // Same meaning as t_packet_header_telemetry_msp.uMSPFlags
-   u8  uMSPOSDRows;
-   u8  uMSPOSDCols;
-   u8  uReserved[2];
-   int iLastDrawFrameNumber; // Same meaning as type_msp_parse_state.iLastDrawFrameNumber
-   u16 uScreenChars[MAX_MSP_CHARS_BUFFER]; // Same layout/stride as type_msp_parse_state.uScreenChars
-} ALIGN_STRUCT_SPEC_INFO shared_mem_msp_osd_screen;
-
 void* open_shared_mem(const char* name, int size, int readOnly);
 void* open_shared_mem_for_write(const char* name, int size);
 void* open_shared_mem_for_read(const char* name, int size);
@@ -189,10 +169,6 @@ void shared_mem_video_frames_stats_radio_in_close(shared_mem_video_frames_stats*
 shared_mem_video_frames_stats* shared_mem_video_frames_stats_radio_out_open_for_read();
 shared_mem_video_frames_stats* shared_mem_video_frames_stats_radio_out_open_for_write();
 void shared_mem_video_frames_stats_radio_out_close(shared_mem_video_frames_stats* pAddress);
-
-shared_mem_msp_osd_screen* shared_mem_msp_osd_screen_open_for_read();
-shared_mem_msp_osd_screen* shared_mem_msp_osd_screen_open_for_write();
-void shared_mem_msp_osd_screen_close(shared_mem_msp_osd_screen* pAddress);
 
 t_packet_header_rc_info_downstream* shared_mem_rc_downstream_info_open_read();
 t_packet_header_rc_info_downstream* shared_mem_rc_downstream_info_open_write();

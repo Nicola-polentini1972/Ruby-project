@@ -37,77 +37,13 @@
 #include "shared_vars.h"
 #include "timers.h"
 #include "../base/ruby_ipc.h"
-#include "../base/hardware_procs.h"
 #include "../base/parse_fc_telemetry.h"
 #include "../radio/radiopackets2.h"
 #include "../common/string_utils.h"
 
 bool isRadioLinksInitInProgress();
-void save_model();
 
 extern int s_fIPCToRouter;
-
-bool s_bOnArmEventHandled = false;
-
-void _telemetry_notify_router_arm_state_changed(bool bArmed)
-{
-   t_packet_header PH;
-   radio_packet_init(&PH, PACKET_COMPONENT_LOCAL_CONTROL, PACKET_TYPE_LOCAL_CONTROL_VEHICLE_ARM_STATE_CHANGED, STREAM_ID_DATA);
-   PH.vehicle_id_src = bArmed ? 1 : 0;
-   PH.vehicle_id_dest = 0;
-   PH.total_length = sizeof(t_packet_header);
-   ruby_ipc_channel_send_message(s_fIPCToRouter, (u8*)&PH, PH.total_length);
-}
-
-void telemetry_handle_arm_disarm_event(t_packet_header_fc_telemetry* pFCTelem)
-{
-   if ( NULL == pFCTelem )
-      return;
-   if ( 0 == pFCTelem->flight_mode )
-      return;
-
-   if ( pFCTelem->flight_mode & FLIGHT_MODE_ARMED )
-   {
-      if ( (pFCTelem->arm_time >= 1) && (pFCTelem->arm_time < 5) )
-      {
-         if ( ! s_bOnArmEventHandled )
-         {
-            s_bOnArmEventHandled = true;
-
-            char szBuff[128];
-            snprintf(szBuff, sizeof(szBuff)/sizeof(szBuff[0]), "touch %s%s", FOLDER_RUBY_TEMP, FILE_TEMP_ARMED);
-            hw_execute_bash_command(szBuff, NULL);
-
-            g_pCurrentModel->m_Stats.uTotalFlights++;
-            log_line("Armed Event. Saving model, total flights: %d", g_pCurrentModel->m_Stats.uTotalFlights);
-            g_pCurrentModel->m_Stats.uCurrentFlightTime = 1; // seconds
-            g_pCurrentModel->m_Stats.uCurrentFlightDistance = 0; // in 1/100 meters (cm)
-            g_pCurrentModel->m_Stats.uCurrentFlightTotalCurrent = 0; // 0.1 miliAmps (1/10000 amps);
-
-            g_pCurrentModel->m_Stats.uCurrentMaxAltitude = 0; // meters
-            g_pCurrentModel->m_Stats.uCurrentMaxDistance = 0; // meters
-            g_pCurrentModel->m_Stats.uCurrentMaxCurrent = 0; // miliAmps (1/1000 amps)
-            g_pCurrentModel->m_Stats.uCurrentMinVoltage = 100000; // miliVolts (1/1000 volts)
-            save_model();
-
-            _telemetry_notify_router_arm_state_changed(true);
-         }
-      }
-   }
-   else
-   {
-      if ( s_bOnArmEventHandled )
-         _telemetry_notify_router_arm_state_changed(false);
-      s_bOnArmEventHandled = false;
-      if ( pFCTelem->arm_time != 0 )
-      {
-         char szBuff[128];
-         snprintf(szBuff, sizeof(szBuff)/sizeof(szBuff[0]), "rm -rf %s%s", FOLDER_RUBY_TEMP, FILE_TEMP_ARMED);
-         hw_execute_bash_command(szBuff, NULL);
-      }
-      pFCTelem->arm_time = 0;
-   }
-}
 t_packet_header_fc_telemetry sPHFCT;
 t_packet_header_fc_extra sPHFCE;
 

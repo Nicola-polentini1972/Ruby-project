@@ -21,5 +21,5 @@ class MenuVehicleCameraGains: public Menu
       MenuItemSelect* m_pItemsSelect[20];
       MenuItemRange* m_pItemsRange[15];
 
-      int m_IndexGain, m_IndexGainB, m_IndexGainR, m_IndexColorTemp;
+      int m_IndexGain, m_IndexGainB, m_IndexGainR;
 };

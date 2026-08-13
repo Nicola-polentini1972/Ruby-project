@@ -227,24 +227,6 @@ void shared_mem_video_frames_stats_radio_out_close(shared_mem_video_frames_stats
       munmap(pAddress, sizeof(shared_mem_video_frames_stats));
 }
 
-shared_mem_msp_osd_screen* shared_mem_msp_osd_screen_open_for_read()
-{
-   void *retVal = open_shared_mem_for_read(SHARED_MEM_MSP_OSD_SCREEN, sizeof(shared_mem_msp_osd_screen));
-   return (shared_mem_msp_osd_screen*)retVal;
-}
-
-shared_mem_msp_osd_screen* shared_mem_msp_osd_screen_open_for_write()
-{
-   void *retVal = open_shared_mem_for_write(SHARED_MEM_MSP_OSD_SCREEN, sizeof(shared_mem_msp_osd_screen));
-   return (shared_mem_msp_osd_screen*)retVal;
-}
-
-void shared_mem_msp_osd_screen_close(shared_mem_msp_osd_screen* pAddress)
-{
-   if ( NULL != pAddress )
-      munmap(pAddress, sizeof(shared_mem_msp_osd_screen));
-}
-
 t_packet_header_rc_info_downstream* shared_mem_rc_downstream_info_open_read()
 {
    void *retVal =  open_shared_mem(SHARED_MEM_RC_DOWNLOAD_INFO, sizeof(t_packet_header_rc_info_downstream), 1);

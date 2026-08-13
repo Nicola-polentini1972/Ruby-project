@@ -1179,7 +1179,7 @@ bool _adaptive_video_switch_higher(Model* pModel, type_global_state_vehicle_runt
       int iNewDR = pModel->getRequiredRadioDataRateForVideoBitrate(uMaxVideoBitrateForLinkDatarate, iLink, true);
       log_line("[AdaptiveVideo] Switch higher: Radio link %d datarate would be: %s for new video bitrate: %.2f Mbps", iLink+1, str_format_datarate_inline(iNewDR), (float)uMaxVideoBitrateForLinkDatarate/1000.0/1000.0);
 
-      if ( uMaxVideoBitrateForLinkDatarate < uNewHigherVideoBitrate )
+      if ( uMaxVideoBitrateForLinkDatarate <= uNewHigherVideoBitrate )
       {
          uNewHigherVideoBitrate = uMaxVideoBitrateForLinkDatarate;
          iNewHigherDR = iNewDR;

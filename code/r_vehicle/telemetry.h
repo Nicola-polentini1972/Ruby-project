@@ -19,7 +19,3 @@ bool telemetry_will_send_full_telemetry_to_controller();
 
 t_packet_header_fc_telemetry* telemetry_get_fc_telemetry_header();
 t_packet_header_fc_extra* telemetry_get_fc_extra_telemetry_header();
-
-// Shared one-shot arm/disarm event handling (stats reset, save model, notify router),
-// used by MAVLink/LTM and MSP telemetry parsers alike.
-void telemetry_handle_arm_disarm_event(t_packet_header_fc_telemetry* pFCTelem);

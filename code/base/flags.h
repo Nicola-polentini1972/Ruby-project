@@ -107,7 +107,6 @@
 #define MODEL_CHANGED_RC_PARAMS 56
 #define MODEL_CHANGED_RESET_RADIO_LINK 57
 #define MODEL_CHANGED_THREADS_PRIORITIES 58
-#define MODEL_CHANGED_ONBOARD_RECORDING_PARAMS 59
 
 //----------------------------------------------------
 // Model & developer flags

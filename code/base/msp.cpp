@@ -88,21 +88,14 @@ void _parse_msp_osd_add_string(type_msp_parse_state* pMSPState, u8* pData, int i
       if ( pData[i] == 0 )
          break;
 
-      if ( (x < 0) || (x >= 64) || (x >= (int)pMSPState->headerTelemetryMSP.uMSPOSDCols) )
-         break;
-
-      int iCharIndex = x + y*pMSPState->headerTelemetryMSP.uMSPOSDCols;
-      if ( (iCharIndex < 0) || (iCharIndex >= MAX_MSP_CHARS_BUFFER) )
-         break;
-
       if ( x > pMSPState->iMaxDrawX )
       {
          pMSPState->iMaxDrawX = x;
          log_line("MSPOSD: Max X updated to %d", pMSPState->iMaxDrawX);
       }
-      pMSPState->uScreenCharsTmp[iCharIndex] = pData[i];
+      pMSPState->uScreenCharsTmp[x + y*pMSPState->headerTelemetryMSP.uMSPOSDCols] = pData[i];
       if ( uAttr & 0x03 )
-         pMSPState->uScreenCharsTmp[iCharIndex] |= (((u16)(uAttr & 0x03)) << 8);
+         pMSPState->uScreenCharsTmp[x + y*pMSPState->headerTelemetryMSP.uMSPOSDCols] |= (((u16)(uAttr & 0x03)) << 8);
       szBuff[i-3] = pData[i];
       x++;
    }

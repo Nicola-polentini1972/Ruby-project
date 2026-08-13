@@ -685,6 +685,17 @@ void link_watch_loop_telemetry()
 
       if ( g_VehiclesRuntimeInfo[i].bGotFCTelemetry )
       {
+         // Seed the arm/disarm baseline from the first sample without treating it
+         // as a transition: uLastFCFlags starts at 0, same value as a normal
+         // disarmed state, so without this seeding step the change-detection below
+         // would either misfire on connect or (if seeded lazily inside the change
+         // check) permanently miss the very first arm of every session.
+         if ( ! g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSample )
+         {
+            g_VehiclesRuntimeInfo[i].bGotFirstFCFlagsSample = true;
+            g_VehiclesRuntimeInfo[i].uLastFCFlags = g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFlags;
+         }
+
          // Flight mode changed?
 
          if ( g_VehiclesRuntimeInfo[i].uLastFCFlightMode != (g_VehiclesRuntimeInfo[i].headerFCTelemetry.flight_mode & (~FLIGHT_MODE_ARMED)) )
@@ -717,18 +728,15 @@ void link_watch_loop_telemetry()
          // FC telemetry flags changed ?
          if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFlags != g_VehiclesRuntimeInfo[i].uLastFCFlags )
          {
-            if ( 0 != g_VehiclesRuntimeInfo[i].uLastFCFlags )
+            if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFlags & FC_TELE_FLAGS_ARMED )
+            if ( !(g_VehiclesRuntimeInfo[i].uLastFCFlags & FC_TELE_FLAGS_ARMED) )
             {
-               if ( g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFlags & FC_TELE_FLAGS_ARMED )
-               if ( !(g_VehiclesRuntimeInfo[i].uLastFCFlags & FC_TELE_FLAGS_ARMED) )
-               {
-                  onEventArmed(g_VehiclesRuntimeInfo[i].uVehicleId);
-               }
-               if ( !(g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFlags & FC_TELE_FLAGS_ARMED) )
-               if ( g_VehiclesRuntimeInfo[i].uLastFCFlags & FC_TELE_FLAGS_ARMED )
-               {
-                  onEventDisarmed(g_VehiclesRuntimeInfo[i].uVehicleId);
-               }
+               onEventArmed(g_VehiclesRuntimeInfo[i].uVehicleId);
+            }
+            if ( !(g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFlags & FC_TELE_FLAGS_ARMED) )
+            if ( g_VehiclesRuntimeInfo[i].uLastFCFlags & FC_TELE_FLAGS_ARMED )
+            {
+               onEventDisarmed(g_VehiclesRuntimeInfo[i].uVehicleId);
             }
             g_VehiclesRuntimeInfo[i].uLastFCFlags = g_VehiclesRuntimeInfo[i].headerFCTelemetry.uFCFlags;
          }

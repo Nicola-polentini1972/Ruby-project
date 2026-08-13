@@ -45,7 +45,6 @@
 #include "menu_vehicle_relay.h"
 #include "menu_vehicle_management.h"
 #include "menu_vehicle_audio.h"
-#include "menu_vehicle_onboard_recording.h"
 #include "menu_vehicle_data_link.h"
 #include "menu_vehicle_functions.h"
 #include "menu_vehicle_alarms.h"
@@ -123,14 +122,6 @@ void MenuVehicle::onShow()
    m_IndexAudio = addMenuItem(new MenuItem(L("Audio"), L("Change the audio settings")));
    if ( (NULL != g_pCurrentModel) && g_pCurrentModel->is_spectator )
       m_pMenuItems[m_IndexAudio]->setEnabled(false);
-
-   m_IndexOnboardRecording = -1;
-   if ( (NULL != g_pCurrentModel) && g_pCurrentModel->hasCamera() && g_pCurrentModel->isRunningOnRadxaHardware() )
-   {
-      m_IndexOnboardRecording = addMenuItem(new MenuItem(L("Onboard Recording"), L("Configure automatic video recording to the vehicle's SD card on arm.")));
-      if ( g_pCurrentModel->is_spectator )
-         m_pMenuItems[m_IndexOnboardRecording]->setEnabled(false);
-   }
 
    m_IndexTelemetry = addMenuItem(new MenuItem(L("Telemetry"), L("Change telemetry parameters between flight controller and ruby vehicle.")));
    if ( NULL != g_pCurrentModel && g_pCurrentModel->is_spectator )
@@ -437,12 +428,6 @@ void MenuVehicle::onSelectItem()
          return;
       }
       add_menu_to_stack(new MenuVehicleAudio());
-      return;
-   }
-
-   if ( (-1 != m_IndexOnboardRecording) && (m_IndexOnboardRecording == m_SelectedIndex) )
-   {
-      add_menu_to_stack(new MenuVehicleOnboardRecording());
       return;
    }
 

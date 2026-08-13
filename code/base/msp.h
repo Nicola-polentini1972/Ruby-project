@@ -1,6 +1,5 @@
 #pragma once
 
-#include <stdbool.h>
 #include "base.h"
 #include "../radio/radiopackets2.h"
 

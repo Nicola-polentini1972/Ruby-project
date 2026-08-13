@@ -229,9 +229,9 @@ int hardware_serial_reload_ports_settings()
          }
          for( int i=0; i<s_iCountLoadedSerialPorts; i++ )
          {
-            if ( (!iFailed) && (1 != fscanf(fd, "%63s", s_LoadedSerialPortsInfo[i].szName)) )
+            if ( (!iFailed) && (1 != fscanf(fd, "%s", s_LoadedSerialPortsInfo[i].szName)) )
                iFailed = 5;
-            if ( (!iFailed) && (1 != fscanf(fd, "%63s", s_LoadedSerialPortsInfo[i].szPortDeviceName)) )
+            if ( (!iFailed) && (1 != fscanf(fd, "%s", s_LoadedSerialPortsInfo[i].szPortDeviceName)) )
                iFailed = 3;
             for( int k=0; k<MAX_SERIAL_PORT_NAME; k++ )
                if ( s_LoadedSerialPortsInfo[i].szName[k] == '*' )

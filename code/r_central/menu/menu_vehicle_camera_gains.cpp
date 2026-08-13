@@ -35,9 +35,6 @@
 #include "menu_item_select.h"
 #include "menu_item_slider.h"
 #include "menu_item_legend.h"
-#include "../../base/camera_utils.h"
-
-#define DEFAULT_COLOR_TEMP_K 5500
 
 
 MenuVehicleCameraGains::MenuVehicleCameraGains(void)
@@ -53,12 +50,7 @@ MenuVehicleCameraGains::MenuVehicleCameraGains(void)
       addMenuItem(new MenuItemLegend("Warning", "Analog gains are ignored if AWB is not turned off.", 0) );
    
 
-   u32 uInitialColorTemp = (pCamProfile->uColorTempK != 0) ? pCamProfile->uColorTempK : DEFAULT_COLOR_TEMP_K;
-   m_pItemsRange[3] = new MenuItemRange("Color Temperature:", "Sets the manual color temperature of the light source and computes the Red/Blue AWB gains accordingly. Ignored if AWB is not turned off.", 2000.0, 10000.0, uInitialColorTemp, 100.0 );
-   m_pItemsRange[3]->setSufix("K");
-   m_IndexColorTemp = addMenuItem(m_pItemsRange[3]);
-
-   m_pItemsRange[0] = new MenuItemRange("Analog Gain:", "Analog gain of the camera sensor when AWB is turned off.", 1.0, 8.0, pCamProfile->analogGain, 0.1 );
+   m_pItemsRange[0] = new MenuItemRange("Analog Gain:", "Analog gain of the camera sensor when AWB is turned off.", 1.0, 8.0, pCamProfile->analogGain, 0.1 );  
    m_pItemsRange[0]->setSufix("");
    m_IndexGain = addMenuItem(m_pItemsRange[0]);
 
@@ -82,7 +74,6 @@ void MenuVehicleCameraGains::updateUIValues()
    m_pItemsRange[0]->setCurrentValue(pCamProfile->analogGain);
    m_pItemsRange[1]->setCurrentValue(pCamProfile->awbGainB);
    m_pItemsRange[2]->setCurrentValue(pCamProfile->awbGainR);
-   m_pItemsRange[3]->setCurrentValue((pCamProfile->uColorTempK != 0) ? pCamProfile->uColorTempK : DEFAULT_COLOR_TEMP_K);
 }
 
 void MenuVehicleCameraGains::valuesToUI()
@@ -150,28 +141,5 @@ void MenuVehicleCameraGains::onSelectItem()
       cparams.profiles[iProfile].awbGainR = m_pItemsRange[2]->getCurrentValue();
       if ( ! handle_commands_send_to_vehicle(COMMAND_ID_SET_CAMERA_PARAMETERS, g_pCurrentModel->iCurrentCamera, (u8*)(&cparams), sizeof(type_camera_parameters)) )
          valuesToUI();
-   }
-
-   if ( m_IndexColorTemp == m_SelectedIndex && ! m_pMenuItems[m_IndexColorTemp]->isEditing() )
-   {
-      type_camera_parameters cparams;
-      memcpy(&cparams, &(g_pCurrentModel->camera_params[g_pCurrentModel->iCurrentCamera]), sizeof(type_camera_parameters));
-      int iProfile = g_pCurrentModel->camera_params[g_pCurrentModel->iCurrentCamera].iCurrentProfile;
-
-      u32 uColorTempK = (u32) m_pItemsRange[3]->getCurrentValue();
-      float fGainR = 0.0f;
-      float fGainB = 0.0f;
-      camera_get_awb_gains_for_color_temperature(uColorTempK, &fGainR, &fGainB);
-
-      cparams.profiles[iProfile].uColorTempK = uColorTempK;
-      cparams.profiles[iProfile].awbGainR = fGainR;
-      cparams.profiles[iProfile].awbGainB = fGainB;
-      if ( ! handle_commands_send_to_vehicle(COMMAND_ID_SET_CAMERA_PARAMETERS, g_pCurrentModel->iCurrentCamera, (u8*)(&cparams), sizeof(type_camera_parameters)) )
-         valuesToUI();
-      else
-      {
-         m_pItemsRange[1]->setCurrentValue(fGainB);
-         m_pItemsRange[2]->setCurrentValue(fGainR);
-      }
    }
 }

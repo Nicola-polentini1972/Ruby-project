@@ -1,0 +1,49 @@
+S7-0:00:14.681 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S7-0:00:14.681 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S7-0:00:14.681 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S7-0:00:14.681 000 RubyStart: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S8-0:00:15.268 000 RubyRadioInit: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S8-0:00:22.979 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 12 ms, stall count: 11
+S8-0:00:23.176 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 31 ms, stall count: 27
+S8-0:00:24.377 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 11 ms, stall count: 9
+S8-0:00:26.749 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5C.
+S8-0:00:26.749 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5D.
+S8-0:00:26.749 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5E.
+S8-0:00:26.749 012 Central: SOFTERROR: [Hardware]: Can't create/get device settings for I2C device id: 5F.
+S8-0:00:26.948 000 RubyPlayerF: SOFTERROR: [MPP] Stalled feeding data for 8 ms, stall count: 6
+S8-0:00:31.148 000 RubyController: SOFTERROR: Main processing loop took too long (550 ms).
+S8-0:00:31.950 000 Router: SOFTERROR: Received a response from set freq command: [Error for wireless request "Set Frequency" (8B04) :
+    SET failed on device wlan0 ; No such device.
+]
+S8-0:00:32.233 000 Router: SOFTERROR: Unexpected result: [command failed: No such device (-19)
+]
+S8-0:00:32.698 000 Router: SOFTERROR: Failed to switch radio interface 1 (wlan0, 8812eu) to frequency 5825 Mhz, returned error: [Error for wireless request "Set Frequency" (8B04) :.    SET failed on device wlan0 ; No such device..]
+S8-0:00:33.172 000 Router: SOFTERROR: Error setting [wlan0] to immediate mode: SIOCGIFHWADDR: No such device
+S8-0:00:33.172 000 Router: SOFTERROR: ERROR: unknown encapsulation on [wlan0]! check if monitor mode is supported and enabled
+S8-0:03:29.922 560 Router: SOFTERROR: Packet not sent! No radio interface could send it. Packet type: PACKET_TYPE_COMMAND
+S8-0:03:29.922 560 Router: SOFTERROR: Current local radio links: 1, current model links frequencies: 1: 5825 Mhz, 2: 0 Mhz, 3: 0 Mhz
+S8-0:03:29.922 560 Router: SOFTERROR: Current radio interface used for TX on local radio link 1, vehicle radio link 1: 1, freq: 0 Mhz
+S8-0:03:29.922 560 Router: SOFTERROR: Current vehicle radio link 1 capabilities: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+S8-0:03:29.922 560 Router: SOFTERROR: Packet not sent! No radio interface could send it. Packet type: PACKET_TYPE_COMMAND
+S8-0:03:29.922 560 Router: SOFTERROR: Current local radio links: 1, current model links frequencies: 1: 5825 Mhz, 2: 0 Mhz, 3: 0 Mhz
+S8-0:03:29.922 560 Router: SOFTERROR: Current radio interface used for TX on local radio link 1, vehicle radio link 1: 1, freq: 0 Mhz
+S8-0:03:29.922 560 Router: SOFTERROR: Current vehicle radio link 1 capabilities: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+S8-0:03:29.922 560 Router: SOFTERROR: Router basic main loop took too long to complete (loop count: 355560) (75 milisec: 0 + 3 + 0 + 72) recording: no, repeat count: 1!!!
+S8-0:03:29.922 560 Router: SOFTERROR: Main loop took too long (max 13 ms, fps: 60): 75 ms (=0 + 3 + 72) cnt2: 0, cnt3: 0
+S8-0:06:03.419 639 Router: SOFTERROR: Packet not sent! No radio interface could send it. Packet type: PACKET_TYPE_COMMAND
+S8-0:06:03.419 639 Router: SOFTERROR: Current local radio links: 1, current model links frequencies: 1: 5825 Mhz, 2: 0 Mhz, 3: 0 Mhz
+S8-0:06:03.419 639 Router: SOFTERROR: Current radio interface used for TX on local radio link 1, vehicle radio link 1: 1, freq: 0 Mhz
+S8-0:06:03.419 639 Router: SOFTERROR: Current vehicle radio link 1 capabilities: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+S8-0:06:03.419 639 Router: SOFTERROR: Packet not sent! No radio interface could send it. Packet type: PACKET_TYPE_COMMAND
+S8-0:06:03.419 639 Router: SOFTERROR: Current local radio links: 1, current model links frequencies: 1: 5825 Mhz, 2: 0 Mhz, 3: 0 Mhz
+S8-0:06:03.419 639 Router: SOFTERROR: Current radio interface used for TX on local radio link 1, vehicle radio link 1: 1, freq: 0 Mhz
+S8-0:06:03.419 639 Router: SOFTERROR: Current vehicle radio link 1 capabilities: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+S8-0:06:03.836 477 Router: SOFTERROR: Packet not sent! No radio interface could send it. Packet type: PACKET_TYPE_COMMAND
+S8-0:06:03.836 477 Router: SOFTERROR: Current local radio links: 1, current model links frequencies: 1: 5825 Mhz, 2: 0 Mhz, 3: 0 Mhz
+S8-0:06:03.836 477 Router: SOFTERROR: Current radio interface used for TX on local radio link 1, vehicle radio link 1: 1, freq: 0 Mhz
+S8-0:06:03.836 477 Router: SOFTERROR: Current vehicle radio link 1 capabilities: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]
+S8-0:06:03.836 477 Router: SOFTERROR: Packet not sent! No radio interface could send it. Packet type: PACKET_TYPE_COMMAND
+S8-0:06:03.836 477 Router: SOFTERROR: Current local radio links: 1, current model links frequencies: 1: 5825 Mhz, 2: 0 Mhz, 3: 0 Mhz
+S8-0:06:03.836 477 Router: SOFTERROR: Current radio interface used for TX on local radio link 1, vehicle radio link 1: 1, freq: 0 Mhz
+S8-0:06:03.836 477 Router: SOFTERROR: Current vehicle radio link 1 capabilities: [CAN TX/RX] [DATA][VIDEO][HIGH CAPACITY]

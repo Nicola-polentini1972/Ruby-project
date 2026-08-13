@@ -1,0 +1,56 @@
+code/base/hardware.o: code/base/hardware.cpp code/base/base.h \
+ code/base/config_hw.h code/base/hardware.h code/base/config.h \
+ code/base/alarms.h code/base/flags.h code/base/flags_osd.h \
+ code/base/flags_video.h code/base/config_rc.h \
+ code/base/config_file_names.h code/base/config_obj_names.h \
+ code/base/config_radio.h code/base/config_video.h \
+ code/base/config_timers.h code/base/hardware_radio.h \
+ code/base/hardware_radio_txpower.h code/base/../radio/radiotap.h \
+ code/base/../radio/ieee80211_radiotap.h \
+ code/base/../radio/radiopackets2.h \
+ code/base/../radio/../public/telemetry_info.h \
+ code/base/../radio/local_packets.h \
+ code/base/../radio/radiopackets_short.h code/base/hardware_radio_sik.h \
+ code/base/../base/shared_mem.h \
+ code/base/../base/../radio/radiopackets_rc.h \
+ code/base/../base/shared_mem_radio.h code/base/hardware_i2c.h \
+ code/base/../public/i2c_protocols.h code/base/hardware_serial.h \
+ code/base/gpio.h code/base/hardware_procs.h code/base/hardware_camera.h \
+ code/base/../base/models.h code/base/../base/hardware_cam_maj.h \
+ code/base/hardware_files.h code/base/../common/string_utils.h
+code/base/base.h:
+code/base/config_hw.h:
+code/base/hardware.h:
+code/base/config.h:
+code/base/alarms.h:
+code/base/flags.h:
+code/base/flags_osd.h:
+code/base/flags_video.h:
+code/base/config_rc.h:
+code/base/config_file_names.h:
+code/base/config_obj_names.h:
+code/base/config_radio.h:
+code/base/config_video.h:
+code/base/config_timers.h:
+code/base/hardware_radio.h:
+code/base/hardware_radio_txpower.h:
+code/base/../radio/radiotap.h:
+code/base/../radio/ieee80211_radiotap.h:
+code/base/../radio/radiopackets2.h:
+code/base/../radio/../public/telemetry_info.h:
+code/base/../radio/local_packets.h:
+code/base/../radio/radiopackets_short.h:
+code/base/hardware_radio_sik.h:
+code/base/../base/shared_mem.h:
+code/base/../base/../radio/radiopackets_rc.h:
+code/base/../base/shared_mem_radio.h:
+code/base/hardware_i2c.h:
+code/base/../public/i2c_protocols.h:
+code/base/hardware_serial.h:
+code/base/gpio.h:
+code/base/hardware_procs.h:
+code/base/hardware_camera.h:
+code/base/../base/models.h:
+code/base/../base/hardware_cam_maj.h:
+code/base/hardware_files.h:
+code/base/../common/string_utils.h:

@@ -1,0 +1,13 @@
+S1-0:00:06.486 000 RubyStart: ERROR: Can't execute Ruby process. Not found here: [ruby_init_wifi] or here: [/home/radxa/ruby/ruby_init_wifi]
+S1-0:00:24.335 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:24.633 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:24.934 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:25.230 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:25.530 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:25.829 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:26.126 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:26.422 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:26.714 000 RubyStart: ERROR: ruby_rt_station is not running
+S1-0:00:27.015 000 RubyStart: ERROR: ruby_rt_station is not running
+S2-0:01:02.865 000 Central: ERROR: Failed to create read semaphore: RUBY_SEM_VIDEO_PLAY_WILL_FINISH, try alternative.
+S2-0:01:02.866 000 Central: ERROR: Failed to create read semaphore: RUBY_SEM_VIDEO_PLAY_FINISHED, try alternative.

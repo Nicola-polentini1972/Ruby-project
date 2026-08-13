@@ -46,6 +46,7 @@ bool isRadioLinksInitInProgress();
 
 bool s_bDidSentMAVLinkSetup = false;
 u32 s_uMAVLinkSetupTime = 0;
+bool s_bOnArmEventHandled = false;
 bool s_bLogNextMAVLinkMessage = true;
 static int s_iCountTelemetryMAVLinkWriteErrors = 0;
 
@@ -319,20 +320,55 @@ void telemetry_mavlink_on_second_lapse()
    
    g_pCurrentModel->updateStatsEverySecond(pFCTelem);
 
-   telemetry_handle_arm_disarm_event(pFCTelem);
-
    if ( pFCTelem->flight_mode != 0 )
-   if ( pFCTelem->flight_mode & FLIGHT_MODE_ARMED )
    {
-      if ( pFCTelem->arm_time > 1 )
+      if ( pFCTelem->flight_mode & FLIGHT_MODE_ARMED )
       {
-         // speed is in 0.01m/s
-         // total distance is in 0.01m
-         float speed = pFCTelem->hspeed-100000.0;
-         pFCTelem->total_distance += speed;
+         if ( (pFCTelem->arm_time >= 1) && (pFCTelem->arm_time < 5) )
+         {
+            if ( ! s_bOnArmEventHandled )
+            {
+               s_bOnArmEventHandled = true;
+
+               char szBuff[128];
+               snprintf(szBuff, sizeof(szBuff)/sizeof(szBuff[0]), "touch %s%s", FOLDER_RUBY_TEMP, FILE_TEMP_ARMED);
+               hw_execute_bash_command(szBuff, NULL);
+
+               g_pCurrentModel->m_Stats.uTotalFlights++;
+               log_line("Armed Event. Saving model, total flights: %d", g_pCurrentModel->m_Stats.uTotalFlights);
+               g_pCurrentModel->m_Stats.uCurrentFlightTime = 1; // seconds
+               g_pCurrentModel->m_Stats.uCurrentFlightDistance = 0; // in 1/100 meters (cm)
+               g_pCurrentModel->m_Stats.uCurrentFlightTotalCurrent = 0; // 0.1 miliAmps (1/10000 amps);
+
+               g_pCurrentModel->m_Stats.uCurrentMaxAltitude = 0; // meters
+               g_pCurrentModel->m_Stats.uCurrentMaxDistance = 0; // meters
+               g_pCurrentModel->m_Stats.uCurrentMaxCurrent = 0; // miliAmps (1/1000 amps)
+               g_pCurrentModel->m_Stats.uCurrentMinVoltage = 100000; // miliVolts (1/1000 volts)
+               save_model();
+            }
+         }
+
+         if ( pFCTelem->arm_time > 1 )
+         {
+            // speed is in 0.01m/s
+            // total distance is in 0.01m
+            float speed = pFCTelem->hspeed-100000.0;
+            pFCTelem->total_distance += speed;
+         }
+         else
+            pFCTelem->total_distance = 0;
       }
       else
-         pFCTelem->total_distance = 0;
+      {
+         s_bOnArmEventHandled = false;
+         if ( pFCTelem->arm_time != 0 )
+         {
+            char szBuff[128];
+            snprintf(szBuff, sizeof(szBuff)/sizeof(szBuff[0]), "rm -rf %s%s", FOLDER_RUBY_TEMP, FILE_TEMP_ARMED);
+            hw_execute_bash_command(szBuff, NULL);
+         }
+         pFCTelem->arm_time = 0;
+      }
    }
 
    broadcast_vehicle_stats();

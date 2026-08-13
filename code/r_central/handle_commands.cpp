@@ -40,6 +40,8 @@
 #include "popup.h"
 #include "popup_log.h"
 #include "shared_vars.h"
+#include "notifications.h"
+#include "vehicle_backend_cache.h"
 #include "menu.h"
 #include "colors.h"
 #include "osd_common.h"
@@ -782,6 +784,40 @@ bool handle_last_command_result()
         }
         break;
 
+      case COMMAND_ID_GET_VIDEO_BACKEND:
+         {
+         if ( iDataLength >= 1 )
+         {
+            u8* pTmp = s_CommandReplyBuffer + sizeof(t_packet_header) + sizeof(t_packet_header_command_response);
+            vehicle_backend_cache_set(pPH->vehicle_id_src, *pTmp);
+            log_line("Received vehicle video backend: %d (1=majestic, 2=waybeam)", (int)(*pTmp));
+         }
+         }
+         break;
+
+      case COMMAND_ID_SET_ONBOARD_RECORDING:
+         warnings_add(pPH->vehicle_id_src, L("Vehicle recording settings updated."), g_idIconCamera, get_Color_IconNormal());
+         break;
+
+      case COMMAND_ID_ONBOARD_RECORD:
+         {
+         if ( 1 == s_CommandParam )
+         {
+            g_bIsVideoRecording = true;
+            g_uVideoRecordingStartTime = g_TimeNow;
+            notification_add_recording_start();
+            warnings_add(pPH->vehicle_id_src, L("Onboard recording started"), g_idIconCamera, get_Color_IconNormal());
+         }
+         else
+         {
+            g_bIsVideoRecording = false;
+            g_uVideoRecordingStartTime = 0;
+            notification_add_recording_end();
+            warnings_add(pPH->vehicle_id_src, L("Onboard recording stopped"), g_idIconCamera, get_Color_IconNormal());
+         }
+         }
+         break;
+
       case COMMAND_ID_GET_CORE_PLUGINS_INFO:
          {
          s_RetryGetCorePluginsCounter = 0;
@@ -1155,15 +1191,7 @@ bool handle_last_command_result()
          add_menu_to_stack(s_pMenuVehicleHWInfo);
          s_pMenuVehicleHWInfo->addTopLine(" ");
          s_pMenuVehicleHWInfo->addTopLine(" ");
-         {
-            int iCopyLen = iDataLength;
-            if ( iCopyLen < 0 )
-               iCopyLen = 0;
-            if ( iCopyLen >= (int)sizeof(szBuff) )
-               iCopyLen = (int)sizeof(szBuff) - 1;
-            memcpy(szBuff, pBuffer, iCopyLen);
-            szBuff[iCopyLen] = 0;
-         }
+         strcpy(szBuff, (const char*)pBuffer);
 
             szWord = strtok(szBuff, "#");
             while( NULL != szWord )
@@ -1225,15 +1253,7 @@ bool handle_last_command_result()
          s_pMenuVehicleHWInfo->addTopLine(" ");
          //s_pMenuVehicleHWInfo->addTopLine("CPU Info:");
 
-         {
-            int iCopyLen = iDataLength;
-            if ( iCopyLen < 0 )
-               iCopyLen = 0;
-            if ( iCopyLen >= (int)sizeof(szBuff) )
-               iCopyLen = (int)sizeof(szBuff) - 1;
-            memcpy(szBuff, pBuffer, iCopyLen);
-            szBuff[iCopyLen] = 0;
-         }
+         strcpy(szBuff, (const char*)pBuffer);
          szWord = strtok(szBuff, szTokens);
          while( NULL != szWord )
          {
@@ -1789,17 +1809,6 @@ bool handle_last_command_result()
             break;
          }
 
-      case COMMAND_ID_SET_ONBOARD_RECORDING_PARAMS:
-         {
-            onboard_recording_params_t params;
-            memcpy(&params, s_CommandBuffer, sizeof(onboard_recording_params_t));
-            memcpy(&(g_pCurrentModel->onboard_recording_params), &params, sizeof(onboard_recording_params_t));
-            saveControllerModel(g_pCurrentModel);
-            send_model_changed_message_to_router(MODEL_CHANGED_ONBOARD_RECORDING_PARAMS, 0);
-            menu_refresh_all_menus();
-            break;
-         }
-
       case COMMAND_ID_SET_GPS_INFO:
          g_pCurrentModel->iGPSCount = s_CommandParam;
          saveControllerModel(g_pCurrentModel);         
@@ -2271,7 +2280,15 @@ void handle_commands_on_response_received(u8* pPacketBuffer, int iLength)
          s_bHasCommandInProgress = false;
          return;
       }
-      if ( ! g_bUpdateInProgress )
+      // A best-effort video-backend probe (214) that an older vehicle firmware does
+      // not recognize is benign - the GS falls back to a heuristic - so don't alarm
+      // the user with an error popup/log for it (it auto-fires on link recover and
+      // around onboard recording, where the "not understood" popup was spurious).
+      bool bSilentUnknownProbe =
+         ( (pPHCR->command_response_flags & COMMAND_RESPONSE_FLAGS_UNKNOWN_COMMAND) &&
+           (pPHCR->origin_command_type == COMMAND_ID_GET_VIDEO_BACKEND) );
+
+      if ( (! g_bUpdateInProgress) && (! bSilentUnknownProbe) )
       {
          Popup* p = NULL;
          if ( pPHCR->command_response_flags & COMMAND_RESPONSE_FLAGS_FAILED_INVALID_PARAMS )

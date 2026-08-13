@@ -43,20 +43,20 @@ char s_szUSBMountName[64];
 pthread_t s_pThreadGetFreeSpaceAsync;
 static int s_iGetFreeSpaceAsyncResultValueKb = -1;
 
-int hardware_file_check_and_fix_access_c(char* szFullFileName)
+bool hardware_file_check_and_fix_access(char* szFullFileName)
 {
    if ( (NULL == szFullFileName) || (0 == szFullFileName[0]) )
-      return 0;
+      return false;
    if ( access(szFullFileName, F_OK) == -1 )
-      return 0;
+      return false;
 
-   int iUpdate = 0;
+   bool bUpdate = false;
    if ( access(szFullFileName, R_OK) == -1 )
-      iUpdate = 1;
+      bUpdate = true;
    if ( access(szFullFileName, X_OK) == -1 )
-      iUpdate = 1;
+      bUpdate = true;
 
-   if ( iUpdate )
+   if ( bUpdate )
    {
       char szComm[MAX_FILE_PATH_SIZE];
       snprintf(szComm, sizeof(szComm)/sizeof(szComm[0]), "chmod 777 %s", szFullFileName);
@@ -65,13 +65,8 @@ int hardware_file_check_and_fix_access_c(char* szFullFileName)
 
    if ( access(szFullFileName, R_OK) != -1 )
    if ( access(szFullFileName, X_OK) != -1 )
-      return 1;
-   return 0;
-}
-
-bool hardware_file_check_and_fix_access(char* szFullFileName)
-{
-   return hardware_file_check_and_fix_access_c(szFullFileName) ? true : false;
+      return true;
+   return false;
 }
 
 long hardware_file_get_file_size(const char* szFullFileName)

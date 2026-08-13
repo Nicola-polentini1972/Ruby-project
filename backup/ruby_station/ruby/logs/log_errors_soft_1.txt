@@ -1,0 +1,4 @@
+S-1-0:00:01.594 000 RubyStart: SOFTERROR: Failed to access previous system type.
+1-0:01:51.221 000 RubyStartFirst: SOFT_ERROR: [Hardware]: Failed to load I2C devices settings from file: /home/radxa/ruby/config/i2c_devices_settings.cfg (missing file). Recreated the file.
+1-0:01:57.434 000 RubyStartFirst: SOFT_ERROR: Failed to load controller settings from file: /home/radxa/ruby/config/controller_settings.cfg (missing file). Resetted controller settings to default.
+1-0:02:05.742 000 RubyStartFirst: SOFT_ERROR: [Hardware] Done executing reboot command

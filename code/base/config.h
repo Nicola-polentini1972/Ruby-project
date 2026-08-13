@@ -124,7 +124,7 @@ extern "C" {
 #endif 
 
 void getSystemVersionString(char* p, u32 swversion);
-int hardware_file_check_and_fix_access_c(char* szFullFileName);
+int hardware_file_check_and_fix_access_c(const char* szFullFileName);
 
 int config_file_get_value(const char* szPropName);
 void config_file_set_value(const char* szFile, const char* szPropName, int value);
