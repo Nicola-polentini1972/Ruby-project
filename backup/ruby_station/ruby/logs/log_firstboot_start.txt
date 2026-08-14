@@ -1,5 +1,0 @@
-Check for write access (step 1), succeeded on try number: 1 (boot count: 1)
-Check for write access (step 2), succeeded on try number: 1 (boot count: 1)
-Access to files ok. Boot count now: 1
-Starting run number 1; Starting Ruby...
-
