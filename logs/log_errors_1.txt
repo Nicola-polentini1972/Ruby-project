@@ -1,1 +1,0 @@
-1-0:01:54.863 000 RubyStartFirst: ERROR: Can't execute Ruby process. Not found here: [ruby_init_wifi] or here: [/home/radxa/ruby/ruby_init_wifi]
