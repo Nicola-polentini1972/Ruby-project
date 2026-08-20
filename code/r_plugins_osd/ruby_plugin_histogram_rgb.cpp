@@ -3,12 +3,20 @@
 // RGB Histogram OSD plugin.
 //
 // The OSD render engine (RenderEngineUI) only exposes vector drawing calls and has
-// no API to read back live video pixels, so this plugin can't sample the actual
-// video feed directly. Instead it reads a 24 bit binary PPM (P6) image file from
-// disk, computes the R/G/B channel histograms from it, and draws them as three
-// overlaid bar charts. Point HISTOGRAM_IMAGE_PATH at a snapshot you want to
-// analyze (e.g. a frame grabbed to PPM). If the file can't be read, a synthetic
-// test histogram is shown instead so the plugin still renders something useful.
+// no API to read back live video pixels, so this plugin can't sample the video feed
+// by itself. It gets histogram data from two possible sources, in priority order:
+//
+//  1. Live data: HISTOGRAM_LIVE_FILE_PATH, a small binary file periodically
+//     (re)written by the companion core plugin
+//     (code/r_plugins_core/ruby_core_plugin_histogram_rgb.cpp), which captures
+//     frames from the vehicle's camera via V4L2 and streams the computed bins to
+//     the controller over the radio data channel. Used only while "fresh"
+//     (updated in the last HISTOGRAM_LIVE_STALE_SECONDS).
+//  2. Static image: HISTOGRAM_IMAGE_PATH, a 24 bit binary PPM (P6) file, useful
+//     for testing without the core plugin / radio link.
+//
+// If neither is available, a synthetic test histogram is shown instead so the
+// plugin still renders something useful.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,9 +30,25 @@
 #include "../public/telemetry_info.h"
 #include "../public/settings_info.h"
 
-#define HISTOGRAM_IMAGE_PATH "/root/ruby/plugins/osd/histogram_source.ppm"
+// Defaults match a Radxa ground station layout; for a Raspberry Pi controller
+// change "/home/radxa/ruby/" to "/home/pi/ruby/" in both paths below.
+#define HISTOGRAM_IMAGE_PATH "/home/radxa/ruby/media/histogram_source.ppm"
+#define HISTOGRAM_LIVE_FILE_PATH "/home/radxa/ruby/tmp/histogram_live.bin"
+#define HISTOGRAM_LIVE_STALE_SECONDS 5
 #define HISTOGRAM_RECHECK_INTERVAL_SECONDS 3
 #define HISTOGRAM_MAX_BINS 64
+#define HISTOGRAM_LIVE_MAGIC 0x52474248u // 'RGBH', must match the core plugin
+
+typedef struct
+{
+   unsigned int uMagic;
+   unsigned int uVersion;
+   unsigned int uNumBins;
+   unsigned int uTimestampSec;
+   unsigned int uHistR[HISTOGRAM_MAX_BINS];
+   unsigned int uHistG[HISTOGRAM_MAX_BINS];
+   unsigned int uHistB[HISTOGRAM_MAX_BINS];
+} __attribute__((packed)) HistogramLiveData;
 
 PLUGIN_VAR RenderEngineUI* g_pEngine = NULL;
 PLUGIN_VAR const char* g_szPluginName = "RGB Histogram";
@@ -40,6 +64,7 @@ static int s_nHistR[256];
 static int s_nHistG[256];
 static int s_nHistB[256];
 static bool s_bHaveRealHistogram = false;
+static bool s_bUsingLiveData = false;
 static time_t s_tLastCheckTime = 0;
 static time_t s_tLastFileMTime = 0;
 
@@ -140,12 +165,54 @@ static bool _load_ppm_histogram(const char* szFile)
    return true;
 }
 
+static bool _try_load_live_histogram()
+{
+   struct stat st;
+   if ( 0 != stat(HISTOGRAM_LIVE_FILE_PATH, &st) )
+      return false;
+
+   time_t tNow = time(NULL);
+   if ( (tNow - st.st_mtime) > HISTOGRAM_LIVE_STALE_SECONDS )
+      return false; // core plugin stopped updating it (link down, vehicle disarmed, etc)
+
+   FILE* fd = fopen(HISTOGRAM_LIVE_FILE_PATH, "rb");
+   if ( NULL == fd )
+      return false;
+
+   HistogramLiveData data;
+   size_t nRead = fread(&data, 1, sizeof(data), fd);
+   fclose(fd);
+
+   if ( (nRead != sizeof(data)) || (data.uMagic != HISTOGRAM_LIVE_MAGIC) || (data.uNumBins != HISTOGRAM_MAX_BINS) )
+      return false;
+
+   // Spread the 64 live bins back across the internal 256 slot arrays (used by both
+   // sources) so render() can re-bin them into whatever display bin count the user picked.
+   int nSpread = 256/HISTOGRAM_MAX_BINS;
+   for( int i=0; i<256; i++ )
+   {
+      int bin = i/nSpread;
+      s_nHistR[i] = data.uHistR[bin]/nSpread;
+      s_nHistG[i] = data.uHistG[bin]/nSpread;
+      s_nHistB[i] = data.uHistB[bin]/nSpread;
+   }
+   return true;
+}
+
 static void _maybe_reload_histogram()
 {
    time_t tNow = time(NULL);
-   if ( s_bHaveRealHistogram && ((tNow - s_tLastCheckTime) < HISTOGRAM_RECHECK_INTERVAL_SECONDS) )
+   if ( (tNow - s_tLastCheckTime) < HISTOGRAM_RECHECK_INTERVAL_SECONDS )
       return;
    s_tLastCheckTime = tNow;
+
+   if ( _try_load_live_histogram() )
+   {
+      s_bUsingLiveData = true;
+      s_bHaveRealHistogram = true;
+      return;
+   }
+   s_bUsingLiveData = false;
 
    struct stat st;
    if ( 0 != stat(HISTOGRAM_IMAGE_PATH, &st) )
@@ -172,6 +239,7 @@ void init(void* pEngine)
    g_pEngine = (RenderEngineUI*)pEngine;
    _generate_fallback_histogram();
    s_bHaveRealHistogram = false;
+   s_bUsingLiveData = false;
    s_tLastCheckTime = 0;
    s_tLastFileMTime = 0;
 }
@@ -308,6 +376,15 @@ void render(vehicle_and_telemetry_info_t* pTelemetryInfo, plugin_settings_info_t
       g_pEngine->setColors(g_pEngine->getColorOSDText());
       g_pEngine->drawText(fLegendX + fLegendBoxSize*1.4, fLegendY - fTextH*0.15, fontId, szLabels[c]);
       fLegendX += fLegendBoxSize*1.4 + g_pEngine->textWidth(fontId, szLabels[c]) + fWidth*0.03;
+   }
+
+   if ( s_bUsingLiveData )
+   {
+      const char* szLive = "LIVE";
+      float wLive = g_pEngine->textWidth(fontId, szLive);
+      double dLiveColor[4] = {80,240,120,0.95};
+      g_pEngine->setColors(dLiveColor);
+      g_pEngine->drawText(xPos + fWidth - fWidth*0.04 - wLive, fLegendY - fTextH*0.15, fontId, szLive);
    }
 
    // Plot area (below the legend)
