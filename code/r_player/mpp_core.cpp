@@ -31,6 +31,9 @@
 */
 
 #include "mpp_core.h"
+#include <sys/mman.h>
+#include <stdio.h>
+#include <time.h>
 
 #define READ_VIDEO_BUF_SIZE (2*1024*1024) // SZ_1M https://github.com/rockchip-linux/mpp/blob/ed377c99a733e2cdbcc457a6aa3f0fcd438a9dff/osal/inc/mpp_common.h#L179
 #define MAX_VIDEO_FRAMES 128  // min 16 and 20+ recommended (mpp/readme.txt)
@@ -118,6 +121,116 @@ int mpp_feed_data_to_decoder(void* pData, int iLength)
     return iElapsedMs;
 }
 
+// --- RGB histogram sampling (feeds the OSD "RGB Histogram" plugin) ---------
+// Reads a strided sample of pixels once a second (piggy-backing on the
+// existing 1Hz _mpp_core_periodic_checks() throttle below) from the NV12
+// buffer that is already decoded and about to be displayed, so it costs no
+// extra decode/capture work. Frame buffers are mmap'd once, at init time, and
+// reused for the lifetime of the buffer to avoid mmap/munmap syscalls on the
+// realtime decode thread.
+
+#define HISTOGRAM_NUM_BINS 64
+#define HISTOGRAM_MAGIC 0x52474248u // 'RGBH', must match the OSD plugin
+#define HISTOGRAM_SAMPLE_STRIDE 8   // sample every 8th pixel in each direction
+#define HISTOGRAM_LIVE_FILE_PATH "/home/radxa/ruby/tmp/histogram_live.bin"
+
+typedef struct
+{
+   unsigned int uMagic;
+   unsigned int uVersion;
+   unsigned int uNumBins;
+   unsigned int uTimestampSec;
+   unsigned int uHistR[HISTOGRAM_NUM_BINS];
+   unsigned int uHistG[HISTOGRAM_NUM_BINS];
+   unsigned int uHistB[HISTOGRAM_NUM_BINS];
+} __attribute__((packed)) HistogramLiveData;
+
+static void* s_pMappedFrameData[MAX_VIDEO_FRAMES];
+static size_t s_uMappedFrameSize[MAX_VIDEO_FRAMES];
+static int s_iHistFrameWidth = 0;
+static int s_iHistFrameHeight = 0;
+static int s_iHistStrideH = 0;
+static int s_iHistStrideV = 0;
+
+static inline void _histogram_yuv_to_rgb(int y, int u, int v, int* pR, int* pG, int* pB)
+{
+   int c = y - 16;
+   int d = u - 128;
+   int e = v - 128;
+
+   int r = (298*c + 409*e + 128) >> 8;
+   int g = (298*c - 100*d - 208*e + 128) >> 8;
+   int b = (298*c + 516*d + 128) >> 8;
+
+   *pR = r < 0 ? 0 : (r > 255 ? 255 : r);
+   *pG = g < 0 ? 0 : (g > 255 ? 255 : g);
+   *pB = b < 0 ? 0 : (b > 255 ? 255 : b);
+}
+
+static void _mpp_core_update_histogram()
+{
+   int idx = g_iMPPFrameBufferIndexToDisplay;
+   if ( (idx < 0) || (idx >= g_iMPPBuffersSize) )
+      return;
+   if ( (NULL == s_pMappedFrameData[idx]) || (s_iHistFrameWidth <= 0) || (s_iHistFrameHeight <= 0) )
+      return;
+
+   const unsigned char* pY = (const unsigned char*)s_pMappedFrameData[idx];
+   const unsigned char* pUV = pY + (size_t)s_iHistStrideH * (size_t)s_iHistStrideV;
+
+   int nHist256R[256];
+   int nHist256G[256];
+   int nHist256B[256];
+   memset(nHist256R, 0, sizeof(nHist256R));
+   memset(nHist256G, 0, sizeof(nHist256G));
+   memset(nHist256B, 0, sizeof(nHist256B));
+
+   for( int y=0; y<s_iHistFrameHeight-1; y+=HISTOGRAM_SAMPLE_STRIDE )
+   for( int x=0; x<s_iHistFrameWidth-1; x+=HISTOGRAM_SAMPLE_STRIDE )
+   {
+      int yy = pY[(size_t)y*s_iHistStrideH + x];
+      int xUV = (x/2)*2;
+      int yUV = y/2;
+      int uu = pUV[(size_t)yUV*s_iHistStrideH + xUV];
+      int vv = pUV[(size_t)yUV*s_iHistStrideH + xUV + 1];
+
+      int r,g,b;
+      _histogram_yuv_to_rgb(yy, uu, vv, &r, &g, &b);
+      nHist256R[r]++; nHist256G[g]++; nHist256B[b]++;
+   }
+
+   HistogramLiveData data;
+   memset(&data, 0, sizeof(data));
+   data.uMagic = HISTOGRAM_MAGIC;
+   data.uVersion = 1;
+   data.uNumBins = HISTOGRAM_NUM_BINS;
+   data.uTimestampSec = (unsigned int)time(NULL);
+
+   int nSamplesPerBin = 256/HISTOGRAM_NUM_BINS;
+   for( int bIdx=0; bIdx<HISTOGRAM_NUM_BINS; bIdx++ )
+   {
+      unsigned int sumR=0, sumG=0, sumB=0;
+      for( int i=0; i<nSamplesPerBin; i++ )
+      {
+         sumR += nHist256R[bIdx*nSamplesPerBin+i];
+         sumG += nHist256G[bIdx*nSamplesPerBin+i];
+         sumB += nHist256B[bIdx*nSamplesPerBin+i];
+      }
+      data.uHistR[bIdx] = sumR;
+      data.uHistG[bIdx] = sumG;
+      data.uHistB[bIdx] = sumB;
+   }
+
+   char szTmp[300];
+   snprintf(szTmp, sizeof(szTmp), "%s.tmp", HISTOGRAM_LIVE_FILE_PATH);
+   FILE* fd = fopen(szTmp, "wb");
+   if ( NULL == fd )
+      return;
+   fwrite(&data, sizeof(data), 1, fd);
+   fclose(fd);
+   rename(szTmp, HISTOGRAM_LIVE_FILE_PATH);
+}
+
 int _mpp_init_frames(MppFrame pFrame)
 {
    log_line("[MPP] Init frames (%d frames)...", g_iMPPBuffersSize);
@@ -137,6 +250,19 @@ int _mpp_init_frames(MppFrame pFrame)
       log_line("[MPP] Received video format: Unknown");
 
    log_line("[MPP] Frame info changed to %dx%d, strides: %dx%d", w,h, stride_h, stride_v);
+
+   s_iHistFrameWidth = w;
+   s_iHistFrameHeight = h;
+   s_iHistStrideH = (int)stride_h;
+   s_iHistStrideV = (int)stride_v;
+
+   for( int hi=0; hi<MAX_VIDEO_FRAMES; hi++ )
+   {
+      if ( NULL != s_pMappedFrameData[hi] )
+         munmap(s_pMappedFrameData[hi], s_uMappedFrameSize[hi]);
+      s_pMappedFrameData[hi] = NULL;
+      s_uMappedFrameSize[hi] = 0;
+   }
 
    int iRet = mpp_buffer_group_get_external(&g_MPPBufferGroup, MPP_BUFFER_TYPE_DRM);
 
@@ -187,6 +313,18 @@ int _mpp_init_frames(MppFrame pFrame)
          iRet = close(g_Frames[i].drmBufferInfo.uBufferId);
       }
 
+      if ( (i < MAX_VIDEO_FRAMES) && (g_Frames[i].drmBufferInfo.uSize > 0) )
+      {
+         void* pMapped = mmap(NULL, g_Frames[i].drmBufferInfo.uSize, PROT_READ, MAP_SHARED, g_Frames[i].prime_fd, 0);
+         if ( pMapped != MAP_FAILED )
+         {
+            s_pMappedFrameData[i] = pMapped;
+            s_uMappedFrameSize[i] = g_Frames[i].drmBufferInfo.uSize;
+         }
+         else
+            log_softerror_and_alarm("[MPP] Failed to mmap frame buffer %d for histogram sampling (%d).", i, errno);
+      }
+
       log_line("[MPP] Allocated new frame");
 
      // Allocate DRM FB from DRM buffer
@@ -226,6 +364,7 @@ void _mpp_core_periodic_checks()
    //uCrtX += 20;
    //type_drm_object_info* pPlaneInfo = ruby_drm_get_plane_info();
    //ruby_drm_set_object_property(pPlaneInfo, "CRTC_X", uCrtX);
+   _mpp_core_update_histogram();
 }
 
 void* _mpp_thread_update_display(void *param)
