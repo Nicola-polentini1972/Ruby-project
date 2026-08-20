@@ -71,7 +71,6 @@ typedef struct
    u32  uTimeLastRecvFCTelemetryShort;
    u8   uLastFCFlightMode;
    u8   uLastFCFlags;
-   bool bGotFirstFCFlagsSample;
 
    t_packet_header_fc_telemetry headerFCTelemetry;
    t_packet_header_fc_extra     headerFCTelemetryExtra;
