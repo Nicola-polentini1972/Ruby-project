@@ -3,7 +3,7 @@ CPPFLAGS=-Wall -O2
 CFLAGS := $(CFLAGS) -Wall -O2 
 RELEASE_DIR = ../../
 
-all: ruby_plugin my_plugin ruby_plugin_gauge_speed ruby_plugin_gauge_altitude ruby_plugin_gauge_ahi ruby_plugin_gauge_heading
+all: ruby_plugin my_plugin ruby_plugin_gauge_speed ruby_plugin_gauge_altitude ruby_plugin_gauge_ahi ruby_plugin_gauge_heading ruby_plugin_histogram_rgb
 
 osd_plugins_utils.o: ../public/utils/osd_plugins_utils.c
 	gcc -c -o $@ $< $(CPPFLAGS)
@@ -49,5 +49,11 @@ my_plugin: my_plugin_source.o
 	gcc my_plugin_source.o -shared -Wl,-soname,my_plugin.so.1 -o my_plugin.so.1.0.1 -lc
 	cp -f my_plugin.so.1.0.1 $(RELEASE_DIR)
 
+ruby_plugin_histogram_rgb: ruby_plugin_histogram_rgb.o
+	gcc ruby_plugin_histogram_rgb.o -shared -Wl,-soname,ruby_plugin_histogram_rgb.so.1 -o ruby_plugin_histogram_rgb.so.1.0.1 -lc -lm
+	cp -f ruby_plugin_histogram_rgb.so.1.0.1 $(RELEASE_DIR)
+	$(info Copy ruby_plugin_histogram_rgb done)
+	$(info ----------------------------------------------------)
+
 clean:
-	rm -f ruby_ahi_plugin.so.* ruby_plugin_gauge_speed.so.* ruby_plugin_gauge_altitude.so.* ruby_plugin_gauge_ahi.so.* ruby_plugin_gauge_heading.so.* my_plugin.* *.o
+	rm -f ruby_ahi_plugin.so.* ruby_plugin_gauge_speed.so.* ruby_plugin_gauge_altitude.so.* ruby_plugin_gauge_ahi.so.* ruby_plugin_gauge_heading.so.* my_plugin.* ruby_plugin_histogram_rgb.so.* *.o
